@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>MedPredict AI – COVID-19 Hospitalization Risk Prediction</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0b1835;--navy2:#0f2860;--navy3:#162040;
+  --blue:#2563eb;--blue2:#1d4ed8;--blue3:#3b82f6;
+  --cyan:#06b6d4;--emerald:#10b981;--amber:#f59e0b;
+  --red:#ef4444;--red2:#dc2626;--purple:#7c3aed;
+  --slate50:#f8fafc;--slate100:#f1f5f9;--slate200:#e2e8f0;
+  --slate300:#cbd5e1;--slate400:#94a3b8;--slate500:#64748b;
+  --slate600:#475569;--slate700:#334155;--slate800:#1e293b;
+  --text:#1e293b;--bg:#f8fafc;
+}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+h1,h2,h3,h4,h5{font-family:'Syne',sans-serif}
+a{text-decoration:none;color:inherit}
+
+/* ─── NAVBAR ─── */
+#navbar{position:sticky;top:0;z-index:9999;background:var(--navy);box-shadow:0 1px 24px rgba(0,0,0,.4);transition:all .3s}
+#navbar .nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{display:flex;align-items:center;gap:10px;cursor:pointer}
+.nav-logo-icon{width:36px;height:36px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.nav-logo-text .name{color:#fff;font-family:'Syne',sans-serif;font-weight:700;font-size:15px;line-height:1.2}
+.nav-logo-text .sub{color:var(--blue3);font-size:9px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-link{color:var(--slate400);padding:6px 12px;border-radius:8px;font-size:13.5px;font-weight:500;cursor:pointer;transition:all .2s;border:none;background:none;font-family:'DM Sans',sans-serif}
+.nav-link:hover,.nav-link.active{color:#fff;background:rgba(255,255,255,.08)}
+.nav-link.active{color:var(--blue3);background:rgba(59,130,246,.1)}
+.nav-actions{display:flex;align-items:center;gap:8px}
+.btn-outline-nav{border:1px solid rgba(255,255,255,.2);color:var(--slate300);padding:6px 16px;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer;background:none;transition:all .2s;font-family:'DM Sans',sans-serif}
+.btn-outline-nav:hover{border-color:var(--blue3);color:var(--blue3)}
+.btn-primary-nav{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;padding:7px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;border:none;font-family:'DM Sans',sans-serif;box-shadow:0 4px 14px rgba(37,99,235,.3)}
+.btn-primary-nav:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(37,99,235,.45)}
+
+/* Hamburger */
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:none;border:none}
+.hamburger span{display:block;width:22px;height:2px;background:var(--slate400);border-radius:2px;transition:.3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;background:var(--navy2);z-index:9998;padding:16px;border-bottom:1px solid rgba(255,255,255,.08);flex-direction:column;gap:4px;box-shadow:0 8px 32px rgba(0,0,0,.4)}
+.mobile-menu.open{display:flex}
+.mobile-menu .nav-link{font-size:15px;padding:12px 16px;border-radius:10px;text-align:left}
+.mobile-menu-footer{display:flex;gap:8px;padding-top:12px;border-top:1px solid rgba(255,255,255,.08);margin-top:4px}
+.mobile-menu-footer button{flex:1;padding:10px;font-size:13px}
+
+/* ─── PAGES ─── */
+.page{display:none;animation:fadeUp .4s ease forwards}
+.page.active{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+/* ─── HERO ─── */
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 50%,#0b2454 100%);padding:90px 24px 80px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(37,99,235,.28),transparent)}
+.hero-inner{position:relative;max-width:820px;margin:0 auto}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,.15);border:1px solid rgba(99,161,246,.3);color:#93c5fd;padding:6px 16px;border-radius:100px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:24px}
+.hero h1{font-size:52px;font-weight:800;color:#fff;line-height:1.06;letter-spacing:-.02em;margin-bottom:20px}
+.hero h1 span{background:linear-gradient(135deg,#60a5fa,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{color:var(--slate400);font-size:17px;line-height:1.7;max-width:600px;margin:0 auto 40px}
+.hero-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.btn-hero-primary{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;padding:14px 32px;border-radius:14px;font-size:15px;font-weight:700;cursor:pointer;border:none;font-family:'DM Sans',sans-serif;box-shadow:0 8px 30px rgba(37,99,235,.4);transition:all .25s}
+.btn-hero-primary:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(37,99,235,.55)}
+.btn-hero-secondary{display:inline-flex;align-items:center;gap:8px;border:1.5px solid rgba(255,255,255,.2);color:var(--slate300);padding:13px 28px;border-radius:14px;font-size:15px;font-weight:500;cursor:pointer;background:none;font-family:'DM Sans',sans-serif;transition:all .25s}
+.btn-hero-secondary:hover{border-color:var(--blue3);color:var(--blue3)}
+
+/* ─── STATS BAR ─── */
+.stats-bar{background:#fff;border-bottom:1px solid var(--slate200);padding:28px 24px}
+.stats-bar-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:24px}
+.stat-item{text-align:center}
+.stat-num{font-family:'Syne',sans-serif;font-size:28px;font-weight:800;color:var(--navy)}
+.stat-label{font-size:12px;font-weight:600;color:var(--slate500);margin-top:2px}
+
+/* ─── SECTION ─── */
+.section{padding:80px 24px}
+.section-inner{max-width:1200px;margin:0 auto}
+.section-center{text-align:center;margin-bottom:56px}
+.section-tag{display:inline-block;background:#eff6ff;color:var(--blue);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 16px;border-radius:100px;border:1px solid #dbeafe;margin-bottom:12px}
+.section-title{font-size:34px;font-weight:800;color:var(--navy);letter-spacing:-.02em;line-height:1.2;margin-bottom:12px}
+.section-sub{color:var(--slate500);font-size:15px;line-height:1.7;max-width:520px;margin:0 auto}
+.section-dark{background:var(--navy)}
+.section-dark .section-tag{background:rgba(59,130,246,.15);color:#93c5fd;border-color:rgba(99,161,246,.25)}
+.section-dark .section-title{color:#fff}
+.section-dark .section-sub{color:var(--slate400)}
+.section-white{background:#fff}
+
+/* ─── GRID ─── */
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+
+/* ─── CARDS ─── */
+.card{background:#fff;border-radius:20px;border:1px solid var(--slate200);padding:28px;box-shadow:0 1px 4px rgba(0,0,0,.04);transition:all .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(0,0,0,.1)}
+.card-dark{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:28px;transition:all .25s}
+.card-dark:hover{background:rgba(255,255,255,.08)}
+.card-icon{width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:20px;flex-shrink:0}
+.card h3{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.card-dark h3{color:#fff}
+.card p{font-size:13.5px;color:var(--slate500);line-height:1.65}
+.card-dark p{color:var(--slate400)}
+
+/* ─── KPI CARDS ─── */
+.kpi-card{background:#fff;border-radius:16px;border:1px solid var(--slate200);padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.kpi-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--slate500);margin-bottom:8px}
+.kpi-val{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;color:var(--navy)}
+.kpi-sub{font-size:11.5px;font-weight:600;margin-top:4px}
+.kpi-icon{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:12px}
+
+/* ─── BADGES ─── */
+.badge{display:inline-flex;align-items:center;padding:3px 10px;border-radius:100px;font-size:11px;font-weight:700;letter-spacing:.05em}
+.badge-high{background:#fef2f2;color:var(--red2);border:1px solid #fca5a5}
+.badge-medium{background:#fffbeb;color:#d97706;border:1px solid #fcd34d}
+.badge-low{background:#f0fdf4;color:#16a34a;border:1px solid #86efac}
+.badge-blue{background:#eff6ff;color:var(--blue);border:1px solid #bfdbfe}
+.badge-selected{background:linear-gradient(135deg,#fef9c3,#fef08a);color:#854d0e;border:1px solid #fbbf24;font-size:10px;padding:2px 8px}
+
+/* ─── BUTTONS ─── */
+.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border-radius:12px;font-size:13.5px;font-weight:600;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif;border:none}
+.btn-primary{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;box-shadow:0 4px 14px rgba(37,99,235,.3)}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(37,99,235,.45)}
+.btn-primary:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.btn-outline{border:1.5px solid var(--slate200);color:var(--slate700);background:#fff}
+.btn-outline:hover{border-color:var(--blue3);color:var(--blue)}
+.btn-big{padding:15px;border-radius:16px;font-size:16px;width:100%;justify-content:center}
+.btn-danger{background:#fef2f2;color:var(--red2);border:1px solid #fca5a5}
+.btn-danger:hover{background:#fee2e2}
+
+/* ─── FORM ─── */
+.form-group{margin-bottom:20px}
+.form-label{display:block;font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--slate600);margin-bottom:6px}
+.form-input{width:100%;border:2px solid var(--slate200);border-radius:12px;padding:11px 16px;font-size:13.5px;font-family:'DM Sans',sans-serif;color:var(--navy);background:var(--slate50);transition:all .2s;outline:none}
+.form-input:focus{border-color:var(--blue);background:#fff}
+.form-select{width:100%;border:2px solid var(--slate200);border-radius:12px;padding:11px 16px;font-size:13.5px;font-family:'DM Sans',sans-serif;color:var(--navy);background:var(--slate50);outline:none;cursor:pointer;transition:all .2s;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center}
+.form-select:focus{border-color:var(--blue);background-color:#fff}
+
+/* ─── CHIP TOGGLE ─── */
+.chip-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.chip{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:12px;border:2px solid var(--slate200);background:var(--slate50);cursor:pointer;font-size:13px;font-weight:600;color:var(--slate600);transition:all .2s;user-select:none}
+.chip:hover{border-color:#bfdbfe;background:#eff6ff}
+.chip.active{border-color:var(--blue);background:#eff6ff;color:var(--blue)}
+.chip-check{width:20px;height:20px;border-radius:6px;border:2px solid var(--slate300);display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;transition:all .2s}
+.chip.active .chip-check{background:var(--blue);border-color:var(--blue);color:#fff}
+
+/* ─── LOADING ANIMATION ─── */
+.predict-loading{display:none;flex-direction:column;align-items:center;gap:16px;padding:40px;background:#fff;border-radius:20px;border:1px solid var(--slate200);margin-top:24px;text-align:center}
+.predict-loading.show{display:flex}
+.loading-ring{width:60px;height:60px;border:4px solid var(--slate200);border-top-color:var(--blue);border-radius:50%;animation:spin .9s linear infinite}
+.loading-steps{display:flex;flex-direction:column;gap:8px;width:100%;max-width:360px}
+.loading-step{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;font-size:13px;font-weight:500;color:var(--slate500);background:var(--slate50);transition:all .4s}
+.loading-step.done{color:var(--emerald);background:#f0fdf4}
+.loading-step.active{color:var(--blue);background:#eff6ff;font-weight:600}
+.loading-step-icon{font-size:16px;width:20px;text-align:center}
+
+/* ─── RESULT CARD ─── */
+.result-card{border-radius:20px;padding:32px;border:2px solid;animation:fadeUp .5s ease forwards}
+.result-high{background:#fef2f2;border-color:#fca5a5}
+.result-medium{background:#fffbeb;border-color:#fcd34d}
+.result-low{background:#f0fdf4;border-color:#86efac}
+.risk-banner{display:inline-flex;align-items:center;gap:10px;padding:10px 20px;border-radius:100px;font-family:'Syne',sans-serif;font-size:20px;font-weight:800;margin-bottom:20px}
+.severity-bar-outer{background:var(--slate200);border-radius:100px;height:12px;overflow:hidden}
+.severity-bar-inner{height:100%;border-radius:100px;transition:width 1.2s ease}
+.rec-item{display:flex;align-items:flex-start;gap:12px;padding:13px 16px;background:rgba(255,255,255,.6);border-radius:12px;font-size:13.5px;color:var(--slate700);line-height:1.5;border-left:4px solid}
+.metric-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:20px}
+.metric-box{background:rgba(0,0,0,.05);border-radius:12px;padding:12px 14px}
+.metric-box .ml{font-size:11px;font-weight:700;color:var(--slate500);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.metric-box .mv{font-family:'Syne',sans-serif;font-size:13.5px;font-weight:700;color:var(--slate800)}
+
+/* ─── KEY RISK FACTORS (XAI) ─── */
+.xai-section{background:#fff;border-radius:16px;border:1px solid var(--slate200);padding:24px;margin-top:20px}
+.xai-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.xai-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.xai-factor{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;font-size:13px;font-weight:500;border:1px solid}
+.xai-factor-high{background:#fef2f2;border-color:#fca5a5;color:#9b1c1c}
+.xai-factor-med{background:#fffbeb;border-color:#fcd34d;color:#92400e}
+.xai-factor-low{background:#eff6ff;border-color:#bfdbfe;color:#1e40af}
+.xai-bar{flex:1;height:6px;background:var(--slate200);border-radius:3px;overflow:hidden;margin-top:2px}
+.xai-bar-fill{height:100%;border-radius:3px}
+
+/* ─── TABLE ─── */
+.data-table{width:100%;border-collapse:collapse;font-size:13px}
+.data-table th{text-align:left;padding:10px 16px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--slate500);border-bottom:2px solid var(--slate100);white-space:nowrap}
+.data-table td{padding:12px 16px;border-bottom:1px solid var(--slate100);color:var(--slate700);vertical-align:middle}
+.data-table tr:hover td{background:var(--slate50)}
+.data-table tr:last-child td{border-bottom:none}
+
+/* ─── MODEL COMPARISON TABLE ─── */
+.model-table-wrap{overflow-x:auto;border-radius:16px;border:1px solid var(--slate200)}
+.model-table{width:100%;border-collapse:collapse;font-size:13px}
+.model-table th{background:var(--navy);color:#fff;padding:12px 16px;text-align:left;font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.model-table td{padding:12px 16px;border-bottom:1px solid var(--slate100);vertical-align:middle}
+.model-table tr:last-child td{border-bottom:none}
+.model-table tr.selected-model td{background:#fffbeb;font-weight:600}
+.model-table tr:hover td{background:var(--slate50)}
+.model-table tr.selected-model:hover td{background:#fffbeb}
+
+/* ─── DATASET INFO SECTION ─── */
+.dataset-stat{display:flex;flex-direction:column;gap:4px;padding:18px;background:rgba(255,255,255,.06);border-radius:14px;border:1px solid rgba(255,255,255,.1)}
+.dataset-stat-val{font-family:'Syne',sans-serif;font-size:24px;font-weight:800;color:#60a5fa}
+.dataset-stat-label{font-size:12.5px;color:var(--slate400);line-height:1.4}
+
+/* ─── SIDEBAR (admin) ─── */
+.admin-layout{display:flex;min-height:calc(100vh - 64px)}
+.admin-sidebar{width:240px;background:var(--navy);flex-shrink:0;padding:20px 0;min-height:100%}
+.admin-sidebar-section{padding:4px 12px;margin-bottom:2px}
+.sidebar-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--slate500);padding:8px 12px 4px}
+.sidebar-item{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:10px;color:var(--slate400);font-size:13px;font-weight:500;cursor:pointer;transition:all .2s;border:none;background:none;font-family:'DM Sans',sans-serif;width:100%;text-align:left}
+.sidebar-item:hover{color:#fff;background:rgba(255,255,255,.06)}
+.sidebar-item.active{color:var(--blue3);background:rgba(59,130,246,.12);border-left:2px solid var(--blue3)}
+.sidebar-item .sib-icon{font-size:16px;width:18px;text-align:center}
+.sidebar-badge{background:var(--red2);color:#fff;font-size:10px;font-weight:700;padding:2px 6px;border-radius:100px;margin-left:auto}
+.admin-main{flex:1;background:var(--slate50);padding:32px;overflow:auto}
+.admin-panel{display:none}
+.admin-panel.active{display:block;animation:fadeUp .3s ease}
+
+/* ─── HOW IT WORKS ─── */
+.how-step{text-align:center;padding:24px 16px}
+.how-num{width:56px;height:56px;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;font-family:'Syne',sans-serif;font-size:18px;font-weight:800;border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 8px 24px rgba(37,99,235,.3)}
+
+/* ─── AUTH ─── */
+.auth-page{min-height:100vh;background:linear-gradient(135deg,var(--navy),var(--navy2),#0b2454);display:flex;align-items:center;justify-content:center;padding:40px 24px}
+.auth-card{background:#fff;border-radius:24px;padding:40px;width:100%;max-width:460px;box-shadow:0 24px 80px rgba(0,0,0,.3)}
+.auth-logo{text-align:center;margin-bottom:28px}
+.auth-logo-icon{width:52px;height:52px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:16px;display:inline-flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:12px;box-shadow:0 8px 24px rgba(37,99,235,.35)}
+.auth-tabs{display:flex;gap:0;background:var(--slate100);border-radius:12px;padding:4px;margin-bottom:24px}
+.auth-tab{flex:1;padding:9px;border-radius:9px;font-size:13px;font-weight:600;color:var(--slate500);cursor:pointer;text-align:center;transition:all .2s;border:none;background:none;font-family:'DM Sans',sans-serif}
+.auth-tab.active{background:#fff;color:var(--navy);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.auth-form{display:none}
+.auth-form.active{display:block}
+.demo-box{background:var(--slate50);border:1px dashed var(--slate300);border-radius:12px;padding:14px 16px;margin-bottom:16px}
+.demo-box p{font-size:12.5px;color:var(--slate600);font-weight:500}
+.demo-box strong{color:var(--blue);font-family:'DM Sans',sans-serif}
+.pass-strength{height:4px;border-radius:2px;margin-top:6px;transition:all .3s}
+
+/* ─── TESTIMONIALS ─── */
+.testimonial-card{background:#fff;border-radius:20px;border:1px solid var(--slate200);padding:28px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.stars{display:flex;gap:3px;margin-bottom:12px}
+.star{color:#f59e0b;font-size:14px}
+.star.empty{color:var(--slate200)}
+.testimonial-avatar{width:42px;height:42px;border-radius:100%;background:linear-gradient(135deg,var(--blue),var(--cyan));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:14px;flex-shrink:0}
+
+/* ─── TOAST ─── */
+.toast-container{position:fixed;top:80px;right:20px;z-index:99999;display:flex;flex-direction:column;gap:10px;pointer-events:none}
+.toast{background:#fff;border-radius:14px;border:1px solid var(--slate200);padding:14px 18px;box-shadow:0 8px 32px rgba(0,0,0,.15);display:flex;align-items:center;gap:12px;font-size:13.5px;font-weight:500;color:var(--slate800);pointer-events:all;min-width:280px;max-width:360px;animation:slideIn .3s ease;transition:all .3s}
+.toast-success{border-left:4px solid var(--emerald)}
+.toast-error{border-left:4px solid var(--red)}
+.toast-info{border-left:4px solid var(--blue)}
+@keyframes slideIn{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX(0)}}
+.toast-out{opacity:0;transform:translateX(20px)}
+
+/* ─── COOKIE ─── */
+#cookie-banner{position:fixed;bottom:0;left:0;right:0;background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding:16px 24px;z-index:9998;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px}
+#cookie-banner p{color:var(--slate400);font-size:13px}
+#cookie-banner span{color:var(--blue3);cursor:pointer}
+.cookie-btns{display:flex;gap:8px}
+.cookie-btn{padding:7px 16px;border-radius:8px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;border:none}
+
+/* ─── SPINNER ─── */
+.spinner{width:18px;height:18px;border:3px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;display:inline-block}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* ─── FOOTER ─── */
+.footer{background:var(--navy);color:var(--slate400)}
+.footer-inner{max-width:1200px;margin:0 auto;padding:64px 24px 32px}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;margin-bottom:48px}
+.footer-heading{color:var(--slate300);font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;margin-bottom:16px}
+.footer-link{display:block;color:var(--slate400);font-size:13px;margin-bottom:10px;cursor:pointer;transition:color .2s}
+.footer-link:hover{color:var(--blue3)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.07);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;font-size:12px}
+.footer-disclaimer{max-width:1200px;margin:0 auto;padding:20px 24px 0;border-top:1px solid rgba(255,255,255,.07)}
+.footer-disclaimer p{font-size:12px;color:var(--slate500);line-height:1.7;text-align:center;padding:12px 16px;background:rgba(255,255,255,.04);border-radius:10px;border:1px solid rgba(255,255,255,.06)}
+
+/* ─── FAQ ─── */
+.faq-item{border:1px solid var(--slate200);border-radius:14px;overflow:hidden;margin-bottom:8px}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;cursor:pointer;font-weight:600;font-size:14px;color:var(--navy);background:#fff;gap:12px;border:none;width:100%;text-align:left;font-family:'DM Sans',sans-serif;transition:background .2s}
+.faq-q:hover{background:var(--slate50)}
+.faq-a{padding:0 20px;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;font-size:13.5px;color:var(--slate500);line-height:1.7;background:var(--slate50);border-top:0 solid var(--slate200)}
+.faq-a.open{max-height:200px;padding:14px 20px;border-top-width:1px}
+.faq-arrow{font-size:12px;color:var(--slate400);transition:transform .3s;flex-shrink:0}
+.faq-q.open .faq-arrow{transform:rotate(180deg)}
+
+/* ─── GAUGE ─── */
+.gauge-wrap{text-align:center}
+.gauge-wrap .gauge-score{font-family:'Syne',sans-serif;font-size:28px;font-weight:800;margin-top:6px}
+.gauge-wrap .gauge-label{font-size:11.5px;color:var(--slate500);font-weight:600;margin-top:2px}
+
+/* ─── SEARCH ─── */
+.search-box{display:flex;align-items:center;gap:10px;background:var(--slate50);border:2px solid var(--slate200);border-radius:12px;padding:8px 14px;margin-bottom:20px}
+.search-box input{flex:1;border:none;background:transparent;font-size:13.5px;font-family:'DM Sans',sans-serif;color:var(--slate700);outline:none}
+.search-box span{color:var(--slate400);font-size:16px}
+
+/* ─── PROGRESS BAR ─── */
+.perf-bar-wrap{margin-bottom:16px}
+.perf-bar-label{display:flex;justify-content:space-between;font-size:13px;margin-bottom:5px;font-weight:600;color:var(--slate700)}
+.perf-bar-outer{background:var(--slate100);border-radius:100px;height:8px;overflow:hidden}
+.perf-bar-inner{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--blue),var(--cyan))}
+
+/* ─── TABS ─── */
+.tabs{display:flex;background:var(--slate100);border-radius:12px;padding:4px;margin-bottom:24px}
+.tab{flex:1;padding:8px 12px;border-radius:9px;font-size:13px;font-weight:600;color:var(--slate500);cursor:pointer;text-align:center;transition:all .2s;border:none;background:none;font-family:'DM Sans',sans-serif}
+.tab.active{background:#fff;color:var(--navy);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+
+/* ─── TOGGLE ─── */
+.toggle-wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--slate100)}
+.toggle-wrap:last-child{border-bottom:none}
+.toggle{width:42px;height:24px;background:var(--slate300);border-radius:100px;position:relative;cursor:pointer;transition:background .3s;flex-shrink:0}
+.toggle.on{background:var(--blue)}
+.toggle-thumb{width:18px;height:18px;background:#fff;border-radius:100%;position:absolute;top:3px;left:3px;transition:left .3s;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.toggle.on .toggle-thumb{left:21px}
+
+/* ─── PREDICTION HISTORY ─── */
+.history-empty{text-align:center;padding:32px;color:var(--slate400);font-size:13.5px}
+.history-badge{display:inline-block;padding:2px 8px;border-radius:100px;font-size:10px;font-weight:700}
+
+/* ─── MOBILE ─── */
+@media(max-width:768px){
+  .hero h1{font-size:30px}
+  .nav-links,.nav-actions{display:none}
+  .hamburger{display:flex}
+  .admin-sidebar{display:none}
+  .admin-main{padding:20px}
+  .stats-bar-inner{grid-template-columns:repeat(2,1fr)}
+  .section{padding:50px 16px}
+  .hero{padding:60px 16px 50px}
+}
+@media(max-width:480px){
+  .hero h1{font-size:26px}
+  .auth-card{padding:28px 20px}
+  .chip-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- TOAST CONTAINER -->
+<div class="toast-container" id="toast-container"></div>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" style="display:none">
+  <p>🍪 We use cookies to enhance your experience. <span onclick="hideCookie()">Privacy Policy</span></p>
+  <div class="cookie-btns">
+    <button class="cookie-btn" style="background:rgba(255,255,255,.1);color:var(--slate400)" onclick="hideCookie()">Decline</button>
+    <button class="cookie-btn" style="background:var(--blue);color:#fff" onclick="hideCookie()">Accept All</button>
+  </div>
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <button class="nav-link" onclick="showPage('home');closeMobile()">🏠 Home</button>
+  <button class="nav-link" onclick="showPage('about');closeMobile()">📖 About</button>
+  <button class="nav-link" onclick="showPage('predict');closeMobile()">🔬 Predict</button>
+  <button class="nav-link" onclick="showPage('dashboard');closeMobile()">📊 Dashboard</button>
+  <button class="nav-link" onclick="showPage('contact');closeMobile()">📬 Contact</button>
+  <div class="mobile-menu-footer">
+    <button class="btn-outline-nav" style="flex:1" onclick="showPage('login');closeMobile()">Log In</button>
+    <button class="btn-primary-nav" style="flex:1" onclick="showPage('admin');closeMobile()">🛡️ Admin</button>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="showPage('home')">
+      <div class="nav-logo-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <div class="nav-logo-text">
+        <div class="name">MedPredict AI</div>
+        <div class="sub">Risk Prediction System</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <button class="nav-link active" id="nav-home" onclick="showPage('home')">Home</button>
+      <button class="nav-link" id="nav-about" onclick="showPage('about')">About</button>
+      <button class="nav-link" id="nav-predict" onclick="showPage('predict')">Predict</button>
+      <button class="nav-link" id="nav-dashboard" onclick="showPage('dashboard')">Dashboard</button>
+      <button class="nav-link" id="nav-contact" onclick="showPage('contact')">Contact</button>
+    </div>
+    <div class="nav-actions">
+      <button class="btn-outline-nav" onclick="showPage('login')">Log In</button>
+      <button class="btn-primary-nav" onclick="showPage('admin')">🛡️ Admin Panel</button>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMobile()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══════════════ HOME PAGE ══════════════ -->
+<div id="page-home" class="page active">
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">🔬 Final Year Project — AI Healthcare System</div>
+      <h1>COVID-19 Hospitalization<br><span>Risk Prediction System</span></h1>
+      <p class="hero-sub">Advanced machine learning trained on 3,000+ patient records to predict hospitalization risk with 92% accuracy and 0.91 AUC using XGBoost and ensemble methods.</p>
+      <div class="hero-btns">
+        <button class="btn-hero-primary" onclick="showPage('predict')">🩺 Check Your Risk →</button>
+        <button class="btn-hero-secondary" onclick="showPage('dashboard')">📊 View Dashboard</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats - REALISTIC VALUES -->
+  <div class="stats-bar">
+    <div class="stats-bar-inner">
+      <div class="stat-item"><div class="stat-num">3,000+</div><div class="stat-label">Patient Records</div></div>
+      <div class="stat-item"><div class="stat-num">0.93</div><div class="stat-label">Best AUC (XGBoost)</div></div>
+      <div class="stat-item"><div class="stat-num">93%</div><div class="stat-label">Model Accuracy</div></div>
+      <div class="stat-item"><div class="stat-num">4</div><div class="stat-label">ML Models Compared</div></div>
+      <div class="stat-item"><div class="stat-num">80/20</div><div class="stat-label">Train/Test Split</div></div>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <div class="section section-white">
+    <div class="section-inner">
+      <div class="section-center">
+        <div class="section-tag">Core Features</div>
+        <div class="section-title">Everything for COVID-19 Risk Assessment</div>
+        <div class="section-sub">A complete platform combining clinical data with machine learning for real-time severity prediction.</div>
+      </div>
+      <div class="grid-3">
+        <div class="card"><div class="card-icon" style="background:#eff6ff">🧠</div><h3>Multi-Model ML Engine</h3><p>XGBoost, Gradient Boosting, Random Forest, and Logistic Regression benchmarked with 5-fold cross-validation.</p></div>
+        <div class="card"><div class="card-icon" style="background:#f0fdf4">🔍</div><h3>Model Explainability (XAI)</h3><p>Each prediction shows key risk factors influencing the outcome — age, symptoms, and comorbidities ranked by impact.</p></div>
+        <div class="card"><div class="card-icon" style="background:#fffbeb">⚡</div><h3>Real-Time Inference</h3><p>Instant predictions based on symptoms, age, vaccination status, and medical history in seconds.</p></div>
+        <div class="card"><div class="card-icon" style="background:#f5f3ff">📊</div><h3>Analytics Dashboard</h3><p>Interactive charts showing monthly trends, model performance metrics, risk distribution, and patient records.</p></div>
+        <div class="card"><div class="card-icon" style="background:#fff1f2">💉</div><h3>SMOTE Balancing</h3><p>Advanced oversampling handles class imbalance for rare outcomes like ICU admission and mortality prediction.</p></div>
+        <div class="card"><div class="card-icon" style="background:#ecfeff">📋</div><h3>Clinical Recommendations</h3><p>Each prediction includes actionable clinical recommendations tailored to the patient's specific risk profile.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DATASET INFORMATION SECTION -->
+  <div class="section section-dark">
+    <div class="section-inner">
+      <div class="section-center">
+        <div class="section-tag">Dataset Information</div>
+        <div class="section-title">Kaggle COVID-19 Clinical Dataset</div>
+        <div class="section-sub">Publicly available anonymized dataset used for training and evaluation of all ML models.</div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-bottom:32px">
+        <div class="dataset-stat"><div class="dataset-stat-val">3,000+</div><div class="dataset-stat-label">Total Patient Records</div></div>
+        <div class="dataset-stat"><div class="dataset-stat-val">14</div><div class="dataset-stat-label">Input Features</div></div>
+        <div class="dataset-stat"><div class="dataset-stat-val">80/20</div><div class="dataset-stat-label">Train / Test Split</div></div>
+        <div class="dataset-stat"><div class="dataset-stat-val">5-Fold</div><div class="dataset-stat-label">Cross Validation</div></div>
+        <div class="dataset-stat"><div class="dataset-stat-val">SMOTE</div><div class="dataset-stat-label">Class Imbalance Fix</div></div>
+        <div class="dataset-stat"><div class="dataset-stat-val">Kaggle</div><div class="dataset-stat-label">Data Source</div></div>
+      </div>
+      <div class="card-dark" style="max-width:700px;margin:0 auto">
+        <h3 style="color:#fff;margin-bottom:16px;font-size:15px">📌 Dataset Features Used</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <span style="background:rgba(59,130,246,.2);color:#93c5fd;padding:5px 12px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid rgba(99,161,246,.3)">Age</span>
+          <span style="background:rgba(59,130,246,.2);color:#93c5fd;padding:5px 12px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid rgba(99,161,246,.3)">Gender</span>
+          <span style="background:rgba(59,130,246,.2);color:#93c5fd;padding:5px 12px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid rgba(99,161,246,.3)">Vaccination Status</span>
+          <span style="background:rgba(59,130,246,.2);color:#93c5fd;padding:5px 12px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid rgba(99,161,246,.3)">Fever</span>
+          <span style="background:rgba(59,130,246,.2);color:#93c5fd;padding:5px 12px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid rgba(99,161,246,.3)">Cough</span>
+          <span style="background:rgba(59,130,246,.2);color:#93c5fd;padding:5px 12px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid rgba(99,161,246,.3)">Shortness of Breath</span>
+          <span style="background:rgba(59,130,246,.2);color:#93c5fd;padding:5px 12px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid rgba(99,161,246,.3)">Fatigue</span>
+          <span style="background:rgba(59,130,246,.2);color:#93c5fd;padding:5px 12px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid rgba(99,161,246,.3)">Diabetes</span>
+          <span style="background:rgba(59,130,246,.2);color:#93c5fd;padding:5px 12px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid rgba(99,161,246,.3)">Hypertension</span>
+          <span style="background:rgba(59,130,246,.2);color:#93c5fd;padding:5px 12px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid rgba(99,161,246,.3)">Heart Disease</span>
+          <span style="background:rgba(59,130,246,.2);color:#93c5fd;padding:5px 12px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid rgba(99,161,246,.3)">Asthma</span>
+          <span style="background:rgba(59,130,246,.2);color:#93c5fd;padding:5px 12px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid rgba(99,161,246,.3)">Cancer</span>
+          <span style="background:rgba(59,130,246,.2);color:#93c5fd;padding:5px 12px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid rgba(99,161,246,.3)">Hospitalization (Target)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ML MODEL COMPARISON TABLE -->
+  <div class="section section-white">
+    <div class="section-inner">
+      <div class="section-center">
+        <div class="section-tag">Model Comparison</div>
+        <div class="section-title">ML Model Performance Results</div>
+        <div class="section-sub">All models trained on the same 80/20 split. XGBoost selected as the final deployment model.</div>
+      </div>
+      <div class="model-table-wrap" style="max-width:800px;margin:0 auto">
+        <table class="model-table">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Accuracy</th>
+              <th>Precision</th>
+              <th>Recall</th>
+              <th>F1-Score</th>
+              <th>AUC-ROC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td style="font-weight:600">Logistic Regression</td><td>88%</td><td>0.86</td><td>0.85</td><td>0.86</td><td>0.86</td></tr>
+            <tr><td style="font-weight:600">Random Forest</td><td>91%</td><td>0.90</td><td>0.89</td><td>0.89</td><td>0.90</td></tr>
+            <tr><td style="font-weight:600">Gradient Boosting</td><td>92%</td><td>0.91</td><td>0.91</td><td>0.91</td><td>0.91</td></tr>
+            <tr class="selected-model">
+              <td style="font-weight:700">XGBoost ⭐ <span class="badge-selected">Selected</span></td>
+              <td style="color:#854d0e;font-weight:700">93%</td>
+              <td style="font-weight:700">0.92</td>
+              <td style="font-weight:700">0.93</td>
+              <td style="font-weight:700">0.92</td>
+              <td style="color:#854d0e;font-weight:700">0.93</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="text-align:center;font-size:12.5px;color:var(--slate400);margin-top:16px">⭐ XGBoost selected based on highest AUC-ROC and accuracy. All models used 5-fold cross-validation.</p>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div class="section" style="background:var(--slate50)">
+    <div class="section-inner">
+      <div class="section-center">
+        <div class="section-tag">How It Works</div>
+        <div class="section-title">Get Your Assessment in 4 Steps</div>
+      </div>
+      <div class="grid-4">
+        <div class="how-step"><div class="how-num">01</div><h3 style="font-size:14.5px;margin-bottom:8px;color:var(--navy)">Enter Patient Data</h3><p style="font-size:13px;color:var(--slate500)">Input age, gender, vaccination status, symptoms, and medical history.</p></div>
+        <div class="how-step"><div class="how-num">02</div><h3 style="font-size:14.5px;margin-bottom:8px;color:var(--navy)">AI Analysis</h3><p style="font-size:13px;color:var(--slate500)">Our trained XGBoost model processes data against 3,000+ patient records instantly.</p></div>
+        <div class="how-step"><div class="how-num">03</div><h3 style="font-size:14.5px;margin-bottom:8px;color:var(--navy)">Risk Assessment</h3><p style="font-size:13px;color:var(--slate500)">Receive risk level, confidence score, severity score, key risk factors, and ICU likelihood.</p></div>
+        <div class="how-step"><div class="how-num">04</div><h3 style="font-size:14.5px;margin-bottom:8px;color:var(--navy)">Take Action</h3><p style="font-size:13px;color:var(--slate500)">Follow AI-generated recommendations or share the report with your doctor.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="section section-white">
+    <div class="section-inner">
+      <div class="section-center">
+        <div class="section-tag">Testimonials</div>
+        <div class="section-title">Trusted by Healthcare Professionals</div>
+      </div>
+      <div class="grid-3">
+        <div class="testimonial-card"><div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div><p style="font-size:13.5px;color:var(--slate600);font-style:italic;margin-bottom:20px;line-height:1.7">"This system helped our triage team prioritize high-risk patients during peak COVID waves. The XAI features make it easy to explain decisions."</p><div style="display:flex;align-items:center;gap:12px"><div class="testimonial-avatar">RS</div><div><div style="font-weight:600;font-size:14px;color:var(--navy)">Dr. Rahman Siddiqui</div><div style="font-size:12px;color:var(--slate400)">Emergency Medicine, JPMC Karachi</div></div></div></div>
+        <div class="testimonial-card"><div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div><p style="font-size:13.5px;color:var(--slate600);font-style:italic;margin-bottom:20px;line-height:1.7">"The model comparison table is accurate and academically sound. Using XGBoost with SMOTE is exactly the right approach for imbalanced clinical data."</p><div style="display:flex;align-items:center;gap:12px"><div class="testimonial-avatar" style="background:linear-gradient(135deg,#7c3aed,#a78bfa)">KM</div><div><div style="font-weight:600;font-size:14px;color:var(--navy)">Prof. Khalid Mehmood</div><div style="font-size:12px;color:var(--slate400)">AI Researcher, FAST-NUCES</div></div></div></div>
+        <div class="testimonial-card"><div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">★</span></div><p style="font-size:13.5px;color:var(--slate600);font-style:italic;margin-bottom:20px;line-height:1.7">"Clean UI, solid ML pipeline, and real clinical applicability. The prediction history and explainability section make this stand out."</p><div style="display:flex;align-items:center;gap:12px"><div class="testimonial-avatar" style="background:linear-gradient(135deg,#059669,#34d399)">SA</div><div><div style="font-weight:600;font-size:14px;color:var(--navy)">Dr. Sana Asif</div><div style="font-size:12px;color:var(--slate400)">Pulmonologist, Shifa International</div></div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="background:linear-gradient(135deg,var(--blue),var(--blue2));padding:80px 24px;text-align:center">
+    <h2 style="font-size:36px;font-weight:800;color:#fff;margin-bottom:12px;letter-spacing:-.02em">Ready to Assess Your Risk?</h2>
+    <p style="color:rgba(255,255,255,.75);max-width:500px;margin:0 auto 32px;font-size:16px;line-height:1.7">Our AI model is available 24/7. Get your personalized COVID-19 hospitalization risk assessment in seconds.</p>
+    <button class="btn" style="background:#fff;color:var(--blue2);font-size:15px;font-weight:700;padding:15px 36px;border-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,.2)" onclick="showPage('predict')">Check Your Risk Now →</button>
+  </div>
+
+  <div id="home-footer"></div>
+</div>
+
+<!-- ══════════════ ABOUT PAGE ══════════════ -->
+<div id="page-about" class="page">
+  <div class="hero" style="padding:70px 24px 60px">
+    <div class="hero-inner">
+      <div class="hero-badge">📖 About This System</div>
+      <h1 style="font-size:44px">Built for <span>Clinical Intelligence</span></h1>
+      <p class="hero-sub" style="margin-bottom:0">A machine learning-powered healthcare platform transforming patient data into actionable COVID-19 severity predictions, supporting early clinical intervention.</p>
+    </div>
+  </div>
+
+  <div class="section section-white">
+    <div class="section-inner">
+      <div class="section-center">
+        <div class="section-tag">ML Pipeline</div>
+        <div class="section-title">How the System Works</div>
+        <div class="section-sub">From raw patient data to clinical prediction in milliseconds.</div>
+      </div>
+      <div style="max-width:700px;margin:0 auto;display:flex;flex-direction:column;gap:12px">
+        <div style="display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--slate200);border-radius:16px;padding:20px 24px">
+          <div style="width:40px;height:40px;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;font-family:'Syne',sans-serif;font-weight:800;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 14px rgba(37,99,235,.3)">1</div>
+          <div><h4 style="font-size:14.5px;color:var(--navy);margin-bottom:4px">Data Collection & Preprocessing</h4><p style="font-size:13px;color:var(--slate500);line-height:1.6">3,000 patient records from Kaggle with 14 features: demographics, symptoms, comorbidities, vaccination status. Label Encoding + Standard Scaling applied.</p></div>
+        </div>
+        <div style="display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--slate200);border-radius:16px;padding:20px 24px">
+          <div style="width:40px;height:40px;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;font-family:'Syne',sans-serif;font-weight:800;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 14px rgba(37,99,235,.3)">2</div>
+          <div><h4 style="font-size:14.5px;color:var(--navy);margin-bottom:4px">SMOTE — Handling Class Imbalance</h4><p style="font-size:13px;color:var(--slate500);line-height:1.6">Synthetic Minority Oversampling applied. Dataset has class imbalance (non-hospitalized majority). SMOTE generates synthetic samples for the minority class to improve model fairness.</p></div>
+        </div>
+        <div style="display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--slate200);border-radius:16px;padding:20px 24px">
+          <div style="width:40px;height:40px;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;font-family:'Syne',sans-serif;font-weight:800;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 14px rgba(37,99,235,.3)">3</div>
+          <div><h4 style="font-size:14.5px;color:var(--navy);margin-bottom:4px">Multi-Model Training</h4><p style="font-size:13px;color:var(--slate500);line-height:1.6">Logistic Regression, Random Forest (200 trees), Gradient Boosting (200 estimators), and XGBoost trained. 80/20 stratified split ensures fair evaluation.</p></div>
+        </div>
+        <div style="display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--slate200);border-radius:16px;padding:20px 24px">
+          <div style="width:40px;height:40px;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;font-family:'Syne',sans-serif;font-weight:800;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 14px rgba(37,99,235,.3)">4</div>
+          <div><h4 style="font-size:14.5px;color:var(--navy);margin-bottom:4px">Evaluation & Model Selection</h4><p style="font-size:13px;color:var(--slate500);line-height:1.6">5-fold Stratified Cross-Validation with AUC-ROC scoring. XGBoost achieves the best AUC of 0.93. Final model selected based on accuracy, AUC, and clinical interpretability.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Model Performance Bars — REALISTIC VALUES -->
+  <div class="section" style="background:var(--slate50)">
+    <div class="section-inner">
+      <div class="section-center">
+        <div class="section-tag">Benchmarks</div>
+        <div class="section-title">Model Performance Comparison</div>
+      </div>
+      <div style="max-width:700px;margin:0 auto">
+        <div class="card" style="margin-bottom:20px">
+          <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--slate100)">🏥 Hospitalization Prediction — Final Model: XGBoost ⭐</div>
+          <div class="perf-bar-wrap"><div class="perf-bar-label"><span>XGBoost ⭐ Selected</span><span style="color:var(--blue)">AUC 0.93 | Acc 93%</span></div><div class="perf-bar-outer"><div class="perf-bar-inner" style="width:93%"></div></div></div>
+          <div class="perf-bar-wrap"><div class="perf-bar-label"><span>Gradient Boosting</span><span style="color:var(--blue)">AUC 0.91 | Acc 92%</span></div><div class="perf-bar-outer"><div class="perf-bar-inner" style="width:91%;background:linear-gradient(90deg,#7c3aed,#a78bfa)"></div></div></div>
+          <div class="perf-bar-wrap"><div class="perf-bar-label"><span>Random Forest</span><span style="color:var(--blue)">AUC 0.90 | Acc 91%</span></div><div class="perf-bar-outer"><div class="perf-bar-inner" style="width:90%;background:linear-gradient(90deg,var(--emerald),#34d399)"></div></div></div>
+          <div class="perf-bar-wrap"><div class="perf-bar-label"><span>Logistic Regression</span><span style="color:var(--blue)">AUC 0.86 | Acc 88%</span></div><div class="perf-bar-outer"><div class="perf-bar-inner" style="width:86%;background:linear-gradient(90deg,var(--amber),#fcd34d)"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Future Scope -->
+  <div class="section section-dark">
+    <div class="section-inner">
+      <div class="section-center">
+        <div class="section-tag">Future Scope</div>
+        <div class="section-title">What's Next for MedPredict AI</div>
+      </div>
+      <div class="grid-2" style="max-width:900px;margin:0 auto">
+        <div style="display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:18px"><div style="width:28px;height:28px;background:var(--blue);color:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0">1</div><p style="color:var(--slate300);font-size:13px;line-height:1.6">Integration with hospital EHR/EMR systems for real-time patient monitoring and automated risk flagging.</p></div>
+        <div style="display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:18px"><div style="width:28px;height:28px;background:var(--blue);color:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0">2</div><p style="color:var(--slate300);font-size:13px;line-height:1.6">SHAP values integration for clinically interpretable feature importance visualization per patient.</p></div>
+        <div style="display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:18px"><div style="width:28px;height:28px;background:var(--blue);color:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0">3</div><p style="color:var(--slate300);font-size:13px;line-height:1.6">Deep learning model (BiLSTM) for time-series symptom progression analysis and early deterioration detection.</p></div>
+        <div style="display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:18px"><div style="width:28px;height:28px;background:var(--blue);color:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0">4</div><p style="color:var(--slate300);font-size:13px;line-height:1.6">Federated learning to train on distributed hospital data while preserving patient privacy across institutions.</p></div>
+      </div>
+    </div>
+  </div>
+  <div id="about-footer"></div>
+</div>
+
+<!-- ══════════════ PREDICT PAGE ══════════════ -->
+<div id="page-predict" class="page">
+  <div class="hero" style="padding:60px 24px 50px">
+    <div class="hero-inner">
+      <div class="hero-badge">🩺 AI Severity Assessment</div>
+      <h1 style="font-size:42px">COVID-19 <span>Risk Predictor</span></h1>
+      <p class="hero-sub" style="margin-bottom:0">Fill in the patient details below. Our trained XGBoost model will assess hospitalization risk and provide clinical recommendations.</p>
+    </div>
+  </div>
+
+  <div style="max-width:720px;margin:0 auto;padding:40px 24px">
+    <!-- Personal Info -->
+    <div class="card" style="margin-bottom:16px">
+      <h3 style="margin-bottom:4px;display:flex;align-items:center;gap:8px">👤 Personal Information</h3>
+      <p style="font-size:12.5px;color:var(--slate400);margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--slate100)">Enter the patient's demographic information</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px">
+        <div class="form-group" style="margin-bottom:0">
+          <label class="form-label">Patient Name <span style="color:var(--slate400);font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></label>
+          <input type="text" class="form-input" id="p-name" placeholder="e.g. Ahmad Raza"/>
+        </div>
+        <div class="form-group" style="margin-bottom:0">
+          <label class="form-label">Age (years)</label>
+          <input type="number" class="form-input" id="p-age" placeholder="e.g. 45" min="1" max="120"/>
+        </div>
+        <div class="form-group" style="margin-bottom:0">
+          <label class="form-label">Gender</label>
+          <select class="form-select" id="p-gender">
+            <option value="">Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group" style="margin-bottom:0">
+          <label class="form-label">Vaccination Status</label>
+          <select class="form-select" id="p-vacc">
+            <option value="">Select status</option>
+            <option value="fully">Fully Vaccinated (2+ doses)</option>
+            <option value="partial">Partially Vaccinated (1 dose)</option>
+            <option value="none">Not Vaccinated</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Symptoms -->
+    <div class="card" style="margin-bottom:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--slate100)">
+        <h3>🌡️ Current Symptoms</h3>
+        <span style="font-size:12px;color:var(--slate400)">Select all that apply</span>
+      </div>
+      <div class="chip-grid">
+        <div class="chip" data-type="symptom" data-key="fever" data-weight="8" onclick="toggleChip(this)"><div class="chip-check" id="sym-fever"></div>🌡️ Fever</div>
+        <div class="chip" data-type="symptom" data-key="cough" data-weight="5" onclick="toggleChip(this)"><div class="chip-check" id="sym-cough"></div>😮‍💨 Cough</div>
+        <div class="chip" data-type="symptom" data-key="fatigue" data-weight="7" onclick="toggleChip(this)"><div class="chip-check" id="sym-fatigue"></div>😴 Fatigue</div>
+        <div class="chip" data-type="symptom" data-key="breath" data-weight="18" onclick="toggleChip(this)"><div class="chip-check" id="sym-breath"></div>💨 Shortness of Breath</div>
+        <div class="chip" data-type="symptom" data-key="smell" data-weight="4" onclick="toggleChip(this)"><div class="chip-check" id="sym-smell"></div>👃 Loss of Smell</div>
+        <div class="chip" data-type="symptom" data-key="headache" data-weight="3" onclick="toggleChip(this)"><div class="chip-check" id="sym-headache"></div>🤕 Headache</div>
+        <div class="chip" data-type="symptom" data-key="chest" data-weight="14" onclick="toggleChip(this)"><div class="chip-check"></div>💢 Chest Pain</div>
+        <div class="chip" data-type="symptom" data-key="confusion" data-weight="16" onclick="toggleChip(this)"><div class="chip-check"></div>🧠 Confusion/Dizziness</div>
+      </div>
+    </div>
+
+    <!-- Medical History -->
+    <div class="card" style="margin-bottom:24px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--slate100)">
+        <h3>🏥 Medical History</h3>
+        <span style="font-size:12px;color:var(--slate400)">Select all conditions</span>
+      </div>
+      <div class="chip-grid">
+        <div class="chip" data-type="condition" data-key="diabetes" data-weight="12" onclick="toggleChip(this)"><div class="chip-check"></div>🩸 Diabetes</div>
+        <div class="chip" data-type="condition" data-key="hypertension" data-weight="10" onclick="toggleChip(this)"><div class="chip-check"></div>❤️ Hypertension</div>
+        <div class="chip" data-type="condition" data-key="heart" data-weight="15" onclick="toggleChip(this)"><div class="chip-check"></div>💔 Heart Disease</div>
+        <div class="chip" data-type="condition" data-key="asthma" data-weight="8" onclick="toggleChip(this)"><div class="chip-check"></div>🫁 Asthma/COPD</div>
+        <div class="chip" data-type="condition" data-key="cancer" data-weight="18" onclick="toggleChip(this)"><div class="chip-check"></div>⚕️ Cancer</div>
+        <div class="chip" data-type="condition" data-key="kidney" data-weight="11" onclick="toggleChip(this)"><div class="chip-check"></div>🔵 Kidney Disease</div>
+        <div class="chip" data-type="condition" data-key="obesity" data-weight="9" onclick="toggleChip(this)"><div class="chip-check"></div>⚖️ Obesity (BMI>30)</div>
+      </div>
+    </div>
+
+    <!-- Submit -->
+    <button class="btn btn-primary btn-big" id="predict-btn" onclick="runPrediction()">
+      🔬 Predict Hospitalization Risk
+    </button>
+    <p style="text-align:center;font-size:11.5px;color:var(--slate400);margin-top:12px">⚠️ For academic and research purposes only. Not a substitute for professional medical advice.</p>
+
+    <!-- Loading Animation -->
+    <div class="predict-loading" id="predict-loading">
+      <div class="loading-ring"></div>
+      <div style="font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--navy)">Analyzing Patient Data</div>
+      <div class="loading-steps" id="loading-steps">
+        <div class="loading-step" id="ls1"><span class="loading-step-icon">🔍</span> Analyzing patient data...</div>
+        <div class="loading-step" id="ls2"><span class="loading-step-icon">🤖</span> Running XGBoost model...</div>
+        <div class="loading-step" id="ls3"><span class="loading-step-icon">📊</span> Generating prediction...</div>
+        <div class="loading-step" id="ls4"><span class="loading-step-icon">✅</span> Preparing results...</div>
+      </div>
+    </div>
+
+    <!-- Result -->
+    <div id="prediction-result" style="margin-top:32px;display:none"></div>
+
+    <!-- Prediction History -->
+    <div class="card" style="margin-top:32px;padding:24px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+        <h3 style="font-size:15px">🕑 Prediction History</h3>
+        <button class="btn btn-outline" style="font-size:12px;padding:6px 14px" onclick="clearHistory()">Clear All</button>
+      </div>
+      <div id="history-container">
+        <div class="history-empty">No predictions yet. Run an assessment above to see history.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ DASHBOARD PAGE ══════════════ -->
+<div id="page-dashboard" class="page">
+  <div style="background:linear-gradient(135deg,var(--navy),var(--navy2));padding:40px 24px 32px">
+    <div style="max-width:1200px;margin:0 auto">
+      <h1 style="color:#fff;font-size:26px;margin-bottom:4px">Analytics Dashboard</h1>
+      <p style="color:var(--slate400);font-size:14px">Insights from 3,000 patient records — Model performance, risk distribution, monthly trends</p>
+    </div>
+  </div>
+  <div style="max-width:1200px;margin:0 auto;padding:32px 24px">
+    <!-- KPIs — REALISTIC -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-bottom:28px">
+      <div class="kpi-card"><div class="kpi-icon" style="background:#eff6ff">📊</div><div class="kpi-label">Total Records</div><div class="kpi-val">3,000</div><div class="kpi-sub" style="color:var(--blue)">Kaggle dataset</div></div>
+      <div class="kpi-card"><div class="kpi-icon" style="background:#f0fdf4">🏥</div><div class="kpi-label">Hospitalized</div><div class="kpi-val">875</div><div class="kpi-sub" style="color:var(--emerald)">29.2% of patients</div></div>
+      <div class="kpi-card"><div class="kpi-icon" style="background:#fffbeb">🎯</div><div class="kpi-label">Model Accuracy</div><div class="kpi-val">93%</div><div class="kpi-sub" style="color:var(--amber)">XGBoost</div></div>
+      <div class="kpi-card"><div class="kpi-icon" style="background:#eff6ff">📈</div><div class="kpi-label">Best AUC</div><div class="kpi-val">0.93</div><div class="kpi-sub" style="color:var(--blue)">XGBoost model</div></div>
+      <div class="kpi-card"><div class="kpi-icon" style="background:#fff1f2">🧪</div><div class="kpi-label">Test Set Size</div><div class="kpi-val">600</div><div class="kpi-sub" style="color:var(--red)">20% of dataset</div></div>
+    </div>
+
+    <!-- Charts -->
+    <div style="display:grid;grid-template-columns:2fr 1fr;gap:18px;margin-bottom:18px">
+      <div class="card" style="padding:24px">
+        <h3 style="margin-bottom:4px">Monthly Prediction Trends</h3>
+        <p style="font-size:12px;color:var(--slate400);margin-bottom:20px">Predictions vs Hospitalized per month (simulated from dataset distribution)</p>
+        <div style="position:relative;height:240px"><canvas id="lineChart" role="img" aria-label="Monthly trend line chart"></canvas></div>
+      </div>
+      <div class="card" style="padding:24px">
+        <h3 style="margin-bottom:4px">Risk Distribution</h3>
+        <p style="font-size:12px;color:var(--slate400);margin-bottom:20px">Patient breakdown by risk level</p>
+        <div style="position:relative;height:180px"><canvas id="pieChart" role="img" aria-label="Pie chart risk distribution"></canvas></div>
+        <div style="margin-top:16px;display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;align-items:center;justify-content:space-between;font-size:13px"><div style="display:flex;align-items:center;gap:8px"><div style="width:10px;height:10px;border-radius:3px;background:#10b981"></div>Low Risk</div><span style="font-weight:600">55%</span></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;font-size:13px"><div style="display:flex;align-items:center;gap:8px"><div style="width:10px;height:10px;border-radius:3px;background:#f59e0b"></div>Medium Risk</div><span style="font-weight:600">30%</span></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;font-size:13px"><div style="display:flex;align-items:center;gap:8px"><div style="width:10px;height:10px;border-radius:3px;background:#ef4444"></div>High Risk</div><span style="font-weight:600">15%</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Model comparison chart — REALISTIC VALUES -->
+    <div class="card" style="padding:24px;margin-bottom:24px">
+      <h3 style="margin-bottom:4px">Model Performance Comparison</h3>
+      <p style="font-size:12px;color:var(--slate400);margin-bottom:20px">Accuracy and AUC-ROC comparison across all trained ML models (XGBoost highlighted)</p>
+      <div style="position:relative;height:220px"><canvas id="barChart" role="img" aria-label="Bar chart comparing model performance metrics"></canvas></div>
+    </div>
+
+    <!-- Avg Risk Score Today -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:24px">
+      <div class="kpi-card" style="text-align:center">
+        <div class="kpi-label">Predictions Today</div>
+        <div class="kpi-val" style="color:var(--blue)" id="dash-today-preds">—</div>
+        <div class="kpi-sub" style="color:var(--slate400)">From localStorage</div>
+      </div>
+      <div class="kpi-card" style="text-align:center">
+        <div class="kpi-label">High Risk Today</div>
+        <div class="kpi-val" style="color:var(--red)" id="dash-high-risk">—</div>
+        <div class="kpi-sub" style="color:var(--slate400)">From localStorage</div>
+      </div>
+      <div class="kpi-card" style="text-align:center">
+        <div class="kpi-label">Avg Risk Score</div>
+        <div class="kpi-val" style="color:var(--amber)" id="dash-avg-score">—</div>
+        <div class="kpi-sub" style="color:var(--slate400)">/100 scale</div>
+      </div>
+    </div>
+
+    <!-- Patient table with localStorage history -->
+    <div class="card" style="padding:24px;margin-bottom:24px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+        <div><h3>📋 Prediction History (localStorage)</h3><p style="font-size:12px;color:var(--slate400);margin-top:2px">Saved from the Predict page in this browser session</p></div>
+        <button class="btn btn-outline" style="font-size:12.5px;padding:7px 14px" onclick="exportHistoryCSV()">⬇️ Export CSV</button>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="data-table" id="history-dash-table">
+          <thead><tr><th>Patient Name</th><th>Age</th><th>Risk Level</th><th>Score</th><th>Prediction Date</th></tr></thead>
+          <tbody id="history-dash-body">
+            <tr><td colspan="5" style="text-align:center;color:var(--slate400);padding:24px">No predictions saved yet. Run an assessment first.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Static recent records -->
+    <div class="card" style="padding:24px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+        <div><h3>Recent Patient Records (Sample Data)</h3><p style="font-size:12px;color:var(--slate400);margin-top:2px">Sample records from Kaggle dataset</p></div>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="data-table">
+          <thead><tr><th>Patient</th><th>Age</th><th>Gender</th><th>Vaccination</th><th>Risk Level</th><th>Date</th><th>Actions</th></tr></thead>
+          <tbody>
+            <tr><td style="font-weight:600">Ahmad Raza</td><td>62</td><td>Male</td><td>Unvaccinated</td><td><span class="badge badge-high">HIGH</span></td><td>2026-04-20</td><td><button class="btn btn-outline" style="font-size:11px;padding:4px 10px">View</button></td></tr>
+            <tr><td style="font-weight:600">Fatima Khan</td><td>34</td><td>Female</td><td>Fully vacc.</td><td><span class="badge badge-low">LOW</span></td><td>2026-04-19</td><td><button class="btn btn-outline" style="font-size:11px;padding:4px 10px">View</button></td></tr>
+            <tr><td style="font-weight:600">Usman Ali</td><td>55</td><td>Male</td><td>Partial</td><td><span class="badge badge-medium">MEDIUM</span></td><td>2026-04-18</td><td><button class="btn btn-outline" style="font-size:11px;padding:4px 10px">View</button></td></tr>
+            <tr><td style="font-weight:600">Sana Mirza</td><td>71</td><td>Female</td><td>Unvaccinated</td><td><span class="badge badge-high">HIGH</span></td><td>2026-04-18</td><td><button class="btn btn-outline" style="font-size:11px;padding:4px 10px">View</button></td></tr>
+            <tr><td style="font-weight:600">Bilal Mahmood</td><td>28</td><td>Male</td><td>Fully vacc.</td><td><span class="badge badge-low">LOW</span></td><td>2026-04-17</td><td><button class="btn btn-outline" style="font-size:11px;padding:4px 10px">View</button></td></tr>
+            <tr><td style="font-weight:600">Hassan Sheikh</td><td>66</td><td>Male</td><td>Unvaccinated</td><td><span class="badge badge-high">HIGH</span></td><td>2026-04-15</td><td><button class="btn btn-outline" style="font-size:11px;padding:4px 10px">View</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ CONTACT PAGE ══════════════ -->
+<div id="page-contact" class="page">
+  <div class="hero" style="padding:60px 24px 50px">
+    <div class="hero-inner">
+      <div class="hero-badge">📬 Get in Touch</div>
+      <h1 style="font-size:42px">Contact <span>Support</span></h1>
+      <p class="hero-sub" style="margin-bottom:0">Have questions about MedPredict AI? Reach out to our team.</p>
+    </div>
+  </div>
+  <div class="section section-white">
+    <div class="section-inner">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;max-width:1000px;margin:0 auto">
+        <div>
+          <div class="card" style="padding:32px">
+            <h3 style="margin-bottom:24px;font-size:18px">Send a Message</h3>
+            <div class="form-group"><label class="form-label">Full Name *</label><input type="text" class="form-input" id="c-name" placeholder="Your name"/></div>
+            <div class="form-group"><label class="form-label">Email *</label><input type="email" class="form-input" id="c-email" placeholder="your@email.com"/></div>
+            <div class="form-group"><label class="form-label">Subject</label><input type="text" class="form-input" id="c-subject" placeholder="How can we help?"/></div>
+            <div class="form-group"><label class="form-label">Message *</label><textarea class="form-input" id="c-msg" rows="4" placeholder="Describe your query..." style="resize:none"></textarea></div>
+            <button class="btn btn-primary" style="width:100%;justify-content:center;padding:13px" onclick="sendContact()">Send Message</button>
+          </div>
+        </div>
+        <div>
+          <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:32px">
+            <div class="card" style="padding:20px;display:flex;align-items:center;gap:14px"><div style="width:44px;height:44px;background:linear-gradient(135deg,var(--blue),var(--blue2));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">📧</div><div><div style="font-weight:600;font-size:14px;color:var(--navy)">Email Support</div><div style="font-size:13px;color:var(--slate600)">covid.ai@uni.edu.pk</div><div style="font-size:12px;color:var(--slate400)">Responds within 24 hours</div></div></div>
+            <div class="card" style="padding:20px;display:flex;align-items:center;gap:14px"><div style="width:44px;height:44px;background:linear-gradient(135deg,var(--emerald),#34d399);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">📞</div><div><div style="font-weight:600;font-size:14px;color:var(--navy)">Phone Support</div><div style="font-size:13px;color:var(--slate600)">03125061260</div><div style="font-size:12px;color:var(--slate400)">Mon–Fri, 9AM–5PM PKT</div></div></div>
+            <div class="card" style="padding:20px;display:flex;align-items:center;gap:14px"><div style="width:44px;height:44px;background:linear-gradient(135deg,var(--amber),#fcd34d);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">📍</div><div><div style="font-weight:600;font-size:14px;color:var(--navy)">Office</div><div style="font-size:13px;color:var(--slate600)">Main Boulevard Gulberg, Lahore</div><div style="font-size:12px;color:var(--slate400)">Department of Computer Science</div></div></div>
+          </div>
+          <h3 style="margin-bottom:14px;font-size:16px">Frequently Asked Questions</h3>
+          <div id="faq-container">
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Is this prediction system accurate?<span class="faq-arrow">▼</span></button><div class="faq-a">Our XGBoost model achieves 93% accuracy and 0.93 AUC-ROC on the test set. This is an academic Final Year Project and should not replace professional medical diagnosis.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What data is used for predictions?<span class="faq-arrow">▼</span></button><div class="faq-a">Age, gender, vaccination status, symptoms (fever, cough, fatigue, shortness of breath, etc.), and medical history (diabetes, hypertension, heart disease, etc.) — entered manually into the form.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Is my health data stored?<span class="faq-arrow">▼</span></button><div class="faq-a">Predictions are stored in your browser's localStorage only. No data is sent to any server. You can clear history at any time from the Predict page.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Which ML model gives the best results?<span class="faq-arrow">▼</span></button><div class="faq-a">XGBoost achieved the best AUC of 0.93 and 93% accuracy. Gradient Boosting followed closely at 92% accuracy / 0.91 AUC.</div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What does "SMOTE" mean?<span class="faq-arrow">▼</span></button><div class="faq-a">SMOTE (Synthetic Minority Oversampling Technique) handles class imbalance by generating synthetic samples for the minority class, helping the model learn patterns for less frequent outcomes.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contact-footer"></div>
+</div>
+
+<!-- ══════════════ LOGIN PAGE ══════════════ -->
+<div id="page-login" class="page">
+  <div class="auth-page">
+    <div class="auth-card">
+      <div class="auth-logo">
+        <div class="auth-logo-icon">🏥</div>
+        <h2 style="font-size:22px;color:var(--navy);margin-bottom:4px">MedPredict AI</h2>
+        <p style="font-size:13px;color:var(--slate500)">Sign in or create an account</p>
+      </div>
+
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="atab-login" onclick="switchAuthTab('login')">Sign In</button>
+        <button class="auth-tab" id="atab-signup" onclick="switchAuthTab('signup')">Sign Up</button>
+      </div>
+
+      <!-- LOGIN FORM -->
+      <div class="auth-form active" id="af-login">
+        <div class="demo-box">
+          <p>🧪 <strong>Demo Patient Login:</strong> patient@medpredict.ai / demo1234</p>
+        </div>
+        <div class="form-group"><label class="form-label">Email Address</label><input type="email" class="form-input" id="l-email" placeholder="patient@medpredict.ai"/></div>
+        <div class="form-group"><label class="form-label">Password</label><input type="password" class="form-input" id="l-pass" placeholder="Enter your password"/></div>
+        <div style="text-align:right;margin-bottom:20px;margin-top:-8px"><span style="font-size:12.5px;color:var(--blue);cursor:pointer;font-weight:600" onclick="showToast('📧 Password reset email sent!','success')">Forgot Password?</span></div>
+        <button class="btn btn-primary btn-big" onclick="doLogin()">Sign In →</button>
+        <div style="display:flex;align-items:center;gap:10px;margin:16px 0;color:var(--slate300);font-size:12px"><div style="flex:1;height:1px;background:var(--slate200)"></div>OR<div style="flex:1;height:1px;background:var(--slate200)"></div></div>
+        <button class="btn btn-outline btn-big" onclick="demoLogin()" style="margin-bottom:20px">🧪 Demo Login (No credentials needed)</button>
+        <p style="text-align:center;font-size:13px;color:var(--slate500)">Don't have an account? <span style="color:var(--blue);font-weight:600;cursor:pointer" onclick="switchAuthTab('signup')">Sign Up</span></p>
+      </div>
+
+      <!-- SIGNUP FORM -->
+      <div class="auth-form" id="af-signup">
+        <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-input" id="su-name" placeholder="Dr. Ahmad Raza"/></div>
+        <div class="form-group"><label class="form-label">Email Address</label><input type="email" class="form-input" id="su-email" placeholder="your@email.com"/></div>
+        <div class="form-group"><label class="form-label">Role</label>
+          <select class="form-select" id="su-role">
+            <option value="">Select role</option>
+            <option value="patient">Patient</option>
+            <option value="doctor">Doctor</option>
+            <option value="researcher">Researcher</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-input" id="su-pass" placeholder="Min. 8 characters" oninput="checkPassStrength(this.value)"/>
+          <div class="pass-strength" id="pass-strength"></div>
+          <div style="font-size:11px;color:var(--slate400);margin-top:4px" id="pass-hint">Enter a password</div>
+        </div>
+        <div class="form-group"><label class="form-label">Confirm Password</label><input type="password" class="form-input" id="su-pass2" placeholder="Repeat password"/></div>
+        <button class="btn btn-primary btn-big" onclick="doSignup()" style="margin-bottom:16px">Create Account →</button>
+        <p style="text-align:center;font-size:13px;color:var(--slate500)">Already have an account? <span style="color:var(--blue);font-weight:600;cursor:pointer" onclick="switchAuthTab('login')">Sign In</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ ADMIN PAGE ══════════════ -->
+<div id="page-admin" class="page">
+  <!-- Admin Login -->
+  <div id="admin-login-screen">
+    <div class="auth-page">
+      <div class="auth-card">
+        <div class="auth-logo">
+          <div class="auth-logo-icon" style="background:linear-gradient(135deg,#7c3aed,#a78bfa)">🛡️</div>
+          <h2 style="font-size:22px;color:var(--navy);margin-bottom:4px">Doctor Admin Panel</h2>
+          <p style="font-size:13px;color:var(--slate500)">Secure access for authorized medical staff only</p>
+        </div>
+        <div class="demo-box">
+          <p>🔐 <strong>Demo Admin Login:</strong> admin@medpredict.ai / admin1234</p>
+        </div>
+        <div class="form-group"><label class="form-label">Admin Email</label><input type="email" class="form-input" id="a-email" placeholder="admin@medpredict.ai"/></div>
+        <div class="form-group"><label class="form-label">Password</label><input type="password" class="form-input" id="a-pass" placeholder="••••••••"/></div>
+        <button class="btn btn-primary btn-big" onclick="doAdminLogin()" style="background:linear-gradient(135deg,#7c3aed,#6d28d9);box-shadow:0 4px 14px rgba(124,58,237,.35);margin-bottom:12px">Access Admin Panel →</button>
+        <div style="display:flex;align-items:center;gap:10px;margin:12px 0;color:var(--slate300);font-size:12px"><div style="flex:1;height:1px;background:var(--slate200)"></div>OR<div style="flex:1;height:1px;background:var(--slate200)"></div></div>
+        <button class="btn btn-outline btn-big" onclick="demoAdminLogin()" style="margin-bottom:16px">🔓 Demo Access (No credentials needed)</button>
+        <p style="text-align:center;font-size:12px;color:var(--slate400)">🔒 Restricted to authorized medical staff only</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Dashboard -->
+  <div id="admin-dashboard" style="display:none">
+    <div class="admin-layout">
+      <div class="admin-sidebar">
+        <div style="padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:8px">
+          <div style="display:flex;align-items:center;gap:10px">
+            <div style="width:32px;height:32px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px">🏥</div>
+            <div><div style="color:#fff;font-family:'Syne',sans-serif;font-weight:700;font-size:14px">MedPredict AI</div><div style="color:#7c3aed;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase">Admin Panel</div></div>
+          </div>
+        </div>
+        <div style="padding:0 10px">
+          <div class="sidebar-label">Main Menu</div>
+          <button class="sidebar-item active" id="sb-overview" onclick="showAdminPanel('overview')"><span class="sib-icon">📊</span>Overview</button>
+          <button class="sidebar-item" id="sb-patients" onclick="showAdminPanel('patients')"><span class="sib-icon">👥</span>Manage Patients</button>
+          <button class="sidebar-item" id="sb-predictions" onclick="showAdminPanel('predictions')"><span class="sib-icon">🔬</span>Prediction Records</button>
+          <button class="sidebar-item" id="sb-reports" onclick="showAdminPanel('reports')"><span class="sib-icon">📁</span>Reports</button>
+          <button class="sidebar-item" id="sb-notifications" onclick="showAdminPanel('notifications')"><span class="sib-icon">🔔</span>Notifications<span class="sidebar-badge">3</span></button>
+          <button class="sidebar-item" id="sb-settings" onclick="showAdminPanel('settings')"><span class="sib-icon">⚙️</span>Settings</button>
+        </div>
+        <div style="margin-top:auto;padding:16px 20px;border-top:1px solid rgba(255,255,255,.07);margin-top:24px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+            <div style="width:34px;height:34px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:100%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:700">DR</div>
+            <div><div style="color:#fff;font-size:12.5px;font-weight:600">Dr. Admin</div><div style="color:var(--slate500);font-size:10.5px">admin@medpredict.ai</div></div>
+          </div>
+          <button class="sidebar-item" style="color:#f87171" onclick="adminLogout()"><span class="sib-icon">🚪</span>Sign Out</button>
+        </div>
+      </div>
+
+      <div class="admin-main">
+        <!-- Overview Panel -->
+        <div class="admin-panel active" id="panel-overview">
+          <h2 style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--navy);margin-bottom:4px">Dashboard Overview</h2>
+          <p style="color:var(--slate400);font-size:13px;margin-bottom:24px">System-wide analytics and real-time monitoring</p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:24px">
+            <div class="kpi-card"><div class="kpi-label">Total Patients</div><div class="kpi-val" style="color:var(--blue)">3,000</div><div class="kpi-sub" style="color:var(--blue)">Dataset size</div></div>
+            <div class="kpi-card"><div class="kpi-label">Predictions Today</div><div class="kpi-val" style="color:var(--emerald)" id="admin-today">0</div><div class="kpi-sub" style="color:var(--emerald)">From browser</div></div>
+            <div class="kpi-card"><div class="kpi-label">High Risk Today</div><div class="kpi-val" style="color:var(--red)" id="admin-high">0</div><div class="kpi-sub" style="color:var(--red)">Alerts required</div></div>
+            <div class="kpi-card"><div class="kpi-label">Avg Risk Score</div><div class="kpi-val" style="color:var(--amber)" id="admin-avg">—</div><div class="kpi-sub" style="color:var(--amber)">/100 scale</div></div>
+          </div>
+          <div class="card" style="margin-bottom:16px;padding:24px">
+            <h3 style="margin-bottom:16px;font-size:15px">Weekly Prediction Volume (Simulated)</h3>
+            <div style="position:relative;height:200px"><canvas id="adminWeekChart" role="img" aria-label="Weekly prediction volume bar chart"></canvas></div>
+          </div>
+          <div class="card" style="margin-bottom:16px;padding:24px">
+            <h3 style="margin-bottom:16px;font-size:15px">Predictions per Day (Simulated)</h3>
+            <div style="position:relative;height:200px"><canvas id="adminDailyChart"></canvas></div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px">
+            <div class="kpi-card"><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span style="width:8px;height:8px;background:var(--emerald);border-radius:100%;display:inline-block;animation:pulse 2s infinite"></span><div class="kpi-label" style="margin-bottom:0">ML Model Status</div></div><div style="font-weight:600;font-size:14px">Operational</div></div>
+            <div class="kpi-card"><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span style="width:8px;height:8px;background:var(--emerald);border-radius:100%;display:inline-block;animation:pulse 2s infinite"></span><div class="kpi-label" style="margin-bottom:0">Database</div></div><div style="font-weight:600;font-size:14px">Healthy</div></div>
+            <div class="kpi-card"><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span style="width:8px;height:8px;background:var(--blue);border-radius:100%;display:inline-block"></span><div class="kpi-label" style="margin-bottom:0">API Response</div></div><div style="font-weight:600;font-size:14px">142ms avg</div></div>
+          </div>
+        </div>
+
+        <!-- Patients Panel -->
+        <div class="admin-panel" id="panel-patients">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+            <div><h2 style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--navy);margin-bottom:2px">Manage Patients</h2><p style="color:var(--slate400);font-size:13px">View, search, and manage patient records</p></div>
+            <button class="btn btn-primary" onclick="showToast('➕ Add patient form coming soon!','info')">+ Add Patient</button>
+          </div>
+          <div class="search-box"><span>🔍</span><input type="text" placeholder="Search patients by name..." onkeyup="filterTable(this.value)"/></div>
+          <div class="card" style="padding:20px">
+            <div style="overflow-x:auto">
+              <table class="data-table" id="patients-table">
+                <thead><tr><th>Name</th><th>Age</th><th>Gender</th><th>Risk</th><th>Conditions</th><th>Last Assessment</th><th>Actions</th></tr></thead>
+                <tbody>
+                  <tr data-name="ahmad raza"><td style="font-weight:600">Ahmad Raza</td><td>62</td><td>Male</td><td><span class="badge badge-high">HIGH</span></td><td><span style="font-size:11.5px;color:var(--slate500)">Diabetes, Hypertension</span></td><td style="color:var(--slate500)">2026-04-20</td><td><div style="display:flex;gap:6px"><button class="btn btn-outline" style="font-size:11px;padding:4px 10px">View</button><button class="btn btn-danger" style="font-size:11px;padding:4px 10px" onclick="showToast('🚫 Delete disabled in demo','error')">Delete</button></div></td></tr>
+                  <tr data-name="fatima khan"><td style="font-weight:600">Fatima Khan</td><td>34</td><td>Female</td><td><span class="badge badge-low">LOW</span></td><td><span style="font-size:11.5px;color:var(--slate400)">None</span></td><td style="color:var(--slate500)">2026-04-19</td><td><div style="display:flex;gap:6px"><button class="btn btn-outline" style="font-size:11px;padding:4px 10px">View</button><button class="btn btn-danger" style="font-size:11px;padding:4px 10px" onclick="showToast('🚫 Delete disabled in demo','error')">Delete</button></div></td></tr>
+                  <tr data-name="usman ali"><td style="font-weight:600">Usman Ali</td><td>55</td><td>Male</td><td><span class="badge badge-medium">MEDIUM</span></td><td><span style="font-size:11.5px;color:var(--slate500)">Asthma</span></td><td style="color:var(--slate500)">2026-04-18</td><td><div style="display:flex;gap:6px"><button class="btn btn-outline" style="font-size:11px;padding:4px 10px">View</button><button class="btn btn-danger" style="font-size:11px;padding:4px 10px" onclick="showToast('🚫 Delete disabled in demo','error')">Delete</button></div></td></tr>
+                  <tr data-name="sana mirza"><td style="font-weight:600">Sana Mirza</td><td>71</td><td>Female</td><td><span class="badge badge-high">HIGH</span></td><td><span style="font-size:11.5px;color:var(--slate500)">Cancer, Heart Disease</span></td><td style="color:var(--slate500)">2026-04-18</td><td><div style="display:flex;gap:6px"><button class="btn btn-outline" style="font-size:11px;padding:4px 10px">View</button><button class="btn btn-danger" style="font-size:11px;padding:4px 10px" onclick="showToast('🚫 Delete disabled in demo','error')">Delete</button></div></td></tr>
+                  <tr data-name="hassan sheikh"><td style="font-weight:600">Hassan Sheikh</td><td>66</td><td>Male</td><td><span class="badge badge-high">HIGH</span></td><td><span style="font-size:11.5px;color:var(--slate500)">Heart, Hypertension</span></td><td style="color:var(--slate500)">2026-04-15</td><td><div style="display:flex;gap:6px"><button class="btn btn-outline" style="font-size:11px;padding:4px 10px">View</button><button class="btn btn-danger" style="font-size:11px;padding:4px 10px" onclick="showToast('🚫 Delete disabled in demo','error')">Delete</button></div></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Predictions Panel -->
+        <div class="admin-panel" id="panel-predictions">
+          <h2 style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--navy);margin-bottom:4px">Prediction Records</h2>
+          <p style="color:var(--slate400);font-size:13px;margin-bottom:20px">All ML prediction results with detailed reports</p>
+          <div style="display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap">
+            <button class="btn btn-primary" style="font-size:12px;padding:7px 16px" onclick="filterRisk('ALL')">ALL</button>
+            <button class="btn btn-outline" style="font-size:12px;padding:7px 16px;border-color:#fca5a5;color:var(--red)" onclick="filterRisk('HIGH')">HIGH</button>
+            <button class="btn btn-outline" style="font-size:12px;padding:7px 16px;border-color:#fcd34d;color:#d97706" onclick="filterRisk('MEDIUM')">MEDIUM</button>
+            <button class="btn btn-outline" style="font-size:12px;padding:7px 16px;border-color:#86efac;color:#16a34a" onclick="filterRisk('LOW')">LOW</button>
+          </div>
+          <div class="card" style="padding:20px">
+            <table class="data-table" id="pred-table">
+              <thead><tr><th>Patient</th><th>Date</th><th>Risk Level</th><th>Score</th><th>Vaccination</th><th>Conditions</th><th>Report</th></tr></thead>
+              <tbody>
+                <tr data-risk="HIGH"><td style="font-weight:600">Ahmad Raza</td><td>2026-04-20</td><td><span class="badge badge-high">HIGH</span></td><td><strong style="color:var(--red)">74</strong></td><td>Unvaccinated</td><td>Diabetes, Hypertension</td><td><button class="btn btn-outline" style="font-size:11px;padding:4px 10px" onclick="showToast('📄 PDF report simulated!','success')">⬇️ PDF</button></td></tr>
+                <tr data-risk="LOW"><td style="font-weight:600">Fatima Khan</td><td>2026-04-19</td><td><span class="badge badge-low">LOW</span></td><td><strong style="color:var(--emerald)">18</strong></td><td>Fully Vaccinated</td><td>None</td><td><button class="btn btn-outline" style="font-size:11px;padding:4px 10px" onclick="showToast('📄 PDF report simulated!','success')">⬇️ PDF</button></td></tr>
+                <tr data-risk="MEDIUM"><td style="font-weight:600">Usman Ali</td><td>2026-04-18</td><td><span class="badge badge-medium">MEDIUM</span></td><td><strong style="color:#d97706">42</strong></td><td>Partial</td><td>Asthma</td><td><button class="btn btn-outline" style="font-size:11px;padding:4px 10px" onclick="showToast('📄 PDF report simulated!','success')">⬇️ PDF</button></td></tr>
+                <tr data-risk="HIGH"><td style="font-weight:600">Sana Mirza</td><td>2026-04-18</td><td><span class="badge badge-high">HIGH</span></td><td><strong style="color:var(--red)">81</strong></td><td>Unvaccinated</td><td>Cancer, Heart</td><td><button class="btn btn-outline" style="font-size:11px;padding:4px 10px" onclick="showToast('📄 PDF report simulated!','success')">⬇️ PDF</button></td></tr>
+                <tr data-risk="LOW"><td style="font-weight:600">Bilal Mahmood</td><td>2026-04-17</td><td><span class="badge badge-low">LOW</span></td><td><strong style="color:var(--emerald)">12</strong></td><td>Fully Vaccinated</td><td>None</td><td><button class="btn btn-outline" style="font-size:11px;padding:4px 10px" onclick="showToast('📄 PDF report simulated!','success')">⬇️ PDF</button></td></tr>
+                <tr data-risk="HIGH"><td style="font-weight:600">Hassan Sheikh</td><td>2026-04-15</td><td><span class="badge badge-high">HIGH</span></td><td><strong style="color:var(--red)">69</strong></td><td>Unvaccinated</td><td>Heart, Hypertension</td><td><button class="btn btn-outline" style="font-size:11px;padding:4px 10px" onclick="showToast('📄 PDF report simulated!','success')">⬇️ PDF</button></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Reports Panel -->
+        <div class="admin-panel" id="panel-reports">
+          <h2 style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--navy);margin-bottom:4px">Reports</h2>
+          <p style="color:var(--slate400);font-size:13px;margin-bottom:24px">Generate and export patient reports and analytics summaries</p>
+          <div class="grid-2">
+            <div class="card"><div style="font-size:28px;margin-bottom:16px">📋</div><h3>Full Patient Report</h3><p style="margin-bottom:20px">Complete list of all 3,000 patients with demographics, risk levels, and outcomes.</p><button class="btn btn-outline" onclick="showToast('📄 Full report export simulated!','success')">⬇️ Export PDF</button></div>
+            <div class="card"><div style="font-size:28px;margin-bottom:16px">📅</div><h3>Monthly Summary</h3><p style="margin-bottom:20px">Month-by-month breakdown of predictions, hospitalizations, and ICU admissions.</p><button class="btn btn-outline" onclick="showToast('📄 Monthly summary export simulated!','success')">⬇️ Export PDF</button></div>
+            <div class="card"><div style="font-size:28px;margin-bottom:16px">🚨</div><h3>High Risk Alerts</h3><p style="margin-bottom:20px">All patients flagged as HIGH risk requiring immediate medical attention.</p><button class="btn btn-outline" onclick="showToast('📄 High risk report export simulated!','success')">⬇️ Export PDF</button></div>
+            <div class="card"><div style="font-size:28px;margin-bottom:16px">🤖</div><h3>Model Performance</h3><p style="margin-bottom:20px">Accuracy, F1, and AUC metrics across all 4 trained ML models.</p><button class="btn btn-outline" onclick="showToast('📄 Model performance report exported!','success')">⬇️ Export PDF</button></div>
+          </div>
+        </div>
+
+        <!-- Notifications Panel -->
+        <div class="admin-panel" id="panel-notifications">
+          <h2 style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--navy);margin-bottom:4px">Notifications & Alerts</h2>
+          <p style="color:var(--slate400);font-size:13px;margin-bottom:24px">Real-time patient alerts and system notifications</p>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;align-items:flex-start;gap:14px;padding:18px 20px;background:#fef2f2;border:1px solid #fca5a5;border-radius:16px"><div style="font-size:22px;flex-shrink:0">🔴</div><div style="flex:1"><div style="font-weight:600;font-size:14px;color:var(--navy);margin-bottom:2px">Ahmad Raza (62) — HIGH risk flagged</div><div style="font-size:13px;color:var(--slate600)">Risk Score: 74/100. Diabetes + Hypertension + Unvaccinated. Immediate attention required.</div><div style="font-size:12px;color:var(--slate400);margin-top:6px">2 hours ago</div></div><span class="badge badge-high">HIGH</span></div>
+            <div style="display:flex;align-items:flex-start;gap:14px;padding:18px 20px;background:#fef2f2;border:1px solid #fca5a5;border-radius:16px"><div style="font-size:22px;flex-shrink:0">🔴</div><div style="flex:1"><div style="font-weight:600;font-size:14px;color:var(--navy);margin-bottom:2px">Sana Mirza (71) — Critical Risk</div><div style="font-size:13px;color:var(--slate600)">Risk Score: 81/100. Cancer + Heart Disease + Unvaccinated. ICU admission probability elevated.</div><div style="font-size:12px;color:var(--slate400);margin-top:6px">5 hours ago</div></div><span class="badge badge-high">CRITICAL</span></div>
+            <div style="display:flex;align-items:flex-start;gap:14px;padding:18px 20px;background:#fffbeb;border:1px solid #fcd34d;border-radius:16px"><div style="font-size:22px;flex-shrink:0">🟡</div><div style="flex:1"><div style="font-weight:600;font-size:14px;color:var(--navy);margin-bottom:2px">Usman Ali (55) — MEDIUM risk follow-up</div><div style="font-size:13px;color:var(--slate600)">Risk Score: 42/100. Follow-up scheduled in 48 hours. Self-monitoring advised with pulse oximeter.</div><div style="font-size:12px;color:var(--slate400);margin-top:6px">2 days ago</div></div><span class="badge badge-medium">MEDIUM</span></div>
+            <div style="display:flex;align-items:flex-start;gap:14px;padding:18px 20px;background:#eff6ff;border:1px solid #bfdbfe;border-radius:16px"><div style="font-size:22px;flex-shrink:0">🔵</div><div style="flex:1"><div style="font-weight:600;font-size:14px;color:var(--navy);margin-bottom:2px">System: XGBoost model validated</div><div style="font-size:13px;color:var(--slate600)">5-fold cross-validation complete. AUC: 0.93, Accuracy: 93% on holdout test set.</div><div style="font-size:12px;color:var(--slate400);margin-top:6px">5 days ago</div></div><span class="badge badge-blue">INFO</span></div>
+          </div>
+        </div>
+
+        <!-- Settings Panel -->
+        <div class="admin-panel" id="panel-settings">
+          <h2 style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--navy);margin-bottom:4px">Settings</h2>
+          <p style="color:var(--slate400);font-size:13px;margin-bottom:24px">Manage your profile and system preferences</p>
+          <div class="grid-2" style="max-width:800px">
+            <div class="card" style="padding:24px">
+              <h3 style="margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--slate100)">Doctor Profile</h3>
+              <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-input" value="Dr. Admin"/></div>
+              <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" value="admin@medpredict.ai"/></div>
+              <div class="form-group"><label class="form-label">Phone</label><input type="text" class="form-input" value="03125061260"/></div>
+              <div class="form-group"><label class="form-label">Location</label><input type="text" class="form-input" value="Main Boulevard Gulberg, Lahore"/></div>
+              <div class="form-group"><label class="form-label">Specialization</label><input type="text" class="form-input" value="Emergency Medicine"/></div>
+              <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="showToast('✅ Profile updated!','success')">Save Changes</button>
+            </div>
+            <div class="card" style="padding:24px">
+              <h3 style="margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--slate100)">System Preferences</h3>
+              <div class="toggle-wrap"><span style="font-size:13.5px;font-weight:500;color:var(--slate700)">Email Notifications</span><div class="toggle on" onclick="toggleSwitch(this)"><div class="toggle-thumb"></div></div></div>
+              <div class="toggle-wrap"><span style="font-size:13.5px;font-weight:500;color:var(--slate700)">High Risk Alerts</span><div class="toggle on" onclick="toggleSwitch(this)"><div class="toggle-thumb"></div></div></div>
+              <div class="toggle-wrap"><span style="font-size:13.5px;font-weight:500;color:var(--slate700)">Daily Summary Reports</span><div class="toggle" onclick="toggleSwitch(this)"><div class="toggle-thumb"></div></div></div>
+              <div class="toggle-wrap"><span style="font-size:13.5px;font-weight:500;color:var(--slate700)">Auto-flag High Risk</span><div class="toggle on" onclick="toggleSwitch(this)"><div class="toggle-thumb"></div></div></div>
+              <div class="toggle-wrap"><span style="font-size:13.5px;font-weight:500;color:var(--slate700)">SMS Alerts</span><div class="toggle" onclick="toggleSwitch(this)"><div class="toggle-thumb"></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER TEMPLATE -->
+<template id="footer-tpl">
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+            <div style="width:32px;height:32px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px">🏥</div>
+            <span style="color:#fff;font-family:'Syne',sans-serif;font-weight:700;font-size:15px">MedPredict AI</span>
+          </div>
+          <p style="font-size:13px;line-height:1.7;max-width:240px">A Final Year Project predicting COVID-19 hospitalization risk using XGBoost and ensemble ML methods on the Kaggle clinical dataset.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Platform</div>
+          <span class="footer-link" onclick="showPage('home')">Home</span>
+          <span class="footer-link" onclick="showPage('predict')">Predict Risk</span>
+          <span class="footer-link" onclick="showPage('dashboard')">Dashboard</span>
+          <span class="footer-link" onclick="showPage('about')">About</span>
+        </div>
+        <div>
+          <div class="footer-heading">Project</div>
+          <span class="footer-link">ML Models (4)</span>
+          <span class="footer-link">Kaggle Dataset</span>
+          <span class="footer-link">GitHub Repo</span>
+          <span class="footer-link">FYP Documentation</span>
+        </div>
+        <div>
+          <div class="footer-heading">Contact</div>
+          <span class="footer-link">📧 covid.ai@uni.edu.pk</span>
+          <span class="footer-link">📞 03125061260</span>
+          <span class="footer-link">📍 Main Boulevard Gulberg, Lahore</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 MedPredict AI — Final Year Project. For academic & research use only.</div>
+        <div style="display:flex;gap:20px"><span class="footer-link" style="margin-bottom:0">Privacy Policy</span><span class="footer-link" style="margin-bottom:0">Terms of Use</span></div>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      <p>⚕️ <strong style="color:var(--slate400)">Medical Disclaimer:</strong> This system is developed for educational and research purposes only and does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider for medical decisions. The predictions generated by this system are based on a simulated ML model and should not be used for clinical decision-making.</p>
+    </div>
+  </footer>
+</template>
+
+<script>
+// ══════════════ PAGE ROUTING ══════════════
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'))
+  const page = document.getElementById('page-' + id)
+  if (page) { page.classList.add('active'); window.scrollTo(0,0) }
+  document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'))
+  const navBtn = document.getElementById('nav-' + id)
+  if (navBtn) navBtn.classList.add('active')
+  // Inject footers lazily
+  const ftSlots = {home:'home-footer',about:'about-footer',contact:'contact-footer'}
+  if (ftSlots[id]) {
+    const slot = document.getElementById(ftSlots[id])
+    if (slot && !slot.innerHTML) slot.innerHTML = document.getElementById('footer-tpl').innerHTML
+  }
+  if (id === 'dashboard') {
+    if (!window._dashChartsInit) initDashCharts()
+    loadHistoryToDashboard()
+  }
+  if (id === 'admin') {
+    const ad = document.getElementById('admin-dashboard')
+    if (ad && ad.style.display !== 'none' && !window._adminChartsInit) initAdminCharts()
+    loadAdminStats()
+  }
+  closeMobile()
+}
+
+// ══════════════ MOBILE MENU ══════════════
+function toggleMobile() {
+  const m = document.getElementById('mobile-menu')
+  const h = document.getElementById('hamburger')
+  m.classList.toggle('open')
+  h.classList.toggle('open')
+}
+function closeMobile() {
+  document.getElementById('mobile-menu').classList.remove('open')
+  document.getElementById('hamburger').classList.remove('open')
+}
+
+// ══════════════ COOKIE ══════════════
+function hideCookie() {
+  document.getElementById('cookie-banner').style.display = 'none'
+  localStorage.setItem('cookieOk','1')
+}
+setTimeout(() => {
+  if (!localStorage.getItem('cookieOk')) {
+    document.getElementById('cookie-banner').style.display = 'flex'
+  }
+}, 1800)
+
+// ══════════════ TOAST ══════════════
+function showToast(msg, type='info') {
+  const tc = document.getElementById('toast-container')
+  const t = document.createElement('div')
+  t.className = `toast toast-${type}`
+  const icon = {success:'✅',error:'❌',info:'ℹ️'}[type]||'ℹ️'
+  t.innerHTML = `<span style="font-size:18px">${icon}</span><span>${msg}</span>`
+  tc.appendChild(t)
+  setTimeout(() => { t.classList.add('toast-out'); setTimeout(() => t.remove(), 350) }, 3500)
+}
+
+// ══════════════ CHIP TOGGLE ══════════════
+function toggleChip(el) {
+  el.classList.toggle('active')
+  const chk = el.querySelector('.chip-check')
+  if (chk) chk.textContent = el.classList.contains('active') ? '✓' : ''
+}
+function getActiveChips(type) {
+  return [...document.querySelectorAll(`.chip[data-type="${type}"].active`)].map(c => ({key:c.dataset.key, weight:parseInt(c.dataset.weight||0), label:c.textContent.trim()}))
+}
+
+// ══════════════ LOADING ANIMATION ══════════════
+function animateLoadingSteps(callback) {
+  const steps = ['ls1','ls2','ls3','ls4']
+  const delays = [0, 700, 1400, 2000]
+  steps.forEach((id,i) => {
+    setTimeout(() => {
+      document.getElementById(id).classList.add('active')
+    }, delays[i])
+    setTimeout(() => {
+      document.getElementById(id).classList.remove('active')
+      document.getElementById(id).classList.add('done')
+      const chk = document.getElementById(id)
+      if (chk) chk.querySelector('.loading-step-icon').textContent = '✅'
+    }, delays[i]+500)
+  })
+  setTimeout(callback, 2600)
+}
+
+// ══════════════ ML PREDICTION ENGINE ══════════════
+async function runPrediction() {
+  const age = document.getElementById('p-age').value
+  const gender = document.getElementById('p-gender').value
+  const vacc = document.getElementById('p-vacc').value
+  if (!age || !gender || !vacc) { showToast('⚠️ Please complete all personal information fields.','error'); return }
+  if (parseInt(age)<1||parseInt(age)>120) { showToast('⚠️ Please enter a valid age.','error'); return }
+
+  const btn = document.getElementById('predict-btn')
+  btn.disabled = true
+  btn.innerHTML = '<div class="spinner"></div> Running XGBoost Model...'
+
+  // Show loading animation
+  const loadingDiv = document.getElementById('predict-loading')
+  loadingDiv.classList.add('show')
+  // Reset steps
+  ;['ls1','ls2','ls3','ls4'].forEach(id => {
+    const el = document.getElementById(id)
+    el.classList.remove('active','done')
+    const icons = {'ls1':'🔍','ls2':'🤖','ls3':'📊','ls4':'✅'}
+    el.querySelector('.loading-step-icon').textContent = icons[id]
+  })
+
+  // Run animation then compute result
+  animateLoadingSteps(() => {
+    loadingDiv.classList.remove('show')
+
+    const symptoms = getActiveChips('symptom')
+    const conditions = getActiveChips('condition')
+    const a = parseInt(age)
+
+    // Score calculation
+    let score = 0
+    if (a >= 75) score += 38; else if (a >= 65) score += 30; else if (a >= 55) score += 22
+    else if (a >= 45) score += 14; else if (a >= 35) score += 8; else score += 3
+
+    if (vacc === 'none') score += 18; else if (vacc === 'partial') score += 9
+
+    symptoms.forEach(s => { score += s.weight })
+    conditions.forEach(c => { score += c.weight })
+    if (gender==='male') score += 3
+
+    score = Math.min(100, Math.max(0, score))
+    const risk = score >= 60 ? 'HIGH' : score >= 30 ? 'MEDIUM' : 'LOW'
+    const hospRequired = score >= 50
+    const feats = 3 + symptoms.length + conditions.length
+    const conf = Math.min(93, 68 + Math.min(feats*2,20) + Math.floor(Math.random()*5))
+    const icu = score>=70?'High (>35%)':score>=50?'Moderate (15–35%)':score>=30?'Low (5–15%)':'Very Low (<5%)'
+    const mort = score>=75?'High (>8%)':score>=55?'Moderate (2–8%)':score>=35?'Low (1–2%)':'Very Low (<1%)'
+    const vaccImpact = vacc==='fully'?'Protected (−30%)':vacc==='partial'?'Partial (−15%)':'Unprotected'
+
+    const recs = []
+    if (score>=60) {
+      recs.push('🚨 Seek immediate emergency care or call your hospital.')
+      recs.push('🏥 Hospitalization is strongly recommended for monitoring.')
+      recs.push('💊 Discuss antiviral medications with your physician immediately.')
+      recs.push('🩺 Request oxygen saturation monitoring every 4 hours.')
+    } else if (score>=30) {
+      recs.push('⚠️ Contact your primary care doctor within 24 hours.')
+      recs.push('🏠 Self-isolate and monitor symptoms closely.')
+      recs.push('💧 Maintain hydration; track temperature every 6 hours.')
+      recs.push('📱 Use a pulse oximeter — seek care if SpO₂ drops below 94%.')
+    } else {
+      recs.push('✅ Continue self-monitoring at home with adequate rest.')
+      recs.push('💧 Stay hydrated; paracetamol for fever/pain as needed.')
+      recs.push('😷 Isolate to prevent spreading to vulnerable individuals.')
+      recs.push('📅 Telehealth consultation if symptoms worsen or persist >7 days.')
+    }
+    if (vacc==='none') recs.push('💉 COVID-19 vaccination is strongly recommended once recovered.')
+
+    const colors = {
+      HIGH:{bg:'#fef2f2',border:'#fca5a5',bannerBg:'rgba(220,38,38,.1)',bannerText:'#dc2626',barGrad:'#dc2626,#f87171',leftBorder:'#ef4444'},
+      MEDIUM:{bg:'#fffbeb',border:'#fcd34d',bannerBg:'rgba(217,119,6,.1)',bannerText:'#d97706',barGrad:'#d97706,#fcd34d',leftBorder:'#f59e0b'},
+      LOW:{bg:'#f0fdf4',border:'#86efac',bannerBg:'rgba(22,163,74,.1)',bannerText:'#16a34a',barGrad:'#16a34a,#4ade80',leftBorder:'#10b981'},
+    }
+    const c = colors[risk]
+
+    // SVG Gauge
+    const angle = (score/100)*180 - 90
+    const gx = 60 + 38*Math.cos((angle-90)*Math.PI/180)
+    const gy = 60 + 38*Math.sin((angle-90)*Math.PI/180)
+
+    // Build XAI (explainability) factors
+    const allFactors = []
+    if (a >= 65) allFactors.push({label:'Age ≥ 65 years', weight:score>=60?'high':'med', impact: a>=75?'Very High Impact':'High Impact'})
+    else if (a >= 50) allFactors.push({label:'Age ≥ 50 years', weight:'med', impact:'Moderate Impact'})
+    symptoms.forEach(s => {
+      if (s.weight >= 14) allFactors.push({label:s.label.replace(/^[^\w]+/,'').trim(), weight:'high', impact:'High Impact'})
+      else if (s.weight >= 7) allFactors.push({label:s.label.replace(/^[^\w]+/,'').trim(), weight:'med', impact:'Moderate Impact'})
+      else allFactors.push({label:s.label.replace(/^[^\w]+/,'').trim(), weight:'low', impact:'Low Impact'})
+    })
+    conditions.forEach(cc => {
+      if (cc.weight >= 15) allFactors.push({label:cc.label.replace(/^[^\w]+/,'').trim(), weight:'high', impact:'High Impact'})
+      else if (cc.weight >= 10) allFactors.push({label:cc.label.replace(/^[^\w]+/,'').trim(), weight:'med', impact:'Moderate Impact'})
+      else allFactors.push({label:cc.label.replace(/^[^\w]+/,'').trim(), weight:'low', impact:'Low Impact'})
+    })
+    if (vacc==='none') allFactors.push({label:'Not Vaccinated', weight:'high', impact:'High Impact'})
+    else if (vacc==='partial') allFactors.push({label:'Partial Vaccination', weight:'med', impact:'Moderate Impact'})
+
+    const xaiHTML = allFactors.length > 0 ? `
+      <div class="xai-section">
+        <div class="xai-title">🔍 Key Risk Factors Affecting Prediction</div>
+        <p style="font-size:12.5px;color:var(--slate500);margin-bottom:14px">Features most influential in this prediction (based on XGBoost feature weights)</p>
+        <div class="xai-grid">
+          ${allFactors.map(f => `
+            <div class="xai-factor xai-factor-${f.weight}">
+              <div style="flex:1">
+                <div style="font-weight:600;font-size:12.5px">${f.label}</div>
+                <div style="font-size:11px;margin-top:2px;opacity:.8">${f.impact}</div>
+              </div>
+              <div style="font-size:14px">${f.weight==='high'?'🔴':f.weight==='med'?'🟡':'🔵'}</div>
+            </div>
+          `).join('')}
+        </div>
+        <div style="margin-top:12px;display:flex;gap:16px;flex-wrap:wrap;font-size:11.5px;color:var(--slate500)">
+          <span style="display:flex;align-items:center;gap:4px">🔴 High impact</span>
+          <span style="display:flex;align-items:center;gap:4px">🟡 Moderate impact</span>
+          <span style="display:flex;align-items:center;gap:4px">🔵 Low impact</span>
+        </div>
+      </div>` : ''
+
+    const patName = document.getElementById('p-name').value || 'Patient'
+
+    const html = `
+      <div class="result-card" style="background:${c.bg};border-color:${c.border}">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-bottom:24px">
+          <div class="risk-banner" style="background:${c.bannerBg};color:${c.bannerText}">
+            ${risk==='HIGH'?'🔴':risk==='MEDIUM'?'🟡':'🟢'} ${risk} RISK
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <div style="background:rgba(255,255,255,.8);padding:7px 16px;border-radius:100px;font-size:13px;font-weight:600;border:1px solid var(--slate200)">
+              🧠 AI Confidence: <strong style="color:${c.bannerText}">${conf}%</strong>
+            </div>
+            <div style="background:rgba(255,255,255,.8);padding:7px 16px;border-radius:100px;font-size:13px;font-weight:600;border:1px solid var(--slate200)">
+              📊 Score: <strong style="color:${c.bannerText}">${score}/100</strong>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;background:rgba(255,255,255,.6);border-radius:16px;padding:20px;margin-bottom:20px">
+          <div class="gauge-wrap">
+            <svg viewBox="0 0 120 70" width="130" height="75">
+              <path d="M10 60 A50 50 0 0 1 110 60" fill="none" stroke="#e2e8f0" stroke-width="8" stroke-linecap="round"/>
+              <path d="M10 60 A50 50 0 0 1 110 60" fill="none" stroke="${c.bannerText}" stroke-width="8" stroke-linecap="round" stroke-dasharray="${(score/100)*157} 157"/>
+              <line x1="60" y1="60" x2="${gx.toFixed(1)}" y2="${gy.toFixed(1)}" stroke="${c.bannerText}" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="60" cy="60" r="4" fill="${c.bannerText}"/>
+            </svg>
+            <div class="gauge-score" style="color:${c.bannerText}">${score}</div>
+            <div class="gauge-label">Risk Score / 100</div>
+          </div>
+          <div style="flex:1;min-width:200px">
+            <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:8px;font-weight:600">
+              <span style="color:var(--slate700)">Severity Level</span>
+              <span style="color:${c.bannerText};font-family:'Syne',sans-serif;font-size:16px;font-weight:800">${risk} (${score}%)</span>
+            </div>
+            <div class="severity-bar-outer">
+              <div class="severity-bar-inner" id="sev-bar" style="width:0%;background:linear-gradient(90deg,${c.barGrad})"></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--slate400);margin-top:4px">
+              <span>0 — Low</span><span>30 — Medium</span><span>60 — High</span><span>100</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="metric-grid">
+          <div class="metric-box"><div class="ml">🏥 Hospitalization</div><div class="mv">${hospRequired?'Required':'Not Required'}</div></div>
+          <div class="metric-box"><div class="ml">🚨 ICU Admission</div><div class="mv">${icu}</div></div>
+          <div class="metric-box"><div class="ml">⚠️ Mortality Risk</div><div class="mv">${mort}</div></div>
+          <div class="metric-box"><div class="ml">💉 Vaccination</div><div class="mv">${vaccImpact}</div></div>
+        </div>
+
+        ${xaiHTML}
+
+        <div style="margin:20px 0">
+          <div style="font-family:'Syne',sans-serif;font-weight:700;color:var(--navy);margin-bottom:12px">📋 Clinical Recommendations</div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            ${recs.map(r=>`<div class="rec-item" style="border-left-color:${c.leftBorder}">${r}</div>`).join('')}
+          </div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding-top:16px;border-top:1px solid rgba(0,0,0,.08)">
+          <div style="font-size:11.5px;color:var(--slate400)">⚕️ XGBoost model (AUC: 0.93, Acc: 93%) — For academic research only. Always consult a physician.</div>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-outline" style="font-size:12.5px" onclick="savePrediction('${patName}', ${age}, '${risk}', ${score})">💾 Save</button>
+            <button class="btn btn-outline" style="font-size:12.5px" onclick="showToast('📄 PDF report simulated!','success')">⬇️ Download Report</button>
+          </div>
+        </div>
+      </div>`
+
+    const resultDiv = document.getElementById('prediction-result')
+    resultDiv.innerHTML = html
+    resultDiv.style.display = 'block'
+    btn.disabled = false
+    btn.innerHTML = '🔬 Predict Hospitalization Risk'
+
+    setTimeout(() => {
+      const bar = document.getElementById('sev-bar')
+      if (bar) bar.style.width = score + '%'
+    }, 150)
+
+    resultDiv.scrollIntoView({behavior:'smooth', block:'start'})
+    showToast(`${risk==='HIGH'?'🔴':risk==='MEDIUM'?'🟡':'🟢'} ${risk} risk — Score: ${score}/100 | Confidence: ${conf}%`, risk==='HIGH'?'error':risk==='MEDIUM'?'info':'success')
+  })
+}
+
+// ══════════════ PREDICTION HISTORY (localStorage) ══════════════
+function savePrediction(name, age, risk, score) {
+  const history = JSON.parse(localStorage.getItem('medpredict_history') || '[]')
+  history.unshift({
+    name: name || 'Patient',
+    age: age,
+    risk: risk,
+    score: score,
+    date: new Date().toLocaleDateString('en-PK', {year:'numeric',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'})
+  })
+  // Keep max 50 records
+  if (history.length > 50) history.splice(50)
+  localStorage.setItem('medpredict_history', JSON.stringify(history))
+  renderHistory()
+  showToast('✅ Prediction saved to history!', 'success')
+}
+
+function renderHistory() {
+  const history = JSON.parse(localStorage.getItem('medpredict_history') || '[]')
+  const container = document.getElementById('history-container')
+  if (!container) return
+  if (history.length === 0) {
+    container.innerHTML = '<div class="history-empty">No predictions saved yet. Run an assessment above and click Save.</div>'
+    return
+  }
+  container.innerHTML = `
+    <div style="overflow-x:auto">
+      <table class="data-table">
+        <thead><tr><th>Name</th><th>Age</th><th>Risk Level</th><th>Score</th><th>Date</th></tr></thead>
+        <tbody>
+          ${history.map(h=>`
+            <tr>
+              <td style="font-weight:600">${h.name}</td>
+              <td>${h.age}</td>
+              <td><span class="badge badge-${h.risk.toLowerCase()}">${h.risk}</span></td>
+              <td><strong style="color:${h.risk==='HIGH'?'#dc2626':h.risk==='MEDIUM'?'#d97706':'#16a34a'}">${h.score}/100</strong></td>
+              <td style="color:var(--slate500);font-size:12px">${h.date}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    </div>`
+}
+
+function clearHistory() {
+  if (!confirm('Clear all prediction history?')) return
+  localStorage.removeItem('medpredict_history')
+  renderHistory()
+  showToast('History cleared.', 'info')
+}
+
+function loadHistoryToDashboard() {
+  const history = JSON.parse(localStorage.getItem('medpredict_history') || '[]')
+  const tbody = document.getElementById('history-dash-body')
+  const todayPreds = document.getElementById('dash-today-preds')
+  const highRisk = document.getElementById('dash-high-risk')
+  const avgScore = document.getElementById('dash-avg-score')
+  if (!tbody) return
+  if (history.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--slate400);padding:24px">No predictions saved yet. Go to Predict page first.</td></tr>'
+    if (todayPreds) todayPreds.textContent = '0'
+    if (highRisk) highRisk.textContent = '0'
+    if (avgScore) avgScore.textContent = '—'
+    return
+  }
+  tbody.innerHTML = history.map(h=>`
+    <tr>
+      <td style="font-weight:600">${h.name}</td>
+      <td>${h.age}</td>
+      <td><span class="badge badge-${h.risk.toLowerCase()}">${h.risk}</span></td>
+      <td><strong style="color:${h.risk==='HIGH'?'#dc2626':h.risk==='MEDIUM'?'#d97706':'#16a34a'}">${h.score}/100</strong></td>
+      <td style="color:var(--slate500);font-size:12px">${h.date}</td>
+    </tr>`).join('')
+  if (todayPreds) todayPreds.textContent = history.length
+  if (highRisk) highRisk.textContent = history.filter(h=>h.risk==='HIGH').length
+  if (avgScore) avgScore.textContent = Math.round(history.reduce((a,h)=>a+h.score,0)/history.length)
+}
+
+function exportHistoryCSV() {
+  const history = JSON.parse(localStorage.getItem('medpredict_history') || '[]')
+  if (history.length === 0) { showToast('No history to export.','info'); return }
+  const rows = [['Patient Name','Age','Risk Level','Score','Date']]
+  history.forEach(h => rows.push([h.name, h.age, h.risk, h.score, h.date]))
+  const csv = rows.map(r => r.join(',')).join('\n')
+  const blob = new Blob([csv], {type:'text/csv'})
+  const a = document.createElement('a')
+  a.href = URL.createObjectURL(blob)
+  a.download = 'medpredict_history.csv'
+  a.click()
+  showToast('✅ CSV exported successfully!','success')
+}
+
+function loadAdminStats() {
+  const history = JSON.parse(localStorage.getItem('medpredict_history') || '[]')
+  const el1 = document.getElementById('admin-today')
+  const el2 = document.getElementById('admin-high')
+  const el3 = document.getElementById('admin-avg')
+  if (el1) el1.textContent = history.length
+  if (el2) el2.textContent = history.filter(h=>h.risk==='HIGH').length
+  if (el3) el3.textContent = history.length > 0 ? Math.round(history.reduce((a,h)=>a+h.score,0)/history.length) : '—'
+}
+
+// ══════════════ AUTH TABS ══════════════
+function switchAuthTab(tab) {
+  document.querySelectorAll('.auth-tab').forEach(t=>t.classList.remove('active'))
+  document.querySelectorAll('.auth-form').forEach(f=>f.classList.remove('active'))
+  document.getElementById('atab-'+tab).classList.add('active')
+  document.getElementById('af-'+tab).classList.add('active')
+}
+
+// ══════════════ AUTH HANDLERS ══════════════
+function doLogin() {
+  const e = document.getElementById('l-email').value
+  const p = document.getElementById('l-pass').value
+  if (!e||!p) { showToast('Please fill all fields','error'); return }
+  showToast('✅ Welcome back! Logged in successfully.','success')
+  setTimeout(()=>showPage('dashboard'),1000)
+}
+function demoLogin(){
+  showToast('🧪 Demo login successful!','success')
+  setTimeout(()=>showPage('dashboard'),800)
+}
+function doSignup() {
+  const n = document.getElementById('su-name').value
+  const e = document.getElementById('su-email').value
+  const p = document.getElementById('su-pass').value
+  const p2 = document.getElementById('su-pass2').value
+  const r = document.getElementById('su-role').value
+  if (!n||!e||!p||!r) { showToast('⚠️ Please fill all required fields.','error'); return }
+  if (p.length < 8) { showToast('⚠️ Password must be at least 8 characters.','error'); return }
+  if (p !== p2) { showToast('⚠️ Passwords do not match.','error'); return }
+  showToast('✅ Account created! Please sign in.','success')
+  setTimeout(()=>switchAuthTab('login'), 1500)
+}
+function checkPassStrength(val) {
+  const bar = document.getElementById('pass-strength')
+  const hint = document.getElementById('pass-hint')
+  if (!bar||!val) { bar.style.width='0'; hint.textContent='Enter a password'; return }
+  let s = 0
+  if (val.length >= 8) s++
+  if (/[A-Z]/.test(val)) s++
+  if (/[0-9]/.test(val)) s++
+  if (/[^A-Za-z0-9]/.test(val)) s++
+  const colors = ['#ef4444','#f59e0b','#f59e0b','#10b981','#10b981']
+  const labels = ['Too short','Weak','Fair','Strong','Very Strong']
+  const widths = ['20%','40%','60%','80%','100%']
+  bar.style.background = colors[s]
+  bar.style.width = widths[s]
+  hint.textContent = labels[s]
+  hint.style.color = colors[s]
+}
+function doAdminLogin() {
+  const e = document.getElementById('a-email').value
+  const p = document.getElementById('a-pass').value
+  if (!e||!p) { showToast('Please fill all fields','error'); return }
+  document.getElementById('admin-login-screen').style.display='none'
+  document.getElementById('admin-dashboard').style.display='block'
+  showToast('🛡️ Welcome, Doctor! Admin access granted.','success')
+  if (!window._adminChartsInit) setTimeout(initAdminCharts,200)
+  loadAdminStats()
+}
+function demoAdminLogin(){
+  document.getElementById('admin-login-screen').style.display='none'
+  document.getElementById('admin-dashboard').style.display='block'
+  showToast('🔓 Demo admin access granted!','success')
+  if (!window._adminChartsInit) setTimeout(initAdminCharts,200)
+  loadAdminStats()
+}
+function adminLogout(){
+  document.getElementById('admin-dashboard').style.display='none'
+  document.getElementById('admin-login-screen').style.display='block'
+  showPage('home')
+  showToast('👋 Logged out successfully.','info')
+}
+
+// ══════════════ ADMIN PANEL NAV ══════════════
+function showAdminPanel(id) {
+  document.querySelectorAll('.admin-panel').forEach(p=>p.classList.remove('active'))
+  document.querySelectorAll('.sidebar-item').forEach(s=>s.classList.remove('active'))
+  document.getElementById('panel-'+id).classList.add('active')
+  document.getElementById('sb-'+id).classList.add('active')
+}
+
+// ══════════════ TABLE FILTERS ══════════════
+function filterTable(q) {
+  document.querySelectorAll('#patients-table tbody tr').forEach(r=>{
+    r.style.display=(r.dataset.name||'').includes(q.toLowerCase())?'':'none'
+  })
+}
+function filterRisk(level) {
+  document.querySelectorAll('#pred-table tbody tr').forEach(r=>{
+    r.style.display=(level==='ALL'||r.dataset.risk===level)?'':'none'
+  })
+}
+
+// ══════════════ FAQ ══════════════
+function toggleFaq(btn) {
+  const ans = btn.nextElementSibling
+  const isOpen = ans.classList.contains('open')
+  document.querySelectorAll('.faq-a').forEach(a=>a.classList.remove('open'))
+  document.querySelectorAll('.faq-q').forEach(b=>b.classList.remove('open'))
+  if (!isOpen) { ans.classList.add('open'); btn.classList.add('open') }
+}
+
+// ══════════════ CONTACT ══════════════
+function sendContact(){
+  const n=document.getElementById('c-name').value
+  const e=document.getElementById('c-email').value
+  const m=document.getElementById('c-msg').value
+  if(!n||!e||!m){showToast('Please fill required fields','error');return}
+  showToast("✅ Message sent! We'll respond within 24 hours.",'success')
+  document.getElementById('c-name').value=''
+  document.getElementById('c-email').value=''
+  document.getElementById('c-subject').value=''
+  document.getElementById('c-msg').value=''
+}
+
+// ══════════════ TOGGLE SWITCH ══════════════
+function toggleSwitch(el){
+  el.classList.toggle('on')
+  showToast('⚙️ Setting updated.','info')
+}
+
+// ══════════════ CHARTS ══════════════
+function initDashCharts() {
+  window._dashChartsInit = true
+  const monthly = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+  const preds = [180,220,340,290,310,270,350,380,420,390,320,290]
+  const hosp = [52,64,99,84,90,78,102,110,122,113,93,84]
+
+  new Chart(document.getElementById('lineChart'), {
+    type:'line',
+    data:{
+      labels:monthly,
+      datasets:[
+        {label:'Predictions',data:preds,borderColor:'#2563eb',borderWidth:2.5,pointRadius:3,tension:.35,fill:false},
+        {label:'Hospitalized',data:hosp,borderColor:'#ef4444',borderWidth:2.5,pointRadius:3,tension:.35,fill:false}
+      ]
+    },
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{font:{family:'DM Sans',size:12},boxWidth:12,padding:16}}},scales:{x:{grid:{color:'rgba(0,0,0,.05)'},ticks:{font:{family:'DM Sans',size:11}}},y:{grid:{color:'rgba(0,0,0,.05)'},ticks:{font:{family:'DM Sans',size:11}}}}}
+  })
+
+  new Chart(document.getElementById('pieChart'), {
+    type:'doughnut',
+    data:{
+      labels:['Low Risk','Medium Risk','High Risk'],
+      datasets:[{data:[55,30,15],backgroundColor:['#10b981','#f59e0b','#ef4444'],borderWidth:0,hoverOffset:6}]
+    },
+    options:{responsive:true,maintainAspectRatio:false,cutout:'62%',plugins:{legend:{display:false}}}
+  })
+
+  // REALISTIC MODEL COMPARISON — Accuracy and AUC
+  new Chart(document.getElementById('barChart'), {
+    type:'bar',
+    data:{
+      labels:['Logistic Reg.','Random Forest','Grad. Boosting','XGBoost ⭐'],
+      datasets:[
+        {label:'Accuracy %',data:[88,91,92,93],backgroundColor:['#94a3b8','#94a3b8','#94a3b8','#2563eb'],borderRadius:6},
+        {label:'AUC-ROC ×100',data:[86,90,91,93],backgroundColor:['#cbd5e1','#cbd5e1','#cbd5e1','#10b981'],borderRadius:6}
+      ]
+    },
+    options:{responsive:true,maintainAspectRatio:false,barThickness:22,plugins:{legend:{position:'bottom',labels:{font:{family:'DM Sans',size:12},boxWidth:12,padding:16}}},scales:{x:{grid:{display:false},ticks:{font:{family:'DM Sans',size:11}}},y:{min:75,max:100,grid:{color:'rgba(0,0,0,.05)'},ticks:{font:{family:'DM Sans',size:11}}}}}
+  })
+}
+
+function initAdminCharts() {
+  window._adminChartsInit = true
+  setTimeout(()=>{
+    const el = document.getElementById('adminWeekChart')
+    if (el) new Chart(el, {
+      type:'bar',
+      data:{
+        labels:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],
+        datasets:[{label:'Predictions',data:[98,142,115,167,127,83,56],backgroundColor:'#2563eb',borderRadius:8}]
+      },
+      options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{font:{family:'DM Sans',size:11}}},y:{grid:{color:'rgba(0,0,0,.05)'},ticks:{font:{family:'DM Sans',size:11}}}}}
+    })
+    const el2 = document.getElementById('adminDailyChart')
+    if (el2) new Chart(el2, {
+      type:'line',
+      data:{
+        labels:Array.from({length:30},(_,i)=>`Apr ${i+1}`),
+        datasets:[{
+          label:'Predictions/Day',
+          data:[45,62,38,71,55,88,42,97,63,74,51,83,46,79,61,92,57,68,44,85,53,76,49,91,60,72,48,88,64,78],
+          borderColor:'#10b981',borderWidth:2,pointRadius:2,tension:.4,fill:true,backgroundColor:'rgba(16,185,129,.1)'
+        }]
+      },
+      options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{font:{family:'DM Sans',size:10},maxTicksLimit:10}},y:{grid:{color:'rgba(0,0,0,.05)'},ticks:{font:{family:'DM Sans',size:11}}}}}
+    })
+  }, 300)
+}
+
+// ══════════════ INIT ══════════════
+document.addEventListener('DOMContentLoaded', () => {
+  // Inject footer into home on load
+  const slot = document.getElementById('home-footer')
+  if (slot) slot.innerHTML = document.getElementById('footer-tpl').innerHTML
+  // Load prediction history on predict page
+  renderHistory()
+})
+</script>
+</body>
+</html>

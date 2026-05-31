@@ -1,0 +1,13 @@
+Target,Model,Accuracy,F1 Score,ROC-AUC,CV AUC
+hospitalized,Logistic Regression,0.9767,0.9607,0.9978,0.996
+hospitalized,Random Forest,0.92,0.8462,0.986,0.9799
+hospitalized,Gradient Boosting,0.985,0.9739,0.9983,0.9982
+hospitalized,XGBoost,0.98,0.9649,0.999,0.9976
+icu_admission,Logistic Regression,0.8067,0.4727,0.8878,0.8747
+icu_admission,Random Forest,0.89,0.1538,0.8163,0.8327
+icu_admission,Gradient Boosting,0.88,0.2,0.849,0.8509
+icu_admission,XGBoost,0.8717,0.2222,0.8356,0.8377
+mortality,Logistic Regression,0.7917,0.2515,0.8664,0.8509
+mortality,Random Forest,0.9467,0.0,0.768,0.8021
+mortality,Gradient Boosting,0.9367,0.05,0.7783,0.796
+mortality,XGBoost,0.9367,0.05,0.7739,0.7908

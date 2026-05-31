@@ -1,0 +1,3001 @@
+age,gender,vaccination_status,fever,cough,fatigue,shortness_of_breath,loss_of_smell,headache,diabetes,hypertension,heart_disease,asthma,cancer,hospitalized,icu_admission,mortality
+51,Male,Unvaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+92,Male,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+14,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+71,Male,Fully Vaccinated,1,1,0,0,0,0,0,1,0,0,0,0,0,0
+60,Male,Unvaccinated,0,1,1,1,1,0,1,1,1,0,0,1,1,0
+20,Male,Partially Vaccinated,0,0,0,0,1,1,0,0,1,0,0,0,0,0
+82,Male,Fully Vaccinated,1,1,1,0,1,0,0,0,0,0,0,1,1,0
+86,Female,Partially Vaccinated,0,1,1,0,0,0,0,1,0,0,0,1,0,0
+74,Female,Booster Dose,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+74,Female,Unvaccinated,0,1,0,0,0,0,0,0,1,0,0,1,0,0
+87,Male,Fully Vaccinated,1,0,1,0,0,0,1,1,0,0,0,1,0,0
+99,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+23,Female,Partially Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+2,Male,Fully Vaccinated,0,1,1,0,0,1,1,1,0,1,0,1,0,0
+21,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+52,Female,Unvaccinated,0,0,1,0,0,0,1,0,0,0,0,1,0,0
+1,Female,Booster Dose,0,1,0,1,0,0,0,1,0,0,0,0,0,0
+87,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+29,Male,Partially Vaccinated,1,1,0,0,0,1,0,0,0,0,0,0,0,0
+37,Female,Partially Vaccinated,1,1,1,0,1,0,1,0,0,0,1,1,1,0
+1,Male,Partially Vaccinated,0,0,1,1,0,1,1,0,0,0,0,1,1,0
+63,Female,Fully Vaccinated,1,0,0,1,0,0,0,0,0,0,1,0,0,0
+59,Female,Fully Vaccinated,1,1,0,1,0,0,1,0,0,0,0,1,0,0
+20,Other,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+32,Male,Booster Dose,1,0,0,0,1,0,0,0,1,0,0,0,0,0
+75,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,1,0,1,0,0,0
+57,Female,Fully Vaccinated,0,1,0,1,1,0,1,1,0,0,0,1,1,0
+21,Male,Partially Vaccinated,1,1,1,0,0,0,0,0,0,0,1,1,0,0
+88,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+48,Female,Unvaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+90,Male,Fully Vaccinated,0,1,1,0,1,1,0,0,0,0,1,1,0,0
+58,Male,Partially Vaccinated,1,0,0,0,0,0,1,0,0,0,1,1,0,0
+41,Male,Unvaccinated,1,0,0,0,1,0,0,0,1,0,0,1,1,0
+91,Female,Unvaccinated,1,0,1,1,0,1,0,0,1,0,0,1,0,0
+59,Female,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+79,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+14,Male,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+61,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+61,Female,Fully Vaccinated,1,0,0,0,0,1,1,0,0,1,0,1,1,0
+46,Female,Fully Vaccinated,0,1,0,1,0,0,0,0,1,0,0,0,0,0
+61,Male,Partially Vaccinated,0,0,0,1,1,0,0,1,0,0,0,1,0,0
+50,Female,Unvaccinated,0,1,0,1,0,0,0,1,0,1,0,1,0,0
+54,Other,Fully Vaccinated,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+63,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+2,Female,Unvaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+50,Female,Partially Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+6,Male,Unvaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+20,Female,Fully Vaccinated,1,0,0,1,0,1,0,0,1,0,0,0,0,0
+72,Other,Partially Vaccinated,0,1,1,1,1,1,1,0,0,0,1,1,1,0
+38,Male,Fully Vaccinated,1,0,0,0,1,1,0,0,1,0,0,0,0,0
+17,Female,Fully Vaccinated,1,1,0,0,0,0,0,0,1,0,0,0,0,0
+3,Female,Partially Vaccinated,0,1,1,0,0,0,1,0,0,0,0,0,0,0
+88,Female,Booster Dose,0,0,0,0,0,1,0,1,0,1,0,0,0,0
+59,Female,Fully Vaccinated,0,0,0,0,0,1,1,1,0,1,0,1,0,0
+13,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8,Female,Fully Vaccinated,1,1,1,0,0,1,0,0,0,1,0,1,0,1
+89,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+52,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+1,Male,Partially Vaccinated,0,1,0,1,0,0,1,0,0,0,0,0,0,0
+83,Male,Unvaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+91,Male,Unvaccinated,0,0,0,1,1,1,0,0,0,0,0,1,1,0
+59,Female,Partially Vaccinated,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+70,Male,Partially Vaccinated,1,0,0,1,1,1,0,0,0,0,1,1,0,0
+43,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7,Female,Unvaccinated,0,0,1,1,1,1,0,1,0,0,0,1,0,0
+46,Female,Fully Vaccinated,0,1,0,1,1,1,1,0,0,0,0,1,0,0
+34,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+77,Female,Booster Dose,0,0,1,0,0,1,1,0,0,0,0,0,0,0
+80,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+35,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+49,Male,Booster Dose,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+3,Male,Partially Vaccinated,0,1,1,0,0,1,0,1,1,0,0,1,1,0
+1,Male,Partially Vaccinated,1,0,1,1,0,1,0,0,0,0,0,1,0,0
+5,Male,Booster Dose,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+53,Male,Fully Vaccinated,0,1,0,1,1,0,0,0,0,0,0,0,0,0
+3,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+53,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+92,Male,Unvaccinated,0,0,1,0,0,1,1,0,0,0,0,1,0,0
+62,Male,Fully Vaccinated,0,0,1,1,1,1,0,0,0,1,0,1,1,0
+17,Male,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+89,Male,Partially Vaccinated,0,0,1,1,0,1,0,0,0,0,0,1,0,0
+43,Male,Unvaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+33,Male,Fully Vaccinated,1,1,1,1,1,0,1,0,0,0,0,1,0,0
+73,Female,Fully Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+61,Other,Partially Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+99,Male,Booster Dose,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+13,Male,Unvaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+94,Female,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+47,Male,Fully Vaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+14,Male,Partially Vaccinated,1,1,1,0,1,0,0,0,0,1,0,1,1,0
+71,Female,Fully Vaccinated,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+77,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+86,Female,Fully Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+61,Female,Unvaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+39,Male,Unvaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+84,Male,Partially Vaccinated,0,1,1,1,1,0,0,0,0,0,0,1,0,0
+79,Female,Fully Vaccinated,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+81,Male,Fully Vaccinated,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+52,Male,Fully Vaccinated,0,1,1,1,0,1,0,1,0,0,1,1,1,0
+23,Female,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+25,Female,Booster Dose,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+88,Male,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+59,Female,Partially Vaccinated,0,0,0,0,0,0,1,0,1,0,1,1,1,0
+40,Male,Partially Vaccinated,1,1,0,1,0,1,0,0,0,0,0,1,0,0
+28,Female,Fully Vaccinated,0,0,1,1,1,0,0,0,1,0,0,0,0,0
+14,Female,Unvaccinated,1,1,0,0,0,1,0,0,0,0,0,1,1,1
+44,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+64,Female,Fully Vaccinated,1,0,1,0,0,0,0,1,0,0,0,0,0,0
+88,Other,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+70,Male,Unvaccinated,0,1,0,0,0,0,1,0,0,0,0,1,0,0
+8,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+87,Male,Fully Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+0,Male,Fully Vaccinated,1,0,0,0,1,0,1,0,0,0,0,0,0,0
+7,Male,Unvaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+87,Female,Unvaccinated,1,0,0,0,0,0,1,0,0,0,1,1,0,0
+62,Other,Fully Vaccinated,0,0,0,0,1,0,0,1,0,0,0,0,0,0
+10,Male,Fully Vaccinated,1,1,0,0,0,1,0,0,0,0,0,0,0,0
+80,Male,Booster Dose,0,1,0,1,1,0,0,0,0,0,1,1,0,0
+7,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+34,Male,Unvaccinated,1,1,0,1,0,1,0,0,0,0,0,1,0,0
+34,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+32,Female,Fully Vaccinated,0,1,0,0,0,1,0,0,0,0,1,0,0,0
+4,Female,Unvaccinated,1,0,0,0,0,1,0,0,0,1,0,1,1,1
+40,Other,Partially Vaccinated,0,1,0,1,0,1,0,1,0,0,0,1,0,0
+27,Male,Fully Vaccinated,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+6,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+72,Female,Partially Vaccinated,0,0,0,0,1,1,0,0,0,1,0,1,0,0
+71,Female,Partially Vaccinated,1,1,0,0,0,0,0,0,1,0,1,1,1,0
+11,Female,Partially Vaccinated,0,0,0,0,1,0,0,1,0,0,0,0,0,0
+33,Female,Unvaccinated,0,0,0,0,1,0,0,1,0,0,0,0,0,0
+32,Male,Fully Vaccinated,0,0,0,1,0,1,0,0,0,1,1,0,0,0
+47,Female,Fully Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+22,Male,Partially Vaccinated,1,1,1,1,0,0,0,0,0,0,0,1,0,1
+61,Male,Fully Vaccinated,0,1,1,0,1,1,0,0,0,0,0,1,0,0
+87,Female,Partially Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+36,Male,Fully Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+98,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+43,Female,Fully Vaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+85,Male,Fully Vaccinated,0,1,1,1,0,1,0,0,0,0,0,1,1,0
+90,Female,Unvaccinated,1,0,0,0,1,0,0,0,1,0,0,1,0,1
+34,Male,Unvaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+64,Female,Booster Dose,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+98,Male,Partially Vaccinated,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+46,Male,Partially Vaccinated,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+77,Other,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+2,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+0,Female,Booster Dose,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+4,Male,Partially Vaccinated,0,0,0,1,0,0,1,0,0,0,1,0,0,0
+89,Female,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13,Female,Unvaccinated,0,0,0,1,0,0,0,1,0,0,0,0,0,0
+26,Female,Unvaccinated,0,0,0,1,1,0,0,0,1,0,0,1,0,0
+8,Female,Fully Vaccinated,0,0,0,1,0,0,0,1,0,0,0,0,0,0
+78,Male,Unvaccinated,0,0,1,0,0,0,0,0,0,0,1,1,1,0
+14,Male,Partially Vaccinated,1,1,0,0,0,0,0,0,1,0,0,0,0,0
+89,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+41,Male,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+76,Male,Unvaccinated,1,0,0,0,0,0,0,0,0,0,1,1,0,0
+50,Female,Partially Vaccinated,1,1,1,1,1,0,0,0,1,1,0,1,0,0
+62,Female,Fully Vaccinated,0,0,0,1,0,0,0,1,0,0,0,0,0,0
+95,Female,Fully Vaccinated,1,0,0,1,1,0,0,0,0,0,0,0,0,0
+51,Female,Fully Vaccinated,1,1,1,1,0,0,0,1,0,0,0,1,1,0
+95,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3,Male,Fully Vaccinated,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+93,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+22,Male,Unvaccinated,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+14,Male,Partially Vaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+42,Female,Fully Vaccinated,0,1,0,1,0,1,0,1,0,0,0,0,0,0
+28,Male,Partially Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+35,Male,Booster Dose,1,0,0,0,1,0,1,0,0,0,0,0,0,0
+12,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+31,Male,Fully Vaccinated,1,1,0,0,1,0,0,1,0,0,0,0,0,0
+70,Male,Partially Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+58,Male,Partially Vaccinated,0,1,1,1,0,0,0,0,0,0,0,1,0,1
+85,Male,Partially Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+27,Male,Fully Vaccinated,1,1,1,0,0,0,0,1,0,0,0,0,0,0
+65,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+41,Female,Booster Dose,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+44,Male,Partially Vaccinated,1,0,0,0,1,1,0,1,0,0,0,1,1,0
+61,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+56,Female,Partially Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+5,Male,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+27,Female,Booster Dose,0,0,0,0,1,1,0,0,1,0,1,0,0,0
+27,Female,Partially Vaccinated,0,0,1,0,1,0,0,0,0,1,0,0,0,0
+43,Male,Fully Vaccinated,0,0,0,1,0,0,1,0,0,1,1,0,0,0
+83,Female,Partially Vaccinated,0,1,0,1,0,0,0,1,0,1,1,1,0,0
+29,Male,Fully Vaccinated,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+61,Female,Booster Dose,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+74,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+91,Female,Partially Vaccinated,0,1,1,0,0,1,0,0,0,0,0,1,0,0
+88,Male,Booster Dose,1,0,0,1,1,0,0,0,0,0,0,0,0,0
+61,Female,Booster Dose,0,1,1,1,1,0,0,0,0,0,0,1,0,0
+96,Female,Fully Vaccinated,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+0,Male,Fully Vaccinated,0,0,0,1,1,0,0,0,0,0,1,0,0,0
+26,Male,Partially Vaccinated,0,1,1,1,1,1,0,1,1,0,0,1,1,0
+61,Female,Fully Vaccinated,0,1,0,1,1,0,0,1,0,1,0,1,0,0
+76,Female,Fully Vaccinated,0,0,0,0,1,0,1,0,1,0,0,0,0,0
+2,Male,Fully Vaccinated,0,1,1,0,1,0,0,0,0,0,0,0,0,0
+69,Female,Partially Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+71,Other,Partially Vaccinated,0,0,0,1,1,0,0,0,1,0,0,1,0,0
+26,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8,Male,Unvaccinated,0,0,0,1,1,1,0,0,1,0,1,1,0,0
+61,Female,Unvaccinated,1,0,0,1,0,0,0,0,0,0,0,1,1,0
+36,Male,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+96,Other,Unvaccinated,1,0,1,0,0,0,1,0,0,0,0,1,0,0
+50,Female,Unvaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+43,Male,Fully Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+23,Female,Unvaccinated,0,0,0,0,0,0,0,1,1,0,0,0,0,0
+78,Male,Unvaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+58,Other,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+31,Other,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+95,Female,Fully Vaccinated,0,0,0,0,0,0,0,1,0,0,1,0,0,0
+87,Male,Unvaccinated,1,0,0,1,1,0,0,0,0,0,0,1,0,0
+51,Female,Fully Vaccinated,0,1,0,0,1,0,0,0,1,0,1,1,0,1
+61,Male,Booster Dose,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+57,Male,Fully Vaccinated,0,0,0,1,1,0,0,0,1,0,0,0,0,0
+51,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,0,1,0,0,0,0
+11,Male,Booster Dose,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+38,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+1,Other,Unvaccinated,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+2,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+55,Male,Booster Dose,0,0,1,0,0,0,1,1,0,1,1,1,0,0
+80,Female,Partially Vaccinated,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+58,Male,Unvaccinated,1,1,0,1,1,0,0,0,0,0,0,1,1,0
+1,Female,Fully Vaccinated,1,0,0,1,0,0,1,0,0,0,0,0,0,0
+1,Other,Fully Vaccinated,0,1,1,0,1,0,0,1,0,0,1,1,1,1
+91,Female,Unvaccinated,0,0,1,0,0,1,1,0,0,0,0,1,1,0
+53,Female,Fully Vaccinated,1,0,0,1,1,0,0,0,0,1,0,1,1,0
+86,Male,Unvaccinated,1,1,1,1,0,0,0,0,0,0,0,1,0,0
+95,Male,Fully Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+96,Female,Partially Vaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+0,Female,Partially Vaccinated,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+18,Female,Fully Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+1,Male,Fully Vaccinated,1,0,1,0,0,1,1,0,0,0,0,0,0,0
+52,Male,Fully Vaccinated,1,0,0,0,0,1,1,0,0,0,0,0,0,0
+43,Male,Partially Vaccinated,0,0,1,1,0,1,0,0,0,0,0,0,0,0
+89,Female,Partially Vaccinated,0,0,1,0,0,0,1,0,0,1,1,1,0,0
+31,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,1,1,0,0,0,0
+69,Female,Unvaccinated,1,0,0,0,0,1,1,0,0,0,0,1,1,0
+31,Female,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+67,Male,Partially Vaccinated,0,1,0,0,0,1,0,0,0,0,1,1,0,0
+54,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+74,Male,Booster Dose,1,1,0,0,0,0,0,1,0,0,0,0,0,0
+55,Female,Booster Dose,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+16,Female,Fully Vaccinated,1,0,0,0,1,1,0,0,0,0,0,0,0,0
+37,Female,Partially Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+23,Female,Partially Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+68,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+97,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+69,Female,Booster Dose,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+85,Male,Partially Vaccinated,0,1,0,1,0,1,0,0,0,0,0,1,1,0
+10,Male,Booster Dose,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+15,Male,Fully Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+96,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+72,Male,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+58,Female,Unvaccinated,1,0,0,0,0,0,0,0,1,0,0,1,0,0
+69,Other,Partially Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+79,Male,Partially Vaccinated,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+92,Male,Unvaccinated,0,0,0,0,1,1,0,0,1,0,0,1,0,1
+2,Male,Fully Vaccinated,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+19,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+58,Male,Fully Vaccinated,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+35,Male,Fully Vaccinated,0,0,0,0,0,0,1,0,0,1,1,0,0,0
+18,Male,Unvaccinated,1,0,1,0,0,0,0,0,0,0,1,1,1,0
+89,Female,Booster Dose,0,0,0,0,1,1,0,0,1,0,1,1,1,0
+66,Male,Unvaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+18,Female,Partially Vaccinated,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+19,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+95,Male,Fully Vaccinated,1,1,0,0,0,1,0,0,0,0,0,0,0,0
+70,Female,Unvaccinated,0,0,1,1,0,0,0,0,0,0,0,1,0,0
+51,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+32,Female,Fully Vaccinated,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+39,Female,Partially Vaccinated,0,0,0,1,0,1,0,0,0,1,0,0,0,0
+38,Female,Fully Vaccinated,0,0,1,0,0,0,0,1,1,0,1,0,0,0
+81,Male,Booster Dose,0,1,1,1,0,0,0,0,0,0,0,0,0,0
+0,Male,Booster Dose,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+10,Male,Unvaccinated,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+91,Male,Partially Vaccinated,1,0,0,0,1,0,0,0,1,0,0,1,0,0
+56,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+88,Male,Partially Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+49,Male,Partially Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+22,Male,Partially Vaccinated,1,0,1,0,0,0,0,1,1,0,1,1,0,0
+30,Female,Booster Dose,1,0,0,0,1,0,0,1,0,0,0,0,0,0
+93,Male,Booster Dose,0,0,1,1,1,0,1,0,0,1,0,1,0,0
+41,Male,Unvaccinated,0,1,0,0,0,1,0,0,1,1,1,1,0,0
+98,Male,Partially Vaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+6,Male,Partially Vaccinated,1,1,0,0,1,0,0,0,1,0,0,1,0,0
+15,Other,Partially Vaccinated,1,1,0,1,1,0,0,0,0,0,1,1,0,0
+89,Male,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+59,Female,Fully Vaccinated,1,0,0,0,1,0,1,0,1,0,0,1,1,1
+1,Other,Booster Dose,0,1,0,1,1,1,0,0,0,0,0,0,0,0
+0,Female,Fully Vaccinated,0,0,1,0,0,0,0,1,1,0,0,0,0,0
+47,Female,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+11,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,1,0,1,0,0,0
+68,Other,Partially Vaccinated,0,0,0,1,0,1,0,0,0,1,0,1,1,0
+36,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+31,Female,Fully Vaccinated,0,0,0,0,1,0,1,0,0,1,0,0,0,0
+8,Female,Unvaccinated,1,0,0,0,0,0,1,0,1,0,0,1,0,0
+98,Female,Partially Vaccinated,0,0,1,0,1,1,0,0,0,0,0,1,0,0
+18,Female,Partially Vaccinated,1,0,0,0,0,0,1,0,0,0,0,0,0,0
+47,Male,Booster Dose,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+79,Male,Partially Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+2,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19,Male,Partially Vaccinated,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+23,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+53,Male,Unvaccinated,1,0,0,0,0,1,1,0,0,1,0,1,1,0
+32,Female,Booster Dose,1,0,0,1,0,1,0,0,0,1,1,1,0,0
+23,Male,Booster Dose,0,0,0,0,1,0,1,1,0,0,0,0,0,0
+74,Female,Fully Vaccinated,1,0,1,0,1,0,0,0,0,1,0,1,1,0
+71,Male,Fully Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+35,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+37,Female,Partially Vaccinated,0,1,0,0,0,0,0,1,1,0,1,1,0,1
+83,Female,Fully Vaccinated,0,0,0,0,0,1,0,1,0,0,0,0,0,0
+98,Male,Unvaccinated,0,0,0,1,1,1,0,0,0,0,0,1,1,0
+88,Female,Partially Vaccinated,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+98,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24,Male,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+92,Male,Booster Dose,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+17,Other,Unvaccinated,1,0,1,1,1,0,1,0,0,0,0,1,1,0
+81,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+65,Female,Fully Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+53,Female,Fully Vaccinated,1,1,0,1,0,1,0,0,0,0,0,1,0,0
+34,Male,Partially Vaccinated,1,0,0,0,0,1,1,1,0,0,0,1,0,0
+79,Male,Fully Vaccinated,0,1,1,1,1,0,0,0,0,0,0,1,0,0
+60,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+40,Female,Fully Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+99,Female,Partially Vaccinated,1,0,1,0,0,0,0,1,0,0,0,1,0,1
+32,Female,Fully Vaccinated,0,0,1,1,0,1,1,0,0,0,0,0,0,0
+67,Male,Fully Vaccinated,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+32,Male,Partially Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+13,Female,Booster Dose,1,1,1,0,0,1,0,1,0,0,0,1,0,0
+20,Female,Partially Vaccinated,1,0,0,0,1,0,1,0,0,0,0,0,0,0
+47,Female,Fully Vaccinated,1,1,0,0,0,0,1,1,0,0,0,0,0,0
+19,Male,Fully Vaccinated,0,1,0,0,0,1,0,0,1,0,0,0,0,0
+7,Female,Fully Vaccinated,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+6,Male,Booster Dose,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+66,Female,Booster Dose,0,0,1,1,1,0,0,0,0,0,1,1,0,0
+16,Male,Partially Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+32,Female,Unvaccinated,0,1,0,0,0,0,0,0,0,1,1,1,1,0
+47,Male,Unvaccinated,1,0,0,1,0,0,0,0,0,1,0,1,1,0
+75,Female,Fully Vaccinated,1,0,0,1,1,1,0,0,0,0,0,1,0,0
+58,Male,Booster Dose,1,1,1,1,0,0,0,0,0,0,0,1,0,0
+85,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,1,0,0,0,0,0
+21,Male,Unvaccinated,1,1,1,1,0,0,0,0,0,1,0,1,0,0
+29,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+37,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+50,Female,Partially Vaccinated,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+53,Male,Partially Vaccinated,0,1,0,0,0,1,0,0,0,0,1,1,1,0
+7,Female,Fully Vaccinated,0,1,1,1,0,1,1,0,0,0,1,1,0,0
+26,Female,Fully Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+26,Female,Fully Vaccinated,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+97,Male,Fully Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+20,Male,Unvaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+29,Female,Fully Vaccinated,1,0,1,1,0,0,0,0,0,0,0,0,0,0
+96,Other,Fully Vaccinated,1,1,0,1,0,0,0,1,0,0,0,1,0,0
+27,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+63,Male,Partially Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+96,Male,Unvaccinated,0,0,1,1,0,1,0,0,0,0,0,1,0,0
+68,Other,Unvaccinated,0,0,1,0,0,1,0,0,1,0,0,1,0,0
+60,Male,Partially Vaccinated,1,1,1,1,0,0,1,0,0,1,0,1,0,1
+47,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18,Female,Unvaccinated,1,0,0,1,1,0,1,0,0,0,0,1,0,1
+3,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+34,Male,Partially Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+63,Female,Unvaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+48,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16,Male,Partially Vaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+43,Male,Partially Vaccinated,0,1,1,1,0,1,0,0,0,0,0,1,1,0
+91,Male,Fully Vaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+29,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+92,Female,Unvaccinated,0,0,0,1,0,0,0,0,0,1,0,1,0,0
+45,Male,Booster Dose,0,0,1,1,0,0,0,0,1,0,0,0,0,0
+5,Male,Fully Vaccinated,1,1,1,1,0,0,0,1,0,1,1,1,1,0
+98,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+36,Female,Unvaccinated,0,0,0,1,1,0,0,0,1,0,0,1,0,0
+23,Female,Unvaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+92,Female,Unvaccinated,0,0,0,0,0,1,0,0,0,0,1,1,1,0
+45,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+52,Female,Partially Vaccinated,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+94,Female,Booster Dose,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+98,Male,Fully Vaccinated,0,0,1,1,0,0,1,0,0,1,0,1,0,0
+59,Male,Partially Vaccinated,1,0,0,1,0,1,0,0,0,0,1,1,0,0
+96,Male,Fully Vaccinated,1,0,1,0,0,1,0,1,1,0,1,1,0,0
+62,Male,Unvaccinated,0,1,1,1,1,0,0,0,0,0,0,1,0,0
+84,Male,Fully Vaccinated,0,1,0,0,0,1,0,0,0,1,0,0,0,0
+31,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+86,Male,Fully Vaccinated,0,0,0,0,0,1,1,0,0,0,1,0,0,0
+32,Female,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+66,Male,Partially Vaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+17,Female,Fully Vaccinated,0,1,1,0,1,1,0,0,1,1,1,1,1,0
+24,Female,Booster Dose,1,0,0,1,0,0,0,0,1,0,0,0,0,0
+94,Female,Fully Vaccinated,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+53,Female,Fully Vaccinated,1,1,0,0,1,0,0,0,0,1,1,1,1,0
+57,Male,Booster Dose,1,1,0,0,0,0,0,1,0,0,0,0,0,0
+66,Female,Unvaccinated,0,1,0,1,0,1,1,0,0,0,0,1,0,0
+45,Male,Booster Dose,0,1,1,0,1,0,0,0,0,0,0,0,0,0
+23,Male,Unvaccinated,0,0,1,0,0,1,0,0,0,1,1,1,0,0
+31,Female,Fully Vaccinated,1,0,0,0,1,1,0,0,0,0,1,0,0,0
+46,Male,Booster Dose,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+85,Male,Partially Vaccinated,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+22,Female,Fully Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+65,Female,Partially Vaccinated,0,1,0,0,1,1,0,0,0,0,0,1,0,0
+26,Female,Booster Dose,0,1,0,0,0,0,0,0,1,1,0,0,0,0
+1,Male,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+89,Female,Fully Vaccinated,1,0,0,1,1,0,0,0,0,0,0,0,0,0
+16,Male,Fully Vaccinated,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+32,Female,Fully Vaccinated,0,0,0,1,0,0,1,0,1,0,0,0,0,0
+8,Female,Partially Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+42,Female,Partially Vaccinated,0,1,0,0,0,0,0,1,0,0,1,0,0,0
+47,Female,Fully Vaccinated,0,1,0,1,0,0,0,0,1,1,0,0,0,0
+38,Male,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+92,Female,Unvaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+41,Female,Unvaccinated,1,0,0,0,0,0,1,0,1,1,0,1,0,0
+25,Male,Unvaccinated,1,0,1,1,0,0,0,0,1,0,0,1,1,0
+98,Female,Booster Dose,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+49,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+24,Female,Fully Vaccinated,1,0,1,0,0,0,1,0,0,0,0,0,0,0
+23,Female,Partially Vaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+12,Female,Partially Vaccinated,0,1,0,0,0,1,0,0,0,1,0,0,0,0
+59,Male,Partially Vaccinated,1,0,0,1,1,0,0,0,0,1,0,1,1,0
+6,Female,Fully Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+56,Female,Fully Vaccinated,1,1,0,0,0,0,1,0,0,1,0,1,1,0
+35,Female,Booster Dose,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+44,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,1,1,0,0,0,0
+19,Male,Fully Vaccinated,0,0,0,0,0,0,0,1,1,0,0,0,0,0
+64,Female,Fully Vaccinated,0,0,1,0,0,0,1,1,0,1,0,1,0,0
+7,Male,Booster Dose,0,0,1,0,0,0,1,0,0,0,1,0,0,0
+15,Female,Fully Vaccinated,1,0,0,1,1,1,0,0,0,0,0,0,0,0
+13,Female,Unvaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+75,Female,Fully Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+86,Female,Fully Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+14,Female,Fully Vaccinated,1,0,0,0,0,1,0,1,0,0,0,0,0,0
+91,Male,Partially Vaccinated,1,1,0,0,0,1,1,0,1,0,0,1,0,1
+97,Male,Booster Dose,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+65,Male,Booster Dose,1,0,1,0,1,0,1,0,0,1,0,1,0,0
+31,Male,Partially Vaccinated,0,1,1,0,1,1,0,0,0,1,0,1,0,0
+86,Female,Booster Dose,0,0,1,0,0,1,0,0,0,1,0,0,0,0
+62,Female,Unvaccinated,0,0,1,0,1,1,0,1,0,0,0,1,0,0
+85,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+50,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+24,Other,Unvaccinated,0,0,0,1,0,0,0,1,0,0,0,0,0,0
+57,Female,Fully Vaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+62,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+61,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+21,Male,Unvaccinated,1,0,0,0,1,0,1,1,0,0,0,1,0,0
+57,Male,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+57,Male,Unvaccinated,0,0,0,0,0,0,0,1,1,0,0,1,1,0
+85,Female,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+48,Female,Unvaccinated,1,0,0,1,0,1,0,1,0,1,0,1,0,0
+51,Male,Booster Dose,0,0,0,1,0,1,0,0,0,0,1,0,0,0
+41,Male,Fully Vaccinated,0,1,0,0,1,1,0,0,0,1,0,0,0,0
+69,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+14,Male,Booster Dose,0,1,0,0,0,0,0,0,1,1,0,0,0,0
+53,Male,Unvaccinated,0,0,0,1,0,1,0,1,0,1,0,1,0,0
+59,Female,Partially Vaccinated,1,1,0,0,0,0,0,0,1,1,0,1,0,0
+96,Male,Unvaccinated,0,0,0,0,0,1,0,0,0,0,1,1,0,0
+7,Male,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+52,Female,Fully Vaccinated,0,0,0,1,1,1,1,0,0,1,1,1,0,0
+59,Female,Fully Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+4,Female,Partially Vaccinated,0,0,0,0,1,0,0,0,1,0,1,0,0,0
+67,Male,Fully Vaccinated,0,1,0,1,0,1,1,0,0,0,0,1,0,1
+5,Male,Unvaccinated,0,0,0,0,1,0,0,0,1,0,1,1,1,1
+95,Male,Fully Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+93,Female,Partially Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+46,Female,Unvaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+98,Male,Unvaccinated,0,0,1,0,1,0,0,0,0,0,1,1,0,0
+54,Female,Unvaccinated,0,0,1,0,1,0,0,1,0,0,0,1,0,0
+39,Male,Fully Vaccinated,0,1,0,0,1,0,0,1,0,0,0,0,0,0
+51,Male,Fully Vaccinated,0,1,0,1,0,1,1,1,0,0,0,1,0,0
+15,Male,Unvaccinated,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+12,Male,Fully Vaccinated,1,1,0,1,0,0,0,0,0,1,0,0,0,0
+29,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+18,Female,Booster Dose,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+16,Male,Partially Vaccinated,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+62,Female,Fully Vaccinated,0,0,0,1,1,1,0,0,0,0,0,0,0,0
+18,Male,Booster Dose,0,0,0,0,1,0,1,1,0,0,1,0,0,0
+91,Female,Fully Vaccinated,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+57,Female,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+54,Male,Unvaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+89,Female,Partially Vaccinated,1,1,0,0,0,1,0,0,0,1,0,1,1,0
+89,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+61,Male,Fully Vaccinated,0,0,0,1,0,0,1,1,0,0,0,0,0,0
+22,Male,Unvaccinated,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+8,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+11,Female,Fully Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+0,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+57,Female,Fully Vaccinated,1,0,0,1,0,1,0,0,1,0,0,1,1,1
+0,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+33,Female,Partially Vaccinated,1,0,0,0,0,0,0,0,1,0,0,0,0,0
+95,Female,Booster Dose,0,1,1,0,1,0,0,0,0,0,0,0,0,0
+47,Female,Unvaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+88,Male,Unvaccinated,0,0,0,0,0,1,0,0,0,0,1,1,0,0
+0,Male,Partially Vaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+15,Other,Unvaccinated,1,1,1,1,0,1,0,1,0,1,0,1,0,0
+60,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+63,Other,Unvaccinated,0,0,1,0,0,1,0,1,0,0,0,1,0,0
+62,Female,Fully Vaccinated,0,0,0,1,0,0,1,1,0,0,0,0,0,0
+68,Male,Unvaccinated,0,0,0,1,1,0,0,0,0,1,1,1,0,0
+21,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+92,Male,Unvaccinated,1,0,0,0,1,0,0,0,0,1,0,1,0,0
+66,Female,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+75,Male,Fully Vaccinated,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+25,Male,Unvaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+15,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+50,Male,Fully Vaccinated,1,0,0,0,0,1,1,0,0,0,0,0,0,0
+85,Female,Fully Vaccinated,1,1,1,0,1,1,0,1,0,0,0,1,1,0
+56,Male,Fully Vaccinated,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+28,Female,Fully Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+77,Male,Fully Vaccinated,1,1,1,0,0,1,0,0,0,1,0,1,1,0
+91,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+68,Male,Unvaccinated,1,0,1,1,0,1,0,0,0,0,0,1,0,0
+46,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+93,Other,Partially Vaccinated,1,0,0,0,1,0,0,1,0,0,0,1,1,1
+61,Female,Fully Vaccinated,0,0,0,1,1,1,0,0,0,0,1,1,0,0
+68,Male,Unvaccinated,0,1,0,1,0,0,0,0,0,0,0,1,0,0
+75,Female,Fully Vaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+15,Male,Booster Dose,0,0,1,0,0,1,1,0,1,0,0,0,0,0
+89,Male,Partially Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+89,Other,Partially Vaccinated,0,0,1,0,1,0,0,0,1,0,0,1,0,0
+47,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+84,Other,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+38,Male,Partially Vaccinated,1,1,0,0,1,0,0,1,1,1,1,1,1,0
+99,Female,Partially Vaccinated,0,0,1,0,1,1,1,1,0,0,0,1,1,0
+32,Male,Booster Dose,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+93,Male,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+22,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9,Male,Unvaccinated,0,0,1,1,0,1,0,0,0,0,1,1,1,1
+68,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,1,1,0,0,0,0
+99,Female,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+33,Male,Partially Vaccinated,0,1,0,1,1,0,0,0,0,1,0,1,0,0
+51,Female,Booster Dose,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+94,Female,Unvaccinated,1,0,0,0,1,0,0,0,0,0,0,1,1,0
+9,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+18,Female,Partially Vaccinated,1,1,0,0,1,0,0,0,0,0,1,1,0,0
+57,Female,Fully Vaccinated,1,1,0,1,0,0,0,0,0,0,1,1,0,0
+95,Male,Fully Vaccinated,0,1,0,0,1,0,0,0,1,0,0,0,0,0
+0,Female,Unvaccinated,0,1,1,1,1,0,0,0,0,1,0,1,0,0
+68,Other,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+3,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15,Female,Booster Dose,0,1,1,0,1,0,0,1,0,0,0,0,0,0
+23,Male,Booster Dose,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+79,Female,Partially Vaccinated,0,0,1,0,0,0,1,0,1,1,0,1,0,1
+1,Female,Partially Vaccinated,0,0,0,0,0,0,1,0,1,0,0,0,0,0
+91,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+31,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+90,Female,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+83,Male,Partially Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+23,Female,Partially Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+11,Male,Unvaccinated,1,1,1,0,0,0,0,1,0,0,1,1,0,1
+49,Female,Fully Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+34,Female,Unvaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+32,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+32,Male,Unvaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+60,Female,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+50,Female,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+42,Male,Booster Dose,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+11,Male,Fully Vaccinated,0,1,1,0,0,1,0,0,0,0,1,0,0,0
+66,Male,Partially Vaccinated,0,0,1,0,0,1,1,0,0,0,1,1,0,1
+64,Female,Unvaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+32,Female,Booster Dose,0,1,0,1,1,0,1,0,0,0,0,0,0,0
+39,Male,Partially Vaccinated,0,1,0,0,0,1,0,0,0,0,1,0,0,0
+73,Female,Unvaccinated,0,0,0,1,0,0,1,0,0,0,0,1,0,0
+42,Male,Booster Dose,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+43,Male,Fully Vaccinated,0,0,1,0,0,1,0,1,0,1,0,0,0,0
+28,Other,Booster Dose,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+12,Female,Booster Dose,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+11,Female,Booster Dose,1,1,0,0,0,1,1,0,0,0,0,0,0,0
+94,Male,Unvaccinated,1,0,0,0,1,1,0,0,0,0,0,1,1,0
+45,Female,Unvaccinated,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+1,Female,Fully Vaccinated,1,0,1,0,0,1,0,0,1,1,0,1,0,0
+34,Male,Fully Vaccinated,0,0,0,0,0,1,1,0,1,0,0,0,0,0
+86,Female,Fully Vaccinated,1,1,0,1,1,0,0,1,0,0,0,1,0,0
+80,Female,Partially Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+89,Female,Partially Vaccinated,1,0,0,0,0,1,0,0,1,0,0,1,1,1
+7,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+92,Female,Unvaccinated,1,1,0,0,0,0,0,0,0,1,0,1,1,0
+25,Female,Partially Vaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+73,Male,Fully Vaccinated,0,1,1,1,0,0,0,0,0,0,0,0,0,0
+89,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+33,Female,Unvaccinated,0,1,0,0,0,1,0,0,0,0,1,1,1,0
+6,Male,Fully Vaccinated,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+67,Male,Fully Vaccinated,1,1,0,1,0,1,0,0,0,1,0,1,0,0
+57,Female,Partially Vaccinated,0,0,1,1,0,1,0,0,0,0,0,1,0,0
+74,Female,Unvaccinated,0,1,0,0,0,0,0,0,0,0,1,1,0,0
+28,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+35,Male,Partially Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+88,Other,Booster Dose,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+20,Male,Unvaccinated,1,0,0,1,0,0,1,0,0,0,1,1,0,1
+35,Male,Fully Vaccinated,0,1,0,0,1,0,0,1,0,0,0,0,0,0
+9,Female,Unvaccinated,1,0,1,0,0,0,1,0,0,0,0,1,0,0
+72,Male,Partially Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+23,Male,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+63,Male,Partially Vaccinated,0,0,0,1,0,1,1,0,0,1,0,1,1,0
+98,Male,Fully Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+48,Male,Unvaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+98,Other,Partially Vaccinated,0,1,0,0,0,1,0,1,0,0,0,1,1,0
+35,Male,Fully Vaccinated,1,0,1,1,0,0,0,0,0,0,1,0,0,0
+81,Female,Partially Vaccinated,1,0,0,0,0,1,0,1,1,0,1,1,0,0
+95,Female,Booster Dose,0,0,1,0,0,1,0,0,0,0,1,0,0,0
+23,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+22,Male,Partially Vaccinated,0,0,0,1,1,1,1,1,0,0,0,1,1,0
+61,Female,Unvaccinated,0,1,0,1,1,0,0,0,0,0,0,1,0,0
+95,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+36,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+11,Female,Partially Vaccinated,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+54,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+12,Male,Partially Vaccinated,0,1,1,0,1,0,0,0,1,0,0,1,1,0
+22,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+88,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+98,Female,Booster Dose,0,1,1,0,1,0,0,0,0,0,0,0,0,0
+29,Other,Fully Vaccinated,0,1,0,1,0,0,0,1,0,0,0,0,0,0
+16,Male,Partially Vaccinated,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+61,Other,Partially Vaccinated,0,0,1,0,0,1,0,0,0,1,0,1,0,0
+83,Male,Partially Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+88,Male,Booster Dose,1,0,1,0,0,0,1,0,0,0,0,0,0,0
+85,Male,Partially Vaccinated,1,1,0,1,0,0,0,0,0,0,0,1,0,0
+12,Male,Unvaccinated,1,1,1,1,0,0,0,0,1,0,1,1,1,1
+58,Female,Fully Vaccinated,1,0,0,0,0,1,0,1,0,0,1,1,0,1
+18,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+48,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+99,Female,Fully Vaccinated,0,0,1,0,1,1,0,1,0,0,0,1,0,0
+11,Female,Partially Vaccinated,0,1,0,1,1,0,1,0,1,1,0,1,0,0
+60,Female,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18,Female,Partially Vaccinated,0,1,1,0,0,0,0,1,0,0,0,0,0,0
+75,Female,Unvaccinated,0,1,0,0,1,1,0,0,0,1,0,1,0,0
+8,Male,Fully Vaccinated,0,0,0,0,1,0,0,1,0,0,0,0,0,0
+70,Male,Fully Vaccinated,0,1,1,1,0,0,0,0,0,1,0,1,1,0
+27,Female,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+77,Male,Fully Vaccinated,0,1,0,1,0,1,0,0,0,0,0,0,0,0
+94,Female,Partially Vaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+51,Male,Partially Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+82,Male,Booster Dose,0,0,1,0,0,0,0,0,1,1,0,0,0,0
+15,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+68,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+98,Female,Fully Vaccinated,0,1,0,1,1,0,0,1,0,1,0,1,0,0
+11,Female,Booster Dose,0,1,0,1,0,0,0,0,0,0,1,0,0,0
+24,Male,Fully Vaccinated,0,0,0,0,1,1,1,0,0,0,0,0,0,0
+51,Male,Fully Vaccinated,0,1,1,1,0,1,0,0,0,0,0,1,1,0
+84,Female,Fully Vaccinated,0,0,1,0,0,1,0,0,1,0,0,0,0,0
+99,Female,Booster Dose,0,1,1,0,0,1,0,0,0,0,0,0,0,0
+52,Male,Booster Dose,0,1,1,0,0,1,0,0,0,0,0,0,0,0
+22,Female,Unvaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+15,Male,Partially Vaccinated,0,1,1,1,0,1,0,0,1,0,0,1,0,0
+56,Male,Fully Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+38,Male,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,1,0,0,0
+52,Female,Fully Vaccinated,1,0,1,1,0,0,0,0,0,1,0,1,1,0
+41,Female,Fully Vaccinated,0,1,0,1,0,0,1,0,0,0,0,0,0,0
+57,Male,Booster Dose,1,0,0,1,1,0,0,0,0,0,0,0,0,0
+38,Female,Unvaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+13,Male,Partially Vaccinated,1,1,1,0,1,0,0,0,0,0,0,1,0,0
+94,Male,Partially Vaccinated,0,1,0,0,1,0,0,1,0,0,0,1,1,0
+4,Male,Partially Vaccinated,0,0,0,1,0,1,0,0,1,1,0,1,0,0
+34,Male,Unvaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+86,Male,Unvaccinated,0,1,1,1,1,0,0,0,0,0,0,1,0,0
+92,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+74,Female,Booster Dose,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+17,Female,Fully Vaccinated,1,0,0,1,1,1,0,0,0,1,0,1,0,0
+75,Male,Fully Vaccinated,0,0,1,0,0,1,0,0,0,1,1,1,0,1
+8,Male,Partially Vaccinated,1,0,0,1,0,1,0,0,0,0,0,0,0,0
+73,Male,Fully Vaccinated,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+57,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+16,Female,Fully Vaccinated,0,0,0,0,0,1,0,1,0,0,1,0,0,0
+6,Male,Partially Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+45,Female,Unvaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+12,Female,Unvaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+39,Male,Fully Vaccinated,0,1,1,1,0,0,0,0,0,0,1,0,0,0
+41,Female,Fully Vaccinated,0,1,1,1,0,0,0,0,0,0,0,0,0,0
+8,Female,Booster Dose,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+49,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+26,Female,Fully Vaccinated,1,0,0,1,1,0,0,0,0,1,1,1,0,0
+65,Male,Booster Dose,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+4,Male,Partially Vaccinated,1,0,0,0,1,0,0,1,0,0,0,0,0,0
+28,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+36,Male,Booster Dose,0,0,1,1,0,0,0,1,0,0,0,0,0,0
+37,Female,Partially Vaccinated,1,0,0,0,0,0,0,0,1,0,0,0,0,0
+82,Male,Booster Dose,1,1,0,0,0,0,0,0,0,1,0,0,0,0
+7,Female,Booster Dose,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+64,Female,Fully Vaccinated,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+85,Male,Fully Vaccinated,0,0,0,0,1,1,0,1,0,1,0,1,1,0
+16,Male,Fully Vaccinated,0,0,0,0,1,1,1,0,0,0,1,0,0,0
+70,Female,Fully Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+88,Female,Partially Vaccinated,0,1,0,1,0,0,0,0,0,0,1,1,1,0
+44,Female,Unvaccinated,0,1,0,1,0,1,0,0,1,0,0,1,0,1
+3,Male,Partially Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+35,Male,Fully Vaccinated,1,1,0,1,0,1,0,0,0,0,1,1,0,0
+69,Male,Unvaccinated,0,0,0,0,0,0,1,0,1,0,0,1,0,0
+30,Male,Unvaccinated,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+18,Female,Unvaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+60,Female,Fully Vaccinated,0,1,0,0,1,1,0,0,0,0,0,0,0,0
+53,Female,Booster Dose,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+38,Female,Booster Dose,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+90,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+73,Male,Booster Dose,0,0,0,0,1,0,0,1,0,1,0,0,0,0
+89,Male,Fully Vaccinated,0,0,0,1,1,0,1,0,1,0,0,1,1,0
+18,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+38,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+66,Female,Unvaccinated,1,0,1,0,1,1,0,0,0,0,0,1,1,0
+44,Female,Booster Dose,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+12,Male,Partially Vaccinated,0,0,0,0,0,1,1,1,0,0,0,0,0,0
+91,Female,Partially Vaccinated,0,1,1,1,1,1,0,0,0,0,0,1,0,0
+57,Female,Fully Vaccinated,1,0,0,1,0,1,0,0,0,0,0,0,0,0
+19,Female,Partially Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+91,Female,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+71,Female,Fully Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+60,Male,Unvaccinated,1,0,0,0,0,1,0,0,0,0,0,1,0,1
+38,Male,Fully Vaccinated,0,0,0,1,1,1,0,0,1,0,0,0,0,0
+0,Female,Fully Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+2,Female,Fully Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+76,Male,Fully Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+91,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+61,Female,Fully Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+62,Female,Fully Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+24,Female,Fully Vaccinated,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+55,Female,Fully Vaccinated,0,0,1,1,1,1,0,0,1,1,0,1,0,0
+32,Male,Booster Dose,0,1,1,0,0,0,0,0,1,0,0,0,0,0
+37,Male,Unvaccinated,1,1,1,1,1,1,0,0,0,0,0,1,0,0
+5,Female,Partially Vaccinated,1,0,0,0,1,0,0,0,0,1,0,0,0,0
+57,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+43,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+44,Male,Unvaccinated,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+31,Female,Fully Vaccinated,0,0,0,0,0,1,0,1,0,0,0,0,0,0
+44,Female,Unvaccinated,0,1,0,0,0,1,0,0,1,0,0,1,0,1
+60,Male,Partially Vaccinated,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+46,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20,Female,Fully Vaccinated,1,0,1,0,0,0,1,0,0,0,0,0,0,0
+79,Other,Partially Vaccinated,1,0,0,0,1,0,1,0,0,0,0,1,0,0
+84,Male,Booster Dose,0,0,1,1,0,0,0,1,1,0,0,1,0,0
+74,Female,Booster Dose,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+35,Male,Partially Vaccinated,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+98,Female,Partially Vaccinated,0,0,1,0,0,1,0,0,0,0,1,1,0,0
+18,Male,Fully Vaccinated,0,1,1,0,0,1,0,0,0,0,0,0,0,0
+19,Male,Fully Vaccinated,0,0,0,0,0,1,1,0,0,1,0,0,0,0
+56,Female,Fully Vaccinated,1,0,0,0,0,1,1,1,1,0,0,1,1,1
+17,Female,Booster Dose,1,1,0,0,0,0,0,0,1,0,0,0,0,0
+46,Male,Fully Vaccinated,0,1,1,1,1,0,0,0,0,1,0,1,0,1
+48,Female,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+13,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14,Female,Partially Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+30,Male,Fully Vaccinated,1,1,1,0,0,0,0,0,0,1,0,0,0,0
+0,Female,Fully Vaccinated,0,0,1,1,0,0,1,0,0,0,0,0,0,0
+53,Male,Unvaccinated,1,0,0,0,1,0,0,0,0,0,0,1,1,0
+2,Female,Fully Vaccinated,1,0,0,0,0,0,0,1,1,0,0,0,0,0
+15,Female,Partially Vaccinated,0,1,0,1,1,1,1,0,1,0,0,1,0,0
+86,Female,Partially Vaccinated,1,0,0,1,1,1,0,0,0,0,0,1,1,1
+56,Female,Fully Vaccinated,0,0,0,1,0,0,1,1,0,0,0,0,0,0
+74,Female,Partially Vaccinated,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+11,Male,Fully Vaccinated,0,1,0,1,0,0,0,0,0,1,0,0,0,0
+73,Male,Unvaccinated,0,1,0,0,0,0,0,0,0,0,1,1,1,0
+95,Female,Fully Vaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+15,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+71,Female,Fully Vaccinated,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+75,Other,Fully Vaccinated,0,1,1,0,0,0,1,0,0,0,0,0,0,0
+23,Male,Booster Dose,0,0,0,1,0,0,0,1,0,0,0,0,0,0
+27,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7,Male,Unvaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+91,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+35,Male,Unvaccinated,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+89,Male,Booster Dose,0,0,1,1,1,1,0,0,0,0,0,1,0,0
+7,Female,Partially Vaccinated,1,0,1,0,0,0,1,0,0,1,0,1,0,0
+57,Female,Fully Vaccinated,0,1,0,0,0,1,0,0,1,0,0,0,0,0
+59,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+49,Female,Partially Vaccinated,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+27,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+91,Female,Unvaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+40,Male,Fully Vaccinated,1,0,1,0,0,0,0,1,0,0,0,0,0,0
+99,Female,Unvaccinated,1,1,0,0,0,0,0,0,0,0,1,1,1,0
+63,Female,Booster Dose,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+26,Female,Booster Dose,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+62,Female,Partially Vaccinated,0,1,0,1,1,1,0,0,0,0,0,1,0,0
+16,Male,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+72,Female,Fully Vaccinated,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+32,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+83,Female,Booster Dose,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+76,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+91,Female,Partially Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+28,Female,Fully Vaccinated,1,0,1,0,1,0,0,0,0,0,1,0,0,0
+12,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+45,Male,Booster Dose,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+34,Female,Booster Dose,0,1,1,0,0,0,1,1,1,0,0,1,0,0
+5,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+81,Male,Unvaccinated,0,0,0,0,1,1,0,1,0,0,0,1,1,0
+68,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+46,Male,Booster Dose,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+24,Female,Unvaccinated,0,1,1,1,0,1,0,0,0,0,1,1,0,0
+65,Female,Fully Vaccinated,0,1,1,0,0,1,0,1,1,0,0,1,0,0
+9,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+55,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+29,Male,Booster Dose,0,1,0,1,0,1,0,0,0,1,0,0,0,0
+4,Male,Unvaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+32,Male,Booster Dose,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+64,Male,Partially Vaccinated,1,1,1,1,0,0,0,0,0,0,0,1,0,0
+17,Male,Fully Vaccinated,0,1,1,0,0,1,0,0,0,0,0,0,0,0
+95,Female,Partially Vaccinated,0,1,0,0,0,0,0,0,0,1,1,1,0,1
+48,Male,Fully Vaccinated,0,0,1,0,1,0,1,0,1,0,0,0,0,0
+10,Female,Fully Vaccinated,1,0,0,0,0,1,0,0,1,0,1,0,0,0
+84,Female,Unvaccinated,0,0,1,0,1,0,0,1,0,0,0,1,1,0
+25,Female,Fully Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+62,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+88,Female,Unvaccinated,1,0,0,1,1,0,0,0,0,0,0,1,1,0
+85,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,1,0,1,0,0,0
+58,Female,Partially Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+26,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+48,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+76,Female,Fully Vaccinated,0,0,1,1,0,1,0,0,0,0,0,0,0,0
+32,Male,Unvaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+97,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+98,Male,Fully Vaccinated,0,1,1,1,1,1,0,0,0,0,1,1,1,0
+0,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+20,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+54,Female,Fully Vaccinated,0,0,1,0,0,1,0,0,0,1,0,0,0,0
+5,Female,Unvaccinated,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+91,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+80,Male,Unvaccinated,0,0,0,0,0,1,0,1,0,0,0,1,1,0
+68,Female,Unvaccinated,0,0,0,0,1,0,1,0,0,0,0,1,0,0
+94,Female,Partially Vaccinated,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+4,Other,Partially Vaccinated,1,0,0,1,0,0,0,0,1,0,0,0,0,0
+2,Male,Partially Vaccinated,1,0,0,0,0,1,0,0,0,0,1,0,0,0
+52,Female,Unvaccinated,0,1,0,0,0,0,1,0,0,0,0,1,0,1
+22,Female,Unvaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+52,Female,Unvaccinated,1,0,0,1,0,0,0,0,0,0,0,1,0,0
+36,Female,Unvaccinated,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+73,Female,Partially Vaccinated,0,0,1,1,1,0,0,0,0,0,0,1,1,0
+73,Male,Fully Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+82,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16,Female,Partially Vaccinated,0,0,1,1,1,1,1,0,0,0,1,1,0,0
+84,Female,Partially Vaccinated,0,1,0,1,0,1,0,1,0,0,0,1,0,0
+77,Female,Unvaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+72,Male,Unvaccinated,0,1,0,0,0,0,0,0,0,0,1,1,0,0
+0,Male,Fully Vaccinated,1,1,1,0,0,0,0,0,0,0,1,0,0,0
+50,Other,Fully Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+44,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+76,Female,Unvaccinated,0,0,1,0,1,0,0,0,0,0,0,1,1,0
+3,Male,Booster Dose,1,1,0,0,0,0,1,0,0,0,0,0,0,0
+61,Female,Partially Vaccinated,0,0,1,0,1,0,0,0,0,1,1,1,1,0
+64,Female,Partially Vaccinated,0,1,0,0,1,1,0,0,0,0,1,1,1,0
+31,Female,Booster Dose,0,0,0,0,0,0,1,1,1,0,0,0,0,0
+33,Male,Fully Vaccinated,0,1,1,0,0,0,1,0,0,1,0,0,0,0
+91,Female,Partially Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+94,Female,Fully Vaccinated,1,0,0,0,1,0,0,0,1,0,1,1,1,0
+71,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+38,Female,Unvaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+25,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+33,Female,Unvaccinated,0,0,1,1,1,0,0,0,0,0,0,1,0,1
+53,Female,Partially Vaccinated,1,0,0,1,0,0,1,1,1,0,1,1,1,0
+2,Male,Booster Dose,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+49,Male,Booster Dose,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+11,Male,Partially Vaccinated,1,0,1,0,1,1,0,1,0,0,0,1,1,1
+64,Male,Fully Vaccinated,0,0,1,0,0,0,1,0,0,1,0,0,0,0
+53,Female,Fully Vaccinated,1,1,0,0,1,1,0,0,0,0,0,1,0,0
+4,Male,Booster Dose,0,1,1,0,1,0,0,1,0,0,0,0,0,0
+93,Female,Partially Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+93,Other,Unvaccinated,0,1,1,0,0,0,0,0,0,0,0,1,0,0
+56,Female,Unvaccinated,0,0,1,0,0,0,0,0,0,0,1,1,0,0
+16,Female,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+46,Female,Partially Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+22,Female,Fully Vaccinated,0,1,0,1,0,0,0,0,0,0,1,0,0,0
+78,Male,Fully Vaccinated,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+84,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+13,Female,Fully Vaccinated,0,1,1,0,1,0,0,0,0,0,0,0,0,0
+65,Female,Unvaccinated,0,0,0,0,1,1,0,0,0,0,0,1,1,0
+74,Female,Booster Dose,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+50,Female,Booster Dose,0,0,1,1,0,1,0,0,0,0,0,0,0,0
+37,Female,Booster Dose,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+63,Male,Booster Dose,1,1,1,0,1,0,1,0,0,0,0,1,1,0
+97,Other,Unvaccinated,1,0,0,0,1,1,0,0,0,0,0,1,0,0
+37,Female,Unvaccinated,0,0,1,0,1,1,0,0,0,0,1,1,0,0
+49,Male,Fully Vaccinated,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+97,Female,Booster Dose,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+81,Male,Unvaccinated,0,1,0,0,0,1,0,1,0,1,0,1,0,0
+29,Female,Unvaccinated,0,1,1,0,0,0,1,0,0,0,0,1,1,1
+78,Female,Fully Vaccinated,0,1,0,0,1,0,1,0,0,0,1,1,1,0
+90,Male,Unvaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+50,Female,Partially Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+62,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+97,Male,Partially Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+51,Male,Unvaccinated,0,1,0,1,0,0,0,0,0,0,0,1,0,0
+37,Female,Fully Vaccinated,0,0,1,1,1,0,1,0,0,0,0,0,0,0
+96,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+87,Male,Booster Dose,0,1,1,0,0,0,1,0,0,0,0,0,0,0
+78,Male,Partially Vaccinated,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+29,Male,Unvaccinated,1,0,0,1,0,1,0,0,0,1,0,1,0,0
+50,Female,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+80,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,1,0,0,0,0,0
+4,Male,Partially Vaccinated,1,0,0,0,0,0,1,1,0,0,0,0,0,0
+28,Female,Fully Vaccinated,1,1,0,0,0,1,0,0,0,1,0,0,0,0
+3,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9,Female,Partially Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+55,Other,Unvaccinated,0,0,0,1,1,0,0,0,0,0,0,1,0,0
+16,Male,Partially Vaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+73,Female,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+16,Female,Fully Vaccinated,1,1,1,0,1,0,0,1,0,0,0,1,0,0
+83,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+87,Male,Booster Dose,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+68,Male,Unvaccinated,1,0,0,1,1,0,0,1,0,0,0,1,0,0
+33,Female,Unvaccinated,0,1,0,0,0,0,0,0,1,1,1,1,0,1
+5,Other,Unvaccinated,1,1,1,0,0,1,0,0,1,1,1,1,0,1
+52,Female,Unvaccinated,0,1,1,0,0,0,1,0,0,0,0,1,0,1
+65,Female,Fully Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+76,Female,Fully Vaccinated,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+42,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+74,Female,Partially Vaccinated,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+22,Male,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+54,Female,Fully Vaccinated,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+79,Female,Unvaccinated,0,0,0,1,1,1,0,0,1,1,0,1,0,0
+94,Male,Fully Vaccinated,1,0,0,0,0,1,1,0,1,0,0,1,1,0
+74,Female,Booster Dose,1,1,0,0,0,0,0,0,1,0,1,1,1,0
+15,Male,Partially Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+7,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+3,Female,Fully Vaccinated,0,1,0,1,0,1,0,0,1,0,0,0,0,0
+3,Male,Unvaccinated,0,0,0,0,1,0,0,1,0,0,0,0,0,0
+55,Male,Fully Vaccinated,1,0,1,0,1,1,0,0,0,0,0,1,0,0
+24,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+66,Female,Unvaccinated,1,1,1,0,1,0,0,0,0,0,0,1,1,1
+95,Male,Fully Vaccinated,0,0,1,1,0,1,1,0,0,0,1,1,0,0
+66,Female,Booster Dose,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+26,Male,Partially Vaccinated,0,0,0,1,1,0,0,1,1,1,0,1,0,0
+92,Other,Partially Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+31,Female,Booster Dose,1,0,1,0,0,0,1,0,0,0,0,0,0,0
+49,Female,Fully Vaccinated,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+60,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+50,Female,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+18,Female,Booster Dose,0,1,0,0,0,1,0,0,0,1,0,0,0,0
+20,Male,Unvaccinated,0,1,0,1,0,0,0,0,0,0,1,1,1,0
+4,Male,Fully Vaccinated,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+81,Male,Unvaccinated,0,0,0,0,0,1,0,0,0,0,1,1,0,0
+91,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+41,Male,Partially Vaccinated,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+60,Female,Partially Vaccinated,0,1,0,0,1,0,1,0,0,0,0,1,1,0
+21,Other,Partially Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+20,Male,Unvaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+69,Female,Fully Vaccinated,1,0,0,1,1,1,0,0,0,1,0,1,1,0
+0,Male,Booster Dose,1,0,0,0,0,0,0,0,0,0,1,0,0,0
+4,Female,Booster Dose,0,1,0,0,0,1,0,1,0,0,0,0,0,0
+11,Female,Unvaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+89,Female,Fully Vaccinated,1,1,0,1,1,1,0,1,0,0,0,1,0,0
+45,Other,Fully Vaccinated,0,1,0,1,0,0,0,1,0,0,1,0,0,0
+33,Male,Partially Vaccinated,1,0,0,1,1,0,0,1,0,0,1,1,0,0
+48,Female,Unvaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+77,Female,Fully Vaccinated,0,1,0,1,1,0,0,1,0,0,0,1,1,0
+89,Male,Booster Dose,1,1,0,0,1,1,0,0,0,0,0,1,1,0
+44,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,1,0,0,0
+26,Male,Partially Vaccinated,0,0,1,0,0,1,0,0,0,1,0,0,0,0
+72,Female,Fully Vaccinated,1,0,0,1,0,1,0,0,0,1,0,1,0,0
+25,Male,Unvaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+46,Male,Fully Vaccinated,1,0,0,1,0,1,0,0,0,0,0,0,0,0
+85,Female,Fully Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+55,Female,Unvaccinated,1,1,1,0,0,0,0,0,0,1,0,1,1,0
+93,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+62,Male,Partially Vaccinated,0,1,0,1,1,0,0,0,0,0,0,1,0,0
+47,Female,Booster Dose,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+60,Male,Partially Vaccinated,1,0,1,1,0,0,0,0,0,0,0,1,0,1
+80,Male,Unvaccinated,0,0,1,0,1,1,1,0,0,1,0,1,1,0
+25,Female,Partially Vaccinated,0,0,0,1,0,0,0,1,0,1,0,0,0,0
+35,Female,Partially Vaccinated,0,1,1,0,0,1,1,0,0,1,0,1,0,0
+0,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+98,Female,Fully Vaccinated,1,0,1,0,0,0,0,1,0,0,0,0,0,0
+51,Female,Fully Vaccinated,0,1,0,0,1,0,0,0,1,0,1,1,0,1
+78,Female,Unvaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+46,Male,Fully Vaccinated,0,1,1,1,1,1,0,1,0,0,0,1,0,0
+55,Male,Unvaccinated,1,0,0,0,0,1,0,0,1,0,0,1,1,0
+85,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13,Female,Unvaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+89,Male,Booster Dose,0,1,0,0,0,1,0,0,0,1,1,1,1,0
+27,Female,Fully Vaccinated,0,0,1,0,1,0,0,0,1,1,0,0,0,0
+86,Male,Fully Vaccinated,0,1,0,1,1,0,0,0,0,0,1,1,0,0
+77,Male,Partially Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+87,Female,Unvaccinated,0,0,1,1,0,0,0,0,0,0,0,1,0,1
+1,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+25,Male,Booster Dose,1,0,0,1,0,0,0,1,0,0,0,0,0,0
+13,Female,Booster Dose,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+58,Male,Unvaccinated,0,1,0,0,1,0,0,0,0,0,1,1,0,0
+55,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+6,Female,Fully Vaccinated,0,1,0,0,1,0,0,1,0,0,1,0,0,0
+2,Male,Fully Vaccinated,0,0,1,1,1,0,0,0,0,0,1,0,0,0
+22,Female,Unvaccinated,0,0,1,0,0,1,0,0,1,0,0,1,1,0
+17,Female,Partially Vaccinated,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+37,Male,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+98,Male,Fully Vaccinated,0,0,1,0,1,1,0,0,0,1,0,1,0,0
+14,Male,Fully Vaccinated,1,1,0,1,1,1,0,0,0,1,0,1,0,0
+63,Female,Fully Vaccinated,0,0,0,0,1,1,1,0,0,0,1,1,0,0
+88,Male,Booster Dose,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+27,Female,Fully Vaccinated,1,0,0,0,0,1,1,0,0,0,0,0,0,0
+73,Female,Booster Dose,0,0,1,0,1,0,0,1,0,0,0,0,0,0
+38,Female,Fully Vaccinated,0,1,1,0,0,1,0,0,0,0,0,0,0,0
+56,Male,Unvaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+16,Male,Booster Dose,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+85,Female,Fully Vaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+89,Male,Unvaccinated,1,0,0,1,1,0,0,0,0,0,0,1,1,0
+43,Male,Partially Vaccinated,0,1,1,1,0,0,0,0,0,0,0,0,0,0
+24,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+16,Male,Fully Vaccinated,1,1,1,1,0,0,0,0,0,0,0,0,0,0
+12,Female,Booster Dose,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+83,Male,Booster Dose,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+24,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+67,Male,Unvaccinated,1,1,0,0,0,0,0,1,0,0,0,1,0,0
+9,Female,Partially Vaccinated,0,0,0,1,1,1,0,0,0,0,0,0,0,0
+66,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17,Male,Booster Dose,0,1,1,0,0,0,0,0,0,0,1,0,0,0
+99,Female,Partially Vaccinated,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+85,Female,Fully Vaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+33,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+7,Female,Partially Vaccinated,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+39,Male,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+82,Male,Booster Dose,0,1,1,0,1,0,1,0,0,0,0,1,0,0
+41,Male,Booster Dose,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+40,Male,Partially Vaccinated,1,1,0,0,1,0,1,0,0,0,0,1,1,0
+5,Other,Fully Vaccinated,1,1,0,0,0,0,1,0,1,0,0,0,0,0
+51,Male,Booster Dose,1,1,0,0,0,0,0,1,0,0,0,0,0,0
+25,Male,Unvaccinated,0,0,0,1,0,1,0,1,0,0,0,1,0,0
+63,Female,Partially Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+97,Female,Unvaccinated,0,0,0,1,0,0,0,0,0,1,0,1,0,1
+58,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+55,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+58,Male,Partially Vaccinated,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+69,Female,Partially Vaccinated,0,0,0,1,1,1,0,0,1,0,0,1,0,0
+32,Male,Fully Vaccinated,1,1,1,0,0,0,0,0,1,0,0,0,0,0
+52,Male,Booster Dose,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+21,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+69,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+69,Female,Unvaccinated,0,0,0,1,1,0,0,0,1,0,0,1,0,0
+3,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+93,Female,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+74,Female,Partially Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+61,Male,Unvaccinated,0,1,0,0,0,0,0,0,1,0,1,1,0,0
+61,Female,Fully Vaccinated,0,0,1,0,0,1,1,0,0,0,0,0,0,0
+93,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+94,Female,Partially Vaccinated,0,1,1,0,1,0,0,1,0,0,0,1,0,0
+23,Male,Booster Dose,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+54,Other,Booster Dose,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+8,Male,Partially Vaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+2,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+30,Male,Fully Vaccinated,0,0,1,0,1,0,0,0,0,0,1,0,0,0
+39,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+35,Female,Unvaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+23,Male,Unvaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+94,Male,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+5,Female,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+65,Male,Fully Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+83,Male,Unvaccinated,1,0,1,1,0,0,0,0,0,0,1,1,0,0
+91,Male,Unvaccinated,1,0,0,0,1,0,0,1,0,0,0,1,0,0
+74,Male,Fully Vaccinated,1,0,0,0,0,1,0,0,0,0,1,0,0,0
+3,Male,Unvaccinated,1,1,1,0,0,0,0,0,0,0,0,1,0,1
+78,Female,Fully Vaccinated,1,0,1,0,1,0,0,0,1,0,0,1,1,0
+5,Male,Unvaccinated,0,1,1,0,1,1,0,0,0,0,0,1,0,0
+93,Male,Unvaccinated,0,0,0,0,1,0,0,0,0,0,1,1,0,0
+50,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+61,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,1,0,1,0,0,0
+56,Male,Partially Vaccinated,0,1,0,1,0,1,1,0,0,0,0,1,0,0
+65,Female,Partially Vaccinated,1,0,0,0,0,1,0,0,0,0,1,1,1,0
+78,Male,Fully Vaccinated,0,0,1,1,0,1,1,0,1,0,0,1,0,0
+74,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+7,Female,Fully Vaccinated,0,0,0,1,0,0,0,1,1,0,0,0,0,0
+25,Male,Booster Dose,1,1,0,0,1,1,0,0,0,0,1,1,0,0
+50,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+44,Male,Booster Dose,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+43,Female,Unvaccinated,0,1,0,1,0,0,0,0,1,0,0,1,1,0
+4,Male,Fully Vaccinated,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+69,Female,Partially Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+25,Female,Booster Dose,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+67,Female,Partially Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+18,Male,Partially Vaccinated,0,0,1,1,1,0,0,1,1,0,0,1,0,0
+83,Female,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+96,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+19,Female,Fully Vaccinated,0,0,1,1,0,1,1,0,0,0,1,1,1,0
+11,Female,Partially Vaccinated,0,1,0,0,1,0,0,0,1,0,0,0,0,0
+46,Female,Fully Vaccinated,0,1,1,0,0,1,0,0,0,0,0,0,0,0
+0,Male,Unvaccinated,1,0,1,1,0,1,1,0,0,0,0,1,0,0
+89,Male,Unvaccinated,0,0,0,0,1,0,0,0,0,1,0,1,0,0
+13,Female,Fully Vaccinated,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+63,Male,Partially Vaccinated,1,0,1,1,1,0,0,0,0,0,0,1,0,1
+37,Other,Booster Dose,0,1,0,1,0,1,0,0,0,0,0,0,0,0
+36,Female,Booster Dose,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+10,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+99,Male,Fully Vaccinated,1,0,0,1,1,0,0,0,0,0,1,1,1,0
+76,Female,Fully Vaccinated,1,1,0,0,1,0,0,0,0,0,0,0,0,0
+2,Female,Unvaccinated,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+32,Female,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+5,Female,Partially Vaccinated,0,1,1,1,0,0,0,0,0,0,0,0,0,0
+49,Male,Partially Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+9,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+4,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,0,1,1,0,0,0
+22,Male,Booster Dose,0,0,0,0,0,0,0,0,1,0,1,0,0,0
+9,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,1,0,0,0,0,0
+43,Female,Fully Vaccinated,0,0,0,0,0,0,0,1,0,1,0,0,0,0
+1,Female,Unvaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+12,Other,Fully Vaccinated,0,0,0,0,1,1,1,0,0,0,0,0,0,0
+39,Female,Fully Vaccinated,0,1,0,0,1,1,0,0,0,0,0,0,0,0
+1,Male,Fully Vaccinated,1,0,0,0,0,0,1,0,0,1,0,0,0,0
+83,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+64,Male,Unvaccinated,1,0,0,1,1,1,0,0,0,0,0,1,0,0
+62,Male,Unvaccinated,1,0,1,0,1,0,0,0,0,0,1,1,0,0
+72,Male,Fully Vaccinated,0,0,0,0,0,1,0,1,0,1,0,0,0,0
+16,Male,Booster Dose,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+8,Male,Partially Vaccinated,0,1,1,1,0,0,0,0,0,0,0,0,0,0
+74,Female,Fully Vaccinated,0,0,0,0,0,0,1,0,1,0,1,0,0,0
+14,Male,Booster Dose,0,1,0,1,1,0,0,0,0,0,0,0,0,0
+23,Female,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,1,0,0,0
+37,Female,Fully Vaccinated,0,1,0,1,0,0,0,0,0,0,1,0,0,0
+34,Male,Fully Vaccinated,0,1,0,0,1,1,0,0,0,0,0,0,0,0
+93,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+94,Male,Partially Vaccinated,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+48,Male,Unvaccinated,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+68,Female,Booster Dose,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+61,Male,Booster Dose,1,0,0,0,1,0,0,1,0,0,0,0,0,0
+59,Male,Fully Vaccinated,0,1,1,0,1,0,0,0,1,0,0,1,1,0
+49,Male,Unvaccinated,0,0,0,0,0,1,1,1,0,0,0,1,0,0
+77,Other,Partially Vaccinated,1,0,0,0,0,0,1,0,0,0,0,0,0,0
+74,Female,Unvaccinated,0,0,0,1,1,0,0,0,0,0,0,1,0,0
+8,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+33,Male,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+75,Female,Booster Dose,0,0,1,0,1,0,0,0,0,1,0,0,0,0
+98,Female,Booster Dose,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+34,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+0,Other,Unvaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+39,Male,Partially Vaccinated,0,0,0,1,0,0,1,1,0,0,0,0,0,0
+63,Female,Partially Vaccinated,0,1,0,1,0,0,0,1,0,0,0,1,0,0
+21,Female,Fully Vaccinated,0,0,0,0,0,1,0,1,1,0,0,0,0,0
+59,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+63,Male,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+92,Other,Partially Vaccinated,1,0,0,0,1,1,0,0,0,0,1,1,0,0
+71,Male,Unvaccinated,1,0,0,0,0,1,1,0,0,0,0,1,0,0
+10,Female,Partially Vaccinated,0,0,1,1,0,0,1,0,0,0,0,0,0,0
+13,Other,Fully Vaccinated,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+59,Female,Unvaccinated,0,0,0,0,1,1,0,0,0,1,0,1,0,0
+29,Male,Fully Vaccinated,0,1,0,0,0,1,0,0,0,1,0,0,0,0
+34,Female,Booster Dose,0,0,1,0,0,0,1,0,1,0,0,0,0,0
+84,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+36,Female,Unvaccinated,0,1,1,0,0,1,1,0,1,0,0,1,0,0
+4,Male,Unvaccinated,1,0,0,0,0,1,0,1,0,0,0,1,0,0
+82,Female,Fully Vaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+77,Female,Partially Vaccinated,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+25,Female,Partially Vaccinated,1,0,0,1,0,0,0,0,1,0,0,0,0,0
+61,Female,Fully Vaccinated,1,1,0,1,0,0,0,0,0,0,1,1,0,0
+3,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+88,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+41,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+88,Female,Fully Vaccinated,0,1,0,1,1,1,0,0,1,0,0,1,0,1
+17,Male,Partially Vaccinated,1,1,0,0,0,1,0,0,0,1,0,1,0,0
+39,Female,Unvaccinated,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+71,Male,Fully Vaccinated,0,0,0,0,0,1,0,1,0,0,0,0,0,0
+38,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+13,Female,Booster Dose,1,0,0,1,1,0,0,1,0,0,0,0,0,0
+31,Male,Fully Vaccinated,1,1,1,1,0,0,0,0,0,0,0,0,0,0
+50,Male,Booster Dose,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+37,Female,Booster Dose,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+96,Female,Fully Vaccinated,0,1,0,1,0,0,1,0,1,0,0,1,0,0
+22,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+62,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14,Female,Booster Dose,1,0,1,0,1,0,1,0,0,0,0,0,0,0
+96,Male,Fully Vaccinated,0,1,1,1,1,0,0,0,0,0,0,1,0,0
+24,Female,Unvaccinated,0,0,1,0,1,0,0,0,0,1,0,1,0,0
+16,Female,Fully Vaccinated,0,0,0,1,0,1,1,0,0,0,0,0,0,0
+96,Female,Unvaccinated,1,0,1,0,0,0,0,0,0,0,0,1,1,0
+65,Male,Partially Vaccinated,0,0,1,0,0,0,1,0,1,0,0,1,0,0
+77,Male,Partially Vaccinated,0,1,1,0,1,0,0,0,0,0,0,1,0,0
+52,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+50,Male,Booster Dose,0,0,0,0,1,1,1,0,0,0,0,0,0,0
+38,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+50,Female,Unvaccinated,1,0,1,0,0,1,0,0,0,0,1,1,1,0
+69,Male,Partially Vaccinated,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+5,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+66,Male,Partially Vaccinated,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+6,Female,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+50,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+71,Male,Fully Vaccinated,0,1,0,1,0,1,0,0,0,0,0,0,0,0
+41,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+63,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14,Male,Unvaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+28,Female,Fully Vaccinated,1,0,1,1,0,0,0,0,0,0,0,0,0,0
+32,Female,Partially Vaccinated,0,0,1,1,1,1,0,0,0,0,1,1,0,0
+93,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,1,1,0,0,0
+26,Male,Partially Vaccinated,0,0,0,1,0,0,1,1,0,0,0,0,0,0
+35,Female,Fully Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+28,Female,Booster Dose,0,0,0,1,0,1,0,0,1,0,0,0,0,0
+37,Female,Booster Dose,0,1,1,1,0,1,0,1,0,0,0,1,1,0
+56,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+96,Female,Fully Vaccinated,0,0,0,1,0,0,0,1,0,0,0,0,0,0
+26,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+54,Female,Fully Vaccinated,0,1,0,0,1,0,1,0,1,0,0,1,0,0
+32,Male,Unvaccinated,0,1,0,1,0,1,0,0,0,0,0,1,0,0
+67,Female,Fully Vaccinated,0,0,0,1,1,0,0,0,1,0,0,0,0,0
+85,Male,Partially Vaccinated,1,0,0,0,1,1,0,1,0,0,0,1,0,0
+65,Female,Unvaccinated,0,1,0,0,0,1,0,0,0,0,0,1,0,0
+9,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+4,Female,Partially Vaccinated,1,0,0,1,0,1,1,0,0,0,0,1,0,0
+73,Female,Fully Vaccinated,0,0,0,1,1,0,1,0,0,0,0,0,0,0
+96,Male,Partially Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+37,Other,Unvaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+12,Male,Unvaccinated,1,0,0,0,1,0,0,0,0,0,1,1,0,0
+30,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+46,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+99,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+87,Male,Unvaccinated,1,0,1,0,1,0,0,0,0,0,0,1,0,0
+51,Female,Unvaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+55,Female,Booster Dose,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+14,Male,Fully Vaccinated,1,1,1,1,0,1,0,0,0,0,0,1,0,0
+28,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+7,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+4,Male,Fully Vaccinated,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+28,Male,Fully Vaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+46,Male,Partially Vaccinated,0,1,0,1,1,0,0,0,0,0,0,0,0,0
+67,Female,Unvaccinated,1,1,0,0,0,0,0,0,1,0,1,1,0,1
+75,Male,Partially Vaccinated,0,1,1,0,0,1,0,0,1,1,1,1,0,0
+44,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,Male,Booster Dose,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+26,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+94,Female,Fully Vaccinated,1,0,0,0,1,0,1,0,0,0,0,0,0,0
+35,Male,Unvaccinated,1,0,0,1,0,1,0,0,0,0,0,1,1,0
+35,Male,Fully Vaccinated,1,1,0,0,1,0,0,1,0,0,0,0,0,0
+25,Female,Fully Vaccinated,0,0,0,0,0,0,0,1,0,1,1,0,0,0
+42,Male,Partially Vaccinated,0,0,1,1,0,0,0,0,0,1,1,1,0,1
+26,Female,Booster Dose,0,0,1,1,1,0,0,0,0,0,0,0,0,0
+68,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+10,Male,Fully Vaccinated,0,1,0,1,0,1,0,0,0,0,0,0,0,0
+73,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+37,Male,Fully Vaccinated,0,1,0,1,0,1,0,1,0,0,0,0,0,0
+5,Other,Unvaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+71,Male,Fully Vaccinated,1,1,1,1,1,1,0,0,0,0,0,1,0,0
+22,Female,Fully Vaccinated,1,0,1,1,1,0,0,1,0,0,0,1,0,0
+46,Male,Fully Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+89,Male,Booster Dose,0,0,0,1,0,0,0,1,0,0,0,0,0,0
+45,Female,Fully Vaccinated,1,0,0,0,0,1,0,1,0,0,0,0,0,0
+11,Male,Unvaccinated,1,0,0,0,1,1,0,0,0,0,0,1,1,0
+89,Female,Fully Vaccinated,0,0,1,1,0,1,1,0,0,0,0,1,1,0
+12,Female,Unvaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+61,Female,Unvaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+81,Male,Partially Vaccinated,0,1,0,0,0,1,1,0,0,0,0,1,1,0
+88,Female,Booster Dose,1,0,0,0,1,0,0,0,0,0,1,0,0,0
+96,Male,Unvaccinated,1,0,0,1,1,0,0,0,0,0,0,1,0,0
+59,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+42,Female,Unvaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+75,Female,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+99,Female,Fully Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+67,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+4,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+36,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,1,0,0,0,0,0
+71,Male,Booster Dose,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+91,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+30,Female,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,1,0,0,0
+8,Female,Booster Dose,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+50,Male,Unvaccinated,1,0,1,0,0,0,0,0,0,1,1,1,0,0
+28,Female,Fully Vaccinated,1,0,0,1,1,1,0,0,0,0,0,0,0,0
+77,Male,Booster Dose,0,1,1,1,0,0,0,0,0,0,0,0,0,0
+39,Male,Unvaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+40,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+85,Male,Partially Vaccinated,0,1,0,0,0,1,0,0,0,1,0,1,0,0
+10,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+0,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+45,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+20,Female,Partially Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+89,Male,Partially Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+35,Female,Unvaccinated,1,0,0,1,1,0,0,0,1,0,0,1,0,0
+53,Female,Booster Dose,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+86,Female,Unvaccinated,0,0,0,1,1,1,0,0,0,1,0,1,0,0
+56,Female,Booster Dose,0,1,1,1,1,0,1,0,0,1,1,1,0,0
+0,Female,Fully Vaccinated,0,1,1,0,0,0,0,1,0,0,0,0,0,0
+62,Female,Partially Vaccinated,0,0,1,0,0,0,0,0,0,1,0,0,0,0
+53,Male,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+54,Female,Fully Vaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+39,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+14,Female,Unvaccinated,0,0,1,0,0,0,1,0,0,0,1,1,0,0
+20,Male,Partially Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+46,Female,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+72,Male,Unvaccinated,0,0,1,0,1,1,0,0,1,0,0,1,1,1
+52,Female,Partially Vaccinated,1,0,1,1,0,0,1,0,0,0,0,1,0,0
+8,Male,Unvaccinated,0,1,1,1,1,0,0,0,0,0,1,1,1,0
+73,Female,Partially Vaccinated,0,0,0,0,1,1,0,0,0,1,0,1,0,1
+51,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+56,Male,Unvaccinated,1,1,1,0,0,0,0,0,0,0,0,1,0,0
+25,Female,Unvaccinated,1,1,0,1,0,0,0,0,0,0,0,1,0,0
+40,Female,Booster Dose,1,1,0,0,0,0,0,1,0,0,0,0,0,0
+34,Female,Unvaccinated,1,0,0,0,1,1,0,0,0,0,0,1,0,0
+62,Male,Fully Vaccinated,1,0,1,0,0,1,0,1,0,0,0,1,0,0
+24,Male,Unvaccinated,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+89,Male,Booster Dose,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+74,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+37,Female,Booster Dose,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+1,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+6,Female,Unvaccinated,1,0,0,0,1,1,1,0,0,0,0,1,0,0
+81,Male,Booster Dose,0,0,1,1,0,0,0,0,0,0,1,0,0,0
+90,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+33,Female,Partially Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+90,Female,Fully Vaccinated,0,1,0,0,0,1,0,0,0,1,0,0,0,0
+16,Male,Booster Dose,0,0,0,0,1,0,0,1,0,0,0,0,0,0
+42,Male,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+58,Male,Partially Vaccinated,0,0,0,0,1,1,0,0,0,0,1,1,0,0
+50,Male,Fully Vaccinated,0,0,0,1,1,0,0,0,0,1,0,0,0,0
+53,Male,Fully Vaccinated,0,0,0,1,0,1,0,1,0,0,0,0,0,0
+23,Male,Booster Dose,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+24,Male,Fully Vaccinated,0,0,0,0,1,0,1,0,1,1,0,0,0,0
+70,Female,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+51,Male,Booster Dose,1,0,0,0,0,0,1,0,1,0,1,1,0,0
+69,Female,Unvaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+87,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+32,Female,Fully Vaccinated,0,1,0,1,0,1,0,0,0,0,0,0,0,0
+48,Female,Fully Vaccinated,0,0,1,0,0,1,0,0,1,0,1,0,0,0
+28,Female,Unvaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+62,Female,Fully Vaccinated,0,1,0,1,0,1,0,1,0,0,0,1,0,0
+21,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+25,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27,Male,Fully Vaccinated,1,1,0,0,0,1,1,0,0,0,0,0,0,0
+84,Male,Partially Vaccinated,0,0,0,1,0,0,0,1,0,0,0,0,0,0
+48,Female,Unvaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+70,Female,Unvaccinated,1,0,0,1,0,0,0,1,0,0,0,1,0,0
+80,Male,Booster Dose,1,0,0,1,0,0,1,0,0,0,1,1,0,0
+83,Female,Unvaccinated,1,0,0,1,0,1,0,0,0,0,0,1,0,0
+48,Female,Partially Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+19,Male,Fully Vaccinated,0,0,0,1,0,1,0,0,0,0,1,0,0,0
+85,Male,Fully Vaccinated,0,1,0,0,1,0,1,0,0,1,0,1,0,0
+91,Male,Unvaccinated,0,1,0,0,0,1,0,0,0,0,1,1,0,0
+62,Male,Fully Vaccinated,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+60,Male,Partially Vaccinated,0,0,0,1,0,0,1,0,0,0,1,1,0,0
+48,Male,Booster Dose,0,1,0,0,1,1,0,1,0,0,0,0,0,0
+70,Male,Unvaccinated,1,0,1,0,0,0,0,0,0,0,0,1,0,0
+0,Female,Partially Vaccinated,0,1,0,1,1,0,0,0,0,0,1,0,0,0
+95,Female,Partially Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+12,Other,Partially Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+93,Male,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+86,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+50,Female,Partially Vaccinated,0,0,0,0,0,0,0,1,1,0,0,0,0,0
+55,Female,Fully Vaccinated,1,0,1,0,0,1,1,0,0,1,0,1,0,0
+82,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+61,Female,Partially Vaccinated,1,1,0,0,1,0,0,1,0,0,0,1,1,0
+31,Male,Unvaccinated,0,0,0,0,1,1,1,0,0,1,0,1,0,0
+29,Male,Unvaccinated,0,0,0,0,0,0,1,1,1,0,0,1,0,0
+28,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+48,Female,Unvaccinated,1,1,0,0,0,0,0,0,0,1,0,1,1,0
+44,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+92,Female,Booster Dose,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+29,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+15,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+39,Female,Unvaccinated,0,0,0,1,0,1,0,0,0,1,0,1,0,0
+18,Male,Partially Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+17,Other,Unvaccinated,1,0,0,1,1,0,0,0,1,0,0,1,0,1
+0,Female,Booster Dose,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+77,Male,Fully Vaccinated,1,1,0,0,0,0,0,0,0,1,0,0,0,0
+46,Female,Booster Dose,0,1,0,0,0,1,0,0,0,1,0,0,0,0
+65,Female,Booster Dose,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+91,Female,Fully Vaccinated,1,0,0,0,0,0,0,1,1,0,0,0,0,0
+93,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+37,Female,Unvaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+50,Female,Fully Vaccinated,1,0,0,0,1,0,1,0,1,0,0,0,0,0
+62,Female,Booster Dose,0,0,0,1,1,0,0,0,0,0,1,0,0,0
+3,Female,Unvaccinated,0,0,1,1,1,1,0,0,1,0,0,1,1,1
+0,Male,Booster Dose,0,1,0,0,0,0,1,1,0,0,1,0,0,0
+7,Female,Partially Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+28,Male,Booster Dose,0,0,0,1,0,0,0,0,1,0,0,0,0,0
+54,Female,Booster Dose,1,0,0,0,0,0,0,0,0,0,1,0,0,0
+2,Female,Fully Vaccinated,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+31,Female,Fully Vaccinated,0,0,1,1,1,1,1,0,0,0,0,1,0,0
+9,Female,Fully Vaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+73,Female,Fully Vaccinated,1,0,0,0,0,1,0,0,1,0,0,0,0,0
+82,Male,Booster Dose,1,1,0,1,0,1,0,0,0,0,0,1,1,0
+33,Female,Fully Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+96,Male,Fully Vaccinated,1,1,0,0,0,1,0,0,1,0,0,1,0,0
+86,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+54,Male,Fully Vaccinated,1,0,0,0,0,1,0,1,0,0,1,1,0,0
+91,Female,Fully Vaccinated,0,0,0,1,1,0,0,1,0,0,0,0,0,0
+31,Female,Fully Vaccinated,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+49,Female,Fully Vaccinated,1,0,0,1,0,0,1,0,0,0,0,0,0,0
+6,Male,Unvaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+92,Female,Partially Vaccinated,0,0,0,1,1,1,0,0,0,0,1,1,1,0
+7,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,1,1,0,0,0,0
+64,Male,Unvaccinated,0,1,0,0,1,1,0,0,0,0,0,1,0,0
+56,Female,Unvaccinated,0,1,0,1,0,0,0,0,0,0,0,1,0,1
+66,Male,Fully Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+87,Male,Unvaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+86,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+58,Male,Fully Vaccinated,1,1,0,0,1,0,0,0,1,0,0,1,0,1
+71,Male,Booster Dose,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+53,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+66,Female,Booster Dose,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+50,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+96,Female,Partially Vaccinated,1,1,1,0,0,0,0,0,0,0,0,1,0,0
+91,Other,Fully Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+7,Male,Fully Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+33,Female,Partially Vaccinated,0,1,1,0,0,0,0,0,0,0,1,0,0,0
+34,Other,Unvaccinated,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+95,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+87,Female,Unvaccinated,0,1,0,0,0,0,0,0,0,1,0,1,1,0
+77,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+31,Male,Unvaccinated,0,0,1,0,0,1,1,0,0,0,1,1,0,0
+45,Male,Fully Vaccinated,1,1,0,0,1,0,0,0,0,0,1,0,0,0
+15,Female,Fully Vaccinated,0,1,0,1,1,1,1,0,0,0,0,1,0,0
+67,Female,Unvaccinated,0,0,1,1,0,0,0,0,0,0,0,1,0,0
+36,Female,Partially Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+53,Male,Fully Vaccinated,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+84,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13,Male,Booster Dose,0,0,0,1,1,0,1,0,0,0,0,0,0,0
+94,Male,Fully Vaccinated,0,1,0,1,0,0,0,0,0,1,0,0,0,0
+54,Female,Fully Vaccinated,1,0,0,1,1,0,0,0,0,1,0,1,1,0
+47,Male,Partially Vaccinated,0,0,1,1,1,1,0,1,0,0,1,1,0,0
+81,Female,Partially Vaccinated,0,1,1,1,0,1,0,0,0,0,0,1,0,0
+6,Female,Unvaccinated,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+73,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+6,Female,Partially Vaccinated,0,0,1,1,1,0,0,0,0,0,0,0,0,0
+32,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22,Male,Fully Vaccinated,1,1,0,0,1,0,0,0,0,0,0,0,0,0
+84,Male,Fully Vaccinated,1,0,1,1,0,0,0,0,0,0,0,0,0,0
+18,Female,Partially Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+18,Male,Unvaccinated,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+35,Female,Partially Vaccinated,0,1,0,1,0,0,0,0,1,1,0,1,0,0
+28,Female,Partially Vaccinated,0,0,0,1,0,0,1,0,0,1,1,1,1,0
+59,Male,Fully Vaccinated,1,0,0,0,1,1,0,1,0,0,1,1,0,0
+81,Female,Partially Vaccinated,0,0,1,1,0,1,1,0,0,0,0,1,1,0
+1,Female,Fully Vaccinated,0,0,0,0,0,1,0,1,0,0,1,0,0,0
+0,Male,Booster Dose,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+46,Male,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+68,Female,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19,Male,Partially Vaccinated,1,0,0,0,1,0,0,0,0,0,1,0,0,0
+10,Female,Partially Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+1,Male,Partially Vaccinated,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+66,Male,Unvaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+86,Male,Unvaccinated,0,1,1,0,1,1,0,0,0,0,0,1,0,1
+11,Male,Partially Vaccinated,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+19,Female,Fully Vaccinated,0,1,0,1,1,0,0,0,0,0,1,0,0,0
+4,Male,Booster Dose,0,0,1,1,1,0,0,0,0,0,0,0,0,0
+36,Female,Fully Vaccinated,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+37,Female,Unvaccinated,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+93,Female,Fully Vaccinated,0,0,1,0,1,0,0,0,0,1,0,0,0,0
+8,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+97,Male,Fully Vaccinated,0,1,1,0,0,1,0,0,0,0,0,0,0,0
+52,Male,Fully Vaccinated,1,0,0,1,0,0,0,0,0,0,1,0,0,0
+43,Female,Booster Dose,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+98,Male,Partially Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+85,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,1,1,0,0,0
+23,Male,Partially Vaccinated,0,1,0,0,0,0,0,1,0,1,0,0,0,0
+80,Female,Booster Dose,0,0,1,0,0,1,0,0,1,0,0,0,0,0
+73,Female,Unvaccinated,0,1,0,0,0,0,1,0,1,0,0,1,0,0
+29,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+58,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+86,Female,Fully Vaccinated,0,1,0,0,1,1,0,0,0,1,0,1,1,0
+95,Female,Partially Vaccinated,1,0,0,1,1,0,1,1,0,1,0,1,1,0
+80,Female,Partially Vaccinated,0,1,0,0,0,0,0,0,1,0,1,1,0,0
+80,Male,Booster Dose,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+13,Male,Booster Dose,0,0,0,0,0,0,1,0,1,1,0,0,0,0
+8,Male,Partially Vaccinated,1,1,0,0,0,0,0,1,0,0,0,0,0,0
+39,Female,Partially Vaccinated,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+65,Male,Fully Vaccinated,1,1,0,0,1,1,0,1,0,0,0,1,1,0
+24,Female,Booster Dose,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+72,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+21,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+3,Female,Partially Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+25,Male,Fully Vaccinated,0,1,1,0,0,0,0,0,0,1,0,0,0,0
+57,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+28,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+97,Male,Unvaccinated,0,0,0,0,0,0,1,0,0,0,1,1,0,0
+86,Male,Booster Dose,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+36,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+74,Female,Unvaccinated,0,0,1,0,1,0,0,0,0,0,0,1,0,0
+69,Male,Fully Vaccinated,1,1,1,1,0,0,0,0,0,0,1,1,0,0
+17,Female,Fully Vaccinated,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+84,Female,Fully Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+41,Male,Fully Vaccinated,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+99,Other,Fully Vaccinated,1,0,1,0,0,0,0,1,0,1,1,1,1,0
+40,Female,Booster Dose,1,0,0,0,1,1,0,0,0,0,1,0,0,0
+37,Female,Unvaccinated,0,1,0,1,1,0,0,1,0,1,0,1,0,0
+33,Female,Unvaccinated,1,0,1,1,0,0,0,0,0,0,0,1,0,0
+16,Male,Unvaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+36,Male,Fully Vaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+24,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+75,Male,Booster Dose,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+86,Male,Fully Vaccinated,0,1,1,0,0,1,0,0,0,0,0,0,0,0
+85,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+84,Female,Booster Dose,0,0,1,0,1,0,0,0,0,1,0,0,0,0
+26,Female,Partially Vaccinated,1,0,0,0,1,0,0,0,1,1,0,1,1,0
+56,Female,Fully Vaccinated,0,0,0,1,0,1,0,1,0,0,1,1,1,0
+30,Female,Partially Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+5,Male,Fully Vaccinated,0,0,1,1,1,0,0,0,0,0,0,0,0,0
+90,Male,Fully Vaccinated,0,1,0,0,0,1,0,0,1,0,0,0,0,0
+39,Female,Fully Vaccinated,0,1,0,1,0,0,1,0,0,0,0,0,0,0
+97,Female,Unvaccinated,0,1,0,1,0,0,0,0,0,0,0,1,0,0
+11,Male,Partially Vaccinated,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+52,Female,Fully Vaccinated,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+70,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+9,Female,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+44,Female,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16,Female,Partially Vaccinated,0,0,0,0,0,0,0,1,1,0,0,0,0,0
+25,Other,Fully Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+84,Female,Fully Vaccinated,1,1,0,0,0,0,0,0,1,0,0,0,0,0
+91,Female,Fully Vaccinated,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+61,Female,Booster Dose,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+45,Female,Fully Vaccinated,1,0,1,1,1,0,0,0,0,0,0,0,0,0
+63,Female,Fully Vaccinated,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+1,Male,Unvaccinated,1,0,0,0,1,0,0,0,1,0,0,1,0,0
+53,Male,Partially Vaccinated,1,0,1,0,0,0,0,1,0,1,1,1,0,0
+64,Female,Partially Vaccinated,1,0,1,0,1,0,1,1,1,0,0,1,1,0
+50,Male,Fully Vaccinated,0,0,1,1,0,1,0,0,0,1,0,0,0,0
+52,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+35,Other,Partially Vaccinated,0,1,0,1,1,0,1,0,0,0,1,1,1,0
+25,Female,Unvaccinated,0,0,1,1,1,0,0,0,0,0,0,1,0,0
+28,Female,Unvaccinated,1,0,0,0,1,1,0,1,0,0,1,1,0,0
+20,Male,Partially Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+10,Male,Booster Dose,0,0,0,1,0,0,0,0,1,0,0,0,0,0
+39,Male,Fully Vaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+10,Male,Fully Vaccinated,0,1,0,0,1,0,0,1,0,1,0,0,0,0
+35,Male,Fully Vaccinated,0,0,0,1,1,0,0,0,1,0,0,0,0,0
+58,Male,Partially Vaccinated,0,1,1,0,1,0,0,0,1,0,0,1,0,0
+38,Female,Booster Dose,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+98,Female,Unvaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+53,Male,Partially Vaccinated,0,0,0,1,0,1,1,0,0,0,0,1,0,0
+97,Male,Fully Vaccinated,0,1,0,1,0,1,1,0,0,0,0,1,0,0
+54,Female,Unvaccinated,0,1,1,1,0,0,0,0,0,0,0,1,1,0
+23,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+21,Female,Partially Vaccinated,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+68,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+55,Male,Fully Vaccinated,0,0,1,0,0,0,1,1,0,0,0,0,0,0
+32,Male,Unvaccinated,1,0,0,0,0,1,1,0,0,0,0,1,0,0
+35,Male,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+19,Female,Partially Vaccinated,0,0,0,1,0,1,0,0,0,1,0,0,0,0
+82,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+98,Female,Unvaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+80,Male,Fully Vaccinated,1,0,0,1,0,0,0,1,0,0,0,0,0,0
+61,Female,Fully Vaccinated,0,0,1,1,0,0,1,0,0,1,0,1,0,0
+97,Female,Partially Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+72,Female,Booster Dose,0,0,0,1,0,1,0,1,0,0,0,0,0,0
+25,Male,Booster Dose,1,0,0,0,1,1,0,0,1,0,0,0,0,0
+65,Male,Fully Vaccinated,0,0,0,1,0,0,1,0,0,1,0,0,0,0
+72,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+72,Female,Partially Vaccinated,1,0,0,0,0,0,0,0,1,0,0,0,0,0
+39,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,1,0,0,0
+16,Male,Unvaccinated,1,0,0,1,0,0,0,1,0,0,0,1,0,1
+0,Female,Unvaccinated,0,0,0,1,1,1,0,0,0,0,0,0,0,0
+88,Female,Booster Dose,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+60,Male,Fully Vaccinated,1,0,1,0,0,0,0,0,0,1,0,0,0,0
+42,Female,Partially Vaccinated,0,1,0,1,0,0,1,0,0,0,0,0,0,0
+41,Female,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+24,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,1,1,1,0,0,0
+38,Female,Unvaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+34,Male,Unvaccinated,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+2,Female,Unvaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+43,Male,Fully Vaccinated,0,1,1,0,0,0,0,0,0,1,1,0,0,0
+50,Female,Fully Vaccinated,1,0,0,0,0,1,0,0,0,1,1,0,0,0
+93,Female,Unvaccinated,0,0,0,0,1,1,0,0,0,0,0,1,0,0
+97,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+11,Female,Partially Vaccinated,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+18,Other,Fully Vaccinated,1,0,0,0,1,0,1,1,0,0,0,0,0,0
+43,Male,Booster Dose,0,0,0,1,0,0,0,1,0,0,1,0,0,0
+58,Female,Fully Vaccinated,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+48,Female,Booster Dose,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+60,Female,Booster Dose,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+16,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+73,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+56,Male,Booster Dose,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+54,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+46,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+11,Female,Booster Dose,1,0,0,1,0,0,0,0,0,1,0,0,0,0
+61,Male,Fully Vaccinated,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+79,Female,Partially Vaccinated,0,1,0,1,0,1,0,0,0,0,0,1,0,1
+87,Male,Partially Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+82,Male,Fully Vaccinated,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+7,Male,Fully Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+94,Male,Fully Vaccinated,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+20,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+80,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+86,Female,Fully Vaccinated,0,1,0,0,1,0,0,1,0,0,0,0,0,0
+79,Female,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+69,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+71,Female,Fully Vaccinated,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+24,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+81,Female,Partially Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+88,Male,Booster Dose,0,0,0,1,0,1,0,0,1,0,0,0,0,0
+11,Female,Unvaccinated,0,1,1,0,0,0,0,0,1,0,0,1,0,0
+14,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+58,Female,Fully Vaccinated,0,0,1,1,1,0,1,0,0,0,0,1,1,1
+25,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+25,Male,Unvaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+46,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+31,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+9,Female,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+15,Male,Partially Vaccinated,0,1,0,1,0,0,1,0,0,1,0,1,0,0
+70,Female,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+16,Female,Partially Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+22,Female,Booster Dose,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+25,Other,Partially Vaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+84,Female,Unvaccinated,0,1,0,0,0,0,1,0,0,0,0,1,0,0
+85,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,1,0,1,0,0,0
+6,Female,Booster Dose,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+13,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+78,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6,Male,Fully Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+8,Male,Unvaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+47,Female,Fully Vaccinated,1,0,0,1,1,0,0,0,0,0,0,0,0,0
+71,Female,Partially Vaccinated,1,1,1,1,0,0,0,0,0,0,0,1,0,0
+58,Female,Fully Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+86,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+92,Female,Partially Vaccinated,1,0,1,0,1,0,0,0,0,1,0,1,0,0
+81,Male,Booster Dose,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+94,Male,Partially Vaccinated,0,1,0,1,0,0,0,1,0,0,1,1,0,0
+93,Male,Booster Dose,0,1,0,0,0,0,0,0,1,1,1,1,1,0
+38,Male,Unvaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+98,Female,Unvaccinated,0,1,0,0,1,0,0,0,0,0,0,1,1,0
+17,Female,Booster Dose,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+58,Male,Fully Vaccinated,1,0,0,0,1,1,0,1,0,0,0,1,0,0
+16,Female,Fully Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+13,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+30,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,1,0,1,0,0,0
+23,Male,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+98,Male,Fully Vaccinated,0,1,1,1,1,1,0,0,0,0,1,1,0,0
+59,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+44,Female,Booster Dose,1,0,0,0,0,0,0,0,1,0,0,0,0,0
+97,Male,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+2,Male,Booster Dose,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+36,Female,Fully Vaccinated,1,0,1,0,0,1,0,0,0,1,0,0,0,0
+42,Other,Fully Vaccinated,1,1,0,0,1,0,0,0,0,0,0,0,0,0
+39,Male,Unvaccinated,1,0,1,1,0,0,0,0,0,0,0,1,0,0
+89,Male,Partially Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+54,Male,Booster Dose,0,0,1,1,1,0,0,0,0,0,0,0,0,0
+86,Male,Partially Vaccinated,1,0,1,1,1,0,0,1,0,0,0,1,0,0
+38,Male,Unvaccinated,1,0,0,1,0,0,0,0,0,1,0,1,0,0
+14,Female,Partially Vaccinated,1,1,1,0,1,0,0,0,0,0,0,1,1,0
+3,Male,Partially Vaccinated,1,0,1,0,1,0,0,0,1,0,0,1,1,0
+92,Male,Booster Dose,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+85,Female,Booster Dose,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+24,Male,Fully Vaccinated,1,1,0,0,1,1,0,0,1,0,0,1,0,0
+12,Male,Unvaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+81,Male,Fully Vaccinated,0,0,0,0,0,1,1,0,0,1,0,0,0,0
+32,Other,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+15,Male,Booster Dose,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+41,Female,Fully Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+65,Female,Partially Vaccinated,0,0,0,1,0,1,0,0,0,1,0,1,1,0
+54,Male,Fully Vaccinated,0,1,0,1,0,1,0,0,0,0,0,0,0,0
+98,Other,Booster Dose,0,0,1,0,1,0,1,0,0,0,0,0,0,0
+41,Male,Fully Vaccinated,0,1,0,0,1,0,0,1,0,0,0,0,0,0
+33,Male,Fully Vaccinated,0,0,1,1,1,0,0,0,0,1,0,0,0,0
+29,Female,Partially Vaccinated,0,0,0,0,0,1,1,0,1,1,0,1,1,0
+12,Female,Fully Vaccinated,1,0,1,1,0,0,0,1,0,0,0,0,0,0
+12,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+17,Male,Partially Vaccinated,0,0,0,0,0,1,0,1,0,0,0,0,0,0
+31,Male,Fully Vaccinated,0,1,0,0,0,1,0,1,0,0,0,0,0,0
+95,Female,Partially Vaccinated,1,0,0,0,1,0,1,0,0,0,0,1,1,0
+98,Male,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+38,Male,Unvaccinated,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+45,Male,Partially Vaccinated,0,1,0,1,0,1,0,0,0,1,0,1,0,0
+28,Male,Fully Vaccinated,0,0,0,1,1,1,0,0,0,0,0,0,0,0
+61,Female,Unvaccinated,1,0,0,1,1,0,0,0,0,0,0,1,0,0
+92,Male,Partially Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+61,Other,Booster Dose,1,1,1,1,0,1,0,0,1,0,0,1,0,0
+56,Male,Fully Vaccinated,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+15,Female,Fully Vaccinated,0,0,0,0,1,0,1,0,0,1,0,0,0,0
+55,Male,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+9,Male,Fully Vaccinated,0,1,1,1,0,0,1,0,0,0,0,0,0,0
+29,Male,Unvaccinated,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+24,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+83,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4,Other,Fully Vaccinated,0,0,1,1,1,1,0,0,0,0,0,0,0,0
+64,Female,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+93,Male,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+48,Male,Fully Vaccinated,0,1,1,0,0,1,0,0,0,0,0,0,0,0
+2,Male,Fully Vaccinated,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+44,Female,Unvaccinated,0,0,0,0,0,1,0,0,0,1,1,1,0,1
+13,Female,Fully Vaccinated,1,0,0,0,0,1,0,0,0,1,0,0,0,0
+29,Female,Booster Dose,0,0,0,1,1,0,0,0,1,0,1,0,0,0
+67,Male,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+17,Female,Unvaccinated,1,1,0,0,1,0,0,0,0,0,0,1,1,0
+61,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+36,Female,Booster Dose,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+24,Female,Fully Vaccinated,1,1,1,1,0,0,0,0,0,0,1,1,0,0
+47,Female,Fully Vaccinated,0,1,1,0,0,0,1,0,0,0,0,0,0,0
+64,Female,Booster Dose,0,0,1,0,1,0,0,1,1,0,1,1,0,0
+52,Male,Booster Dose,0,1,0,0,1,1,0,1,1,0,0,1,0,0
+78,Female,Fully Vaccinated,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+72,Male,Partially Vaccinated,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+14,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+48,Male,Fully Vaccinated,1,1,0,0,0,0,0,1,1,0,0,0,0,0
+87,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+67,Female,Partially Vaccinated,0,0,0,1,1,1,0,0,1,0,0,1,0,0
+11,Female,Partially Vaccinated,0,0,0,0,1,1,0,1,0,0,0,0,0,0
+58,Female,Unvaccinated,1,1,1,0,1,0,0,0,0,0,0,1,0,0
+36,Female,Fully Vaccinated,1,0,0,1,0,1,0,0,0,0,0,0,0,0
+60,Female,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+42,Female,Fully Vaccinated,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+69,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+38,Male,Booster Dose,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+55,Other,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+62,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+45,Female,Booster Dose,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+87,Male,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+10,Male,Fully Vaccinated,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+61,Female,Booster Dose,0,0,0,0,0,1,0,1,0,0,1,0,0,0
+76,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,0,1,1,1,1,0
+97,Female,Fully Vaccinated,1,0,1,1,0,0,0,0,0,0,0,0,0,0
+24,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+70,Male,Partially Vaccinated,0,1,0,0,0,1,1,0,0,0,0,1,0,0
+51,Female,Fully Vaccinated,0,1,1,1,0,0,0,0,0,0,0,0,0,0
+3,Female,Booster Dose,1,1,1,0,0,0,0,0,0,0,1,0,0,0
+58,Female,Fully Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+71,Female,Unvaccinated,0,0,0,0,1,1,0,0,0,0,0,1,0,1
+19,Male,Unvaccinated,1,1,0,1,1,0,0,0,0,0,0,1,1,0
+92,Female,Fully Vaccinated,0,1,1,0,0,1,0,0,1,0,1,1,1,0
+62,Male,Unvaccinated,1,0,0,0,0,1,0,0,0,0,0,1,0,0
+53,Female,Fully Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+73,Female,Fully Vaccinated,1,1,0,1,1,1,0,1,0,0,0,1,1,0
+97,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+56,Female,Fully Vaccinated,1,0,1,1,0,0,0,0,0,1,0,1,0,0
+89,Female,Partially Vaccinated,1,0,0,1,0,1,0,1,0,0,0,1,1,0
+40,Male,Partially Vaccinated,1,0,1,0,1,1,1,0,0,1,0,1,0,1
+2,Other,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+5,Male,Fully Vaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+4,Male,Fully Vaccinated,1,0,0,0,0,0,1,0,0,0,0,0,0,0
+4,Female,Fully Vaccinated,1,1,0,0,0,1,0,1,0,1,0,1,1,1
+53,Female,Fully Vaccinated,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+46,Female,Booster Dose,0,0,1,0,0,1,0,0,0,1,0,0,0,0
+86,Female,Partially Vaccinated,0,0,1,1,0,1,0,0,0,0,0,1,0,1
+48,Female,Unvaccinated,1,0,0,0,1,1,0,0,0,0,0,1,0,1
+8,Female,Partially Vaccinated,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+98,Male,Fully Vaccinated,0,0,1,1,1,0,0,0,0,1,0,1,1,0
+19,Male,Partially Vaccinated,1,1,0,0,1,0,0,1,0,0,1,1,0,0
+60,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+34,Male,Fully Vaccinated,0,1,1,0,0,0,0,0,0,0,1,0,0,0
+49,Female,Booster Dose,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+81,Male,Booster Dose,0,0,1,0,0,0,1,1,1,0,0,1,1,0
+61,Male,Unvaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+16,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+87,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2,Female,Partially Vaccinated,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+31,Female,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+98,Female,Fully Vaccinated,1,0,0,1,1,1,0,0,0,0,0,1,0,1
+12,Female,Partially Vaccinated,1,0,0,0,0,1,1,1,0,0,0,1,0,1
+88,Female,Fully Vaccinated,1,1,0,0,1,0,0,1,1,0,0,1,1,0
+72,Male,Fully Vaccinated,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+67,Female,Unvaccinated,0,0,0,0,1,1,0,0,0,0,0,1,0,0
+13,Female,Fully Vaccinated,0,0,0,1,0,0,1,0,1,0,0,0,0,0
+97,Female,Partially Vaccinated,0,0,0,1,1,0,0,0,1,0,0,1,1,1
+10,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+55,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+66,Female,Booster Dose,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+91,Female,Partially Vaccinated,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+28,Male,Unvaccinated,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+8,Female,Partially Vaccinated,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+66,Male,Partially Vaccinated,1,0,1,0,0,0,0,0,1,1,0,1,0,0
+24,Female,Partially Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+97,Female,Fully Vaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+75,Male,Fully Vaccinated,0,1,0,0,1,1,0,1,0,1,0,1,0,0
+41,Female,Unvaccinated,1,0,1,0,0,0,1,0,0,0,0,1,0,0
+8,Male,Unvaccinated,1,0,0,0,0,0,1,0,0,0,0,0,0,0
+78,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,1,1,0,0,0
+39,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+24,Female,Partially Vaccinated,0,1,1,0,0,0,0,0,0,0,1,0,0,0
+4,Male,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+10,Female,Partially Vaccinated,1,0,0,0,0,0,0,1,1,0,0,0,0,0
+58,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+97,Female,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+87,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+78,Other,Booster Dose,0,0,1,0,0,0,0,1,1,0,0,0,0,0
+37,Female,Partially Vaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+71,Female,Fully Vaccinated,0,1,0,0,0,0,0,1,1,1,1,1,0,0
+4,Male,Partially Vaccinated,1,1,0,1,0,1,0,0,0,0,0,1,0,0
+47,Male,Fully Vaccinated,1,0,0,1,0,1,1,0,0,0,0,0,0,0
+89,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17,Female,Unvaccinated,0,1,0,1,0,0,1,0,1,1,0,1,0,0
+69,Female,Fully Vaccinated,1,0,1,0,0,1,1,1,0,0,1,1,0,0
+36,Male,Fully Vaccinated,0,0,0,1,1,0,0,1,0,0,0,0,0,0
+59,Female,Fully Vaccinated,1,1,1,0,0,1,0,1,0,0,0,1,0,0
+47,Female,Fully Vaccinated,0,1,0,0,1,1,0,0,0,0,0,0,0,0
+76,Female,Booster Dose,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+27,Male,Unvaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+68,Male,Partially Vaccinated,0,1,1,0,1,0,0,0,0,0,1,1,0,0
+76,Female,Booster Dose,1,0,0,0,0,1,0,0,1,0,0,0,0,0
+80,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+39,Male,Unvaccinated,0,1,0,0,1,1,1,0,0,0,1,1,0,0
+44,Female,Fully Vaccinated,1,0,0,1,0,0,1,0,0,0,0,0,0,0
+95,Female,Fully Vaccinated,0,0,1,0,1,0,0,1,0,0,0,0,0,0
+61,Female,Partially Vaccinated,1,0,0,0,1,1,0,0,0,0,0,1,0,0
+92,Female,Partially Vaccinated,0,0,1,1,0,1,0,0,0,0,0,1,1,0
+57,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+66,Male,Partially Vaccinated,1,0,1,1,1,0,0,0,0,0,0,1,1,0
+55,Female,Fully Vaccinated,0,1,0,0,1,0,0,0,1,0,0,0,0,0
+39,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+97,Male,Partially Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+39,Male,Partially Vaccinated,1,0,1,1,1,1,0,0,0,1,0,1,0,0
+90,Male,Partially Vaccinated,0,1,1,0,0,1,0,0,0,0,0,1,0,0
+76,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+32,Male,Fully Vaccinated,0,0,0,1,0,1,0,0,0,1,0,0,0,0
+5,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+87,Male,Fully Vaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+18,Female,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+79,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+39,Female,Unvaccinated,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+91,Male,Unvaccinated,0,0,0,0,1,0,0,0,0,0,1,1,1,0
+96,Male,Partially Vaccinated,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+58,Female,Partially Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+58,Female,Booster Dose,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+47,Female,Fully Vaccinated,1,1,0,0,0,0,1,0,0,0,0,0,0,0
+40,Male,Partially Vaccinated,0,0,1,1,0,0,0,0,1,0,0,0,0,0
+12,Female,Partially Vaccinated,0,1,1,0,1,1,0,0,0,1,1,1,0,0
+44,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+88,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+52,Female,Fully Vaccinated,0,0,0,1,1,1,0,0,0,0,0,0,0,0
+41,Female,Partially Vaccinated,0,0,0,1,0,1,0,0,1,0,0,0,0,0
+99,Male,Partially Vaccinated,0,1,1,0,1,0,0,0,0,0,0,1,0,0
+62,Male,Unvaccinated,1,1,1,0,0,1,0,1,0,0,0,1,0,0
+26,Female,Unvaccinated,1,0,0,0,1,1,0,0,0,0,1,1,0,1
+37,Male,Unvaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+59,Male,Fully Vaccinated,0,1,0,0,1,0,0,0,1,1,1,1,0,0
+6,Male,Partially Vaccinated,1,0,1,0,0,0,0,0,0,0,1,0,0,0
+4,Female,Fully Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+44,Male,Fully Vaccinated,1,0,1,1,0,1,0,0,0,0,0,0,0,0
+57,Other,Booster Dose,0,0,1,0,0,1,1,0,0,0,0,0,0,0
+30,Female,Booster Dose,0,0,1,0,1,0,0,0,1,1,0,0,0,0
+22,Other,Fully Vaccinated,0,1,0,1,1,1,0,0,0,0,1,1,1,0
+41,Female,Unvaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+9,Male,Fully Vaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+31,Male,Fully Vaccinated,0,1,0,1,0,1,1,0,0,0,0,0,0,0
+52,Male,Unvaccinated,0,0,0,1,0,1,0,0,0,0,1,1,0,1
+29,Male,Fully Vaccinated,0,0,0,1,1,1,0,0,0,1,0,0,0,0
+38,Female,Booster Dose,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+30,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,1,0,0,0
+81,Male,Unvaccinated,1,1,0,0,0,1,0,0,0,1,0,1,0,1
+99,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,Female,Partially Vaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+77,Male,Unvaccinated,0,1,0,1,0,0,0,0,0,0,0,1,0,0
+76,Male,Fully Vaccinated,0,0,0,1,1,0,1,0,0,0,0,0,0,0
+92,Male,Fully Vaccinated,0,0,0,1,0,1,0,0,0,1,0,0,0,0
+11,Female,Unvaccinated,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+38,Female,Booster Dose,0,0,0,0,1,1,0,0,0,1,0,0,0,0
+65,Male,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+95,Male,Unvaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+12,Male,Fully Vaccinated,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+45,Male,Fully Vaccinated,0,0,0,1,0,1,0,0,0,0,1,0,0,0
+26,Female,Fully Vaccinated,0,1,0,0,0,1,0,1,0,0,0,0,0,0
+16,Female,Booster Dose,1,0,0,0,0,0,0,0,0,0,1,0,0,0
+94,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+97,Female,Booster Dose,0,0,0,0,0,0,0,0,1,0,1,0,0,0
+59,Male,Partially Vaccinated,1,0,0,1,0,0,1,0,0,0,0,1,0,1
+63,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+87,Female,Booster Dose,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+34,Male,Fully Vaccinated,0,0,1,0,0,0,1,0,1,0,0,0,0,0
+69,Female,Unvaccinated,1,0,1,0,0,0,0,0,0,1,0,1,1,0
+82,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+29,Male,Fully Vaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+70,Male,Unvaccinated,0,0,0,1,0,1,0,0,0,0,0,1,0,1
+73,Male,Booster Dose,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+95,Female,Unvaccinated,1,1,1,1,1,0,0,0,0,0,0,1,1,0
+97,Female,Unvaccinated,0,0,0,1,0,0,0,0,0,0,1,1,0,0
+62,Female,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+59,Female,Unvaccinated,0,1,1,1,0,0,0,0,1,0,0,1,1,0
+78,Male,Fully Vaccinated,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+93,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+36,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+92,Female,Booster Dose,0,0,0,0,1,0,0,0,1,0,1,0,0,0
+21,Female,Fully Vaccinated,0,0,0,1,1,0,1,0,0,0,0,0,0,0
+67,Male,Fully Vaccinated,1,1,0,1,0,0,0,1,0,1,0,1,1,0
+19,Female,Fully Vaccinated,1,0,1,0,1,0,0,0,0,1,0,0,0,0
+95,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+99,Female,Partially Vaccinated,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+67,Male,Partially Vaccinated,0,1,1,0,0,1,0,0,0,0,1,1,0,0
+90,Male,Fully Vaccinated,0,0,0,0,0,1,1,0,0,0,1,0,0,0
+63,Male,Fully Vaccinated,0,1,0,0,0,1,0,0,1,1,0,1,0,0
+16,Male,Unvaccinated,0,0,1,1,1,0,0,0,0,0,0,1,0,0
+11,Male,Fully Vaccinated,1,0,1,1,1,1,0,0,0,0,0,1,0,0
+21,Female,Fully Vaccinated,0,1,0,1,1,0,0,0,0,0,0,0,0,0
+16,Male,Unvaccinated,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+9,Female,Unvaccinated,0,0,0,1,0,0,0,0,1,0,0,0,0,0
+64,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+21,Female,Fully Vaccinated,1,0,0,1,0,1,0,0,1,0,0,0,0,0
+89,Male,Unvaccinated,0,0,1,0,0,1,1,0,0,0,0,1,0,1
+81,Female,Partially Vaccinated,0,1,1,0,0,0,0,0,1,0,0,1,0,0
+49,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,1,0,0,0
+13,Male,Fully Vaccinated,1,0,0,1,0,1,0,1,0,1,0,1,0,0
+63,Male,Partially Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+46,Female,Partially Vaccinated,1,1,0,1,0,0,0,1,0,0,0,1,0,0
+28,Male,Fully Vaccinated,1,1,0,0,0,1,1,0,0,0,0,0,0,0
+75,Male,Booster Dose,1,0,1,1,1,0,0,0,0,0,0,1,0,0
+35,Male,Booster Dose,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+98,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+51,Female,Partially Vaccinated,0,1,0,0,0,1,0,0,0,0,1,1,1,0
+75,Male,Partially Vaccinated,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+6,Female,Unvaccinated,0,0,0,1,0,0,1,0,0,0,1,1,0,0
+28,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10,Female,Fully Vaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+32,Female,Partially Vaccinated,0,1,0,0,1,1,1,0,0,0,0,1,0,0
+5,Female,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+78,Male,Booster Dose,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+31,Female,Unvaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+50,Female,Unvaccinated,0,0,0,0,1,0,1,0,0,0,1,1,1,0
+74,Female,Unvaccinated,0,1,0,1,1,1,0,0,0,0,0,1,0,0
+57,Female,Fully Vaccinated,0,0,0,0,1,0,1,0,1,0,1,1,0,0
+86,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+25,Male,Partially Vaccinated,1,0,0,0,0,1,0,0,1,0,0,0,0,0
+97,Female,Fully Vaccinated,1,0,0,0,1,0,0,0,0,0,1,0,0,0
+45,Male,Fully Vaccinated,1,1,1,1,0,1,0,0,0,0,0,1,0,0
+97,Female,Fully Vaccinated,1,0,1,1,1,0,0,0,0,0,0,1,1,0
+28,Male,Booster Dose,0,0,1,1,0,0,0,0,0,0,1,0,0,0
+3,Male,Fully Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+80,Male,Fully Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+98,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12,Female,Unvaccinated,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+38,Male,Unvaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+14,Other,Fully Vaccinated,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+28,Female,Fully Vaccinated,0,0,0,1,1,1,0,0,0,0,0,0,0,0
+28,Male,Fully Vaccinated,0,1,0,0,0,1,0,0,0,1,0,0,0,0
+74,Female,Unvaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+31,Female,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+1,Female,Booster Dose,1,0,0,0,1,1,0,0,0,0,0,0,0,0
+46,Male,Fully Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+77,Female,Fully Vaccinated,1,0,0,0,0,0,1,0,0,0,0,0,0,0
+83,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+21,Male,Booster Dose,0,1,0,0,1,0,1,0,0,0,0,0,0,0
+74,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+66,Male,Partially Vaccinated,0,1,1,0,1,0,0,1,0,0,0,1,0,0
+80,Female,Unvaccinated,0,1,1,0,0,0,1,1,0,0,0,1,0,1
+55,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,1,1,0,0,0
+91,Female,Unvaccinated,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+92,Female,Booster Dose,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+20,Male,Partially Vaccinated,1,0,1,0,1,0,0,0,1,0,0,1,0,0
+46,Male,Booster Dose,1,1,0,0,1,1,1,0,1,0,0,1,1,0
+79,Female,Partially Vaccinated,1,1,1,0,0,0,0,0,0,0,0,1,0,0
+58,Female,Partially Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+83,Female,Booster Dose,0,0,0,1,0,1,0,1,0,0,0,0,0,0
+5,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18,Male,Partially Vaccinated,1,1,1,1,0,0,0,1,0,0,0,1,0,0
+56,Male,Unvaccinated,0,0,1,1,1,1,0,0,0,0,0,1,0,0
+68,Female,Fully Vaccinated,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+2,Male,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+0,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+57,Female,Fully Vaccinated,0,1,1,0,0,1,0,0,0,0,0,0,0,0
+37,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+14,Male,Fully Vaccinated,1,0,1,0,0,0,0,0,1,0,0,0,0,0
+33,Male,Fully Vaccinated,0,1,1,1,0,0,1,0,0,0,0,0,0,0
+60,Female,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+34,Female,Fully Vaccinated,1,1,1,1,0,0,0,0,0,0,1,1,1,0
+63,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+24,Female,Fully Vaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+23,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+11,Male,Booster Dose,1,0,0,0,1,1,1,0,0,1,0,1,0,0
+17,Male,Partially Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+14,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+79,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+26,Male,Fully Vaccinated,0,0,0,0,1,1,1,0,0,0,0,0,0,0
+71,Female,Unvaccinated,1,0,0,1,0,1,0,0,0,0,1,1,0,0
+59,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+45,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+88,Female,Booster Dose,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+16,Female,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+92,Male,Partially Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+52,Male,Partially Vaccinated,0,0,1,1,1,0,1,1,0,0,1,1,0,0
+7,Male,Booster Dose,1,0,0,0,0,0,0,0,1,0,0,0,0,0
+78,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+26,Other,Partially Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+45,Male,Partially Vaccinated,1,0,1,0,0,0,1,0,0,0,0,0,0,0
+49,Female,Fully Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+70,Female,Partially Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+2,Female,Partially Vaccinated,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+92,Male,Unvaccinated,0,0,0,1,0,0,1,1,0,0,1,1,1,0
+63,Male,Partially Vaccinated,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+43,Male,Partially Vaccinated,0,0,1,0,1,0,1,0,0,0,0,0,0,0
+52,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+23,Male,Partially Vaccinated,1,1,0,0,0,1,0,0,0,0,0,0,0,0
+59,Female,Partially Vaccinated,0,0,1,0,1,0,0,0,0,1,0,1,0,0
+2,Male,Partially Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+19,Male,Fully Vaccinated,0,0,1,0,1,0,1,1,1,1,0,1,0,0
+45,Female,Unvaccinated,0,1,0,1,0,0,0,0,0,0,1,1,1,0
+14,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24,Male,Fully Vaccinated,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+93,Male,Unvaccinated,0,0,1,0,0,1,0,0,0,1,0,1,0,1
+77,Other,Unvaccinated,0,0,1,0,1,1,0,0,0,0,0,1,0,0
+70,Male,Unvaccinated,0,1,1,0,1,0,0,0,0,0,1,1,0,0
+16,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+83,Female,Booster Dose,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+99,Male,Unvaccinated,0,0,0,0,1,1,0,0,0,0,0,1,1,0
+8,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+37,Male,Unvaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+47,Male,Fully Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+59,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+62,Male,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+85,Male,Fully Vaccinated,0,0,1,0,1,0,1,0,0,0,0,0,0,0
+1,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+87,Female,Fully Vaccinated,0,0,0,0,0,0,0,1,0,0,1,0,0,0
+71,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10,Male,Fully Vaccinated,1,0,0,1,0,1,0,0,0,0,0,0,0,0
+63,Female,Unvaccinated,0,0,0,1,0,0,0,1,0,1,0,1,0,0
+76,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+80,Male,Fully Vaccinated,1,0,1,0,0,0,0,0,1,0,0,0,0,0
+71,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+20,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,1,1,0,0,0,0
+17,Male,Fully Vaccinated,0,1,0,0,1,0,1,0,0,0,0,0,0,0
+93,Female,Booster Dose,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+63,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+81,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+94,Male,Fully Vaccinated,0,1,1,1,1,0,0,0,0,0,0,1,1,0
+37,Female,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+31,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+10,Female,Fully Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+44,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+88,Female,Booster Dose,0,0,0,1,1,1,1,0,0,0,0,1,1,1
+32,Female,Unvaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+40,Female,Unvaccinated,1,0,0,0,0,1,1,1,0,0,0,1,0,0
+7,Female,Booster Dose,0,1,1,0,0,0,0,1,0,0,0,0,0,0
+10,Female,Fully Vaccinated,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+85,Male,Partially Vaccinated,0,0,0,1,1,1,0,0,0,0,0,1,1,0
+50,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+87,Male,Fully Vaccinated,0,1,1,1,0,0,0,1,0,1,0,1,1,0
+40,Female,Fully Vaccinated,0,0,0,1,0,0,0,1,0,0,0,0,0,0
+16,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+75,Male,Fully Vaccinated,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+45,Male,Booster Dose,0,1,0,1,1,0,0,1,0,0,0,0,0,0
+31,Male,Unvaccinated,1,0,0,1,1,0,0,0,0,0,0,1,0,0
+78,Female,Booster Dose,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+79,Male,Booster Dose,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+53,Female,Fully Vaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+85,Other,Fully Vaccinated,0,0,1,1,0,0,1,0,0,0,0,0,0,0
+91,Male,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+19,Male,Partially Vaccinated,0,1,0,0,1,0,0,1,0,0,0,0,0,0
+32,Male,Fully Vaccinated,0,0,1,1,0,0,1,1,0,0,1,1,0,1
+73,Male,Booster Dose,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+39,Male,Fully Vaccinated,1,1,0,0,0,1,0,0,1,0,0,0,0,0
+31,Male,Fully Vaccinated,0,1,0,0,0,1,0,1,0,0,0,0,0,0
+96,Female,Unvaccinated,0,0,1,1,1,0,0,0,0,0,0,1,0,1
+1,Male,Unvaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+96,Female,Partially Vaccinated,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+32,Female,Unvaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+76,Female,Fully Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+29,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+32,Female,Fully Vaccinated,0,1,1,0,0,0,1,0,0,0,0,0,0,0
+76,Male,Partially Vaccinated,0,0,1,0,0,1,0,0,0,0,1,1,0,0
+25,Female,Fully Vaccinated,0,0,1,0,0,1,0,0,1,0,0,0,0,0
+21,Female,Fully Vaccinated,1,1,1,0,1,1,1,0,0,0,0,1,0,0
+65,Female,Unvaccinated,1,1,0,1,0,0,0,0,0,0,0,1,0,1
+37,Male,Unvaccinated,0,1,0,1,0,0,0,1,0,0,0,1,1,0
+89,Female,Partially Vaccinated,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+45,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14,Male,Unvaccinated,1,1,0,0,0,0,1,1,0,0,0,1,0,0
+97,Male,Fully Vaccinated,0,0,0,1,1,0,0,0,0,1,0,0,0,0
+43,Male,Booster Dose,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+48,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+74,Female,Partially Vaccinated,1,1,0,1,1,0,0,0,0,0,0,1,1,0
+60,Female,Booster Dose,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+66,Male,Unvaccinated,1,1,0,0,1,0,0,0,0,0,0,1,0,0
+5,Male,Fully Vaccinated,1,0,0,0,0,1,1,0,0,1,0,0,0,0
+8,Male,Booster Dose,1,1,0,0,0,1,0,0,0,0,0,0,0,0
+5,Male,Fully Vaccinated,0,1,1,0,1,1,0,0,0,0,1,1,0,0
+72,Male,Partially Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+94,Female,Partially Vaccinated,0,1,0,0,0,1,0,0,1,0,0,1,0,0
+31,Male,Partially Vaccinated,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+40,Male,Fully Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+75,Male,Partially Vaccinated,0,0,0,0,0,1,1,1,1,0,0,1,0,0
+7,Female,Booster Dose,0,1,0,0,0,0,1,1,0,0,0,0,0,0
+71,Female,Booster Dose,0,1,0,0,0,1,1,0,1,0,0,1,0,0
+49,Female,Booster Dose,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+91,Female,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+61,Male,Fully Vaccinated,1,1,0,1,1,0,1,0,0,0,0,1,0,0
+83,Male,Booster Dose,0,1,0,0,1,0,1,0,0,0,0,0,0,0
+61,Female,Booster Dose,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+6,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+74,Female,Unvaccinated,0,0,1,0,1,0,1,0,0,0,0,1,0,0
+83,Male,Unvaccinated,0,0,1,0,0,0,0,0,0,0,1,1,0,0
+79,Male,Fully Vaccinated,1,1,0,0,1,1,1,0,0,0,1,1,0,0
+3,Female,Fully Vaccinated,0,1,0,0,0,0,1,0,0,0,1,0,0,0
+5,Female,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+57,Female,Partially Vaccinated,1,0,0,0,1,0,1,1,0,0,0,1,0,0
+21,Male,Unvaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+25,Female,Partially Vaccinated,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+2,Male,Partially Vaccinated,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+40,Male,Unvaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+59,Male,Fully Vaccinated,0,0,0,1,1,1,0,0,0,0,1,1,0,0
+13,Male,Fully Vaccinated,1,0,0,1,1,0,0,0,0,0,1,0,0,0
+74,Male,Fully Vaccinated,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+81,Male,Partially Vaccinated,0,0,0,0,1,1,0,1,0,0,0,1,0,0
+11,Male,Partially Vaccinated,1,0,0,1,0,1,1,0,0,1,1,1,1,0
+86,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+11,Male,Booster Dose,1,1,0,0,0,0,0,1,1,0,0,0,0,0
+12,Male,Unvaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+24,Male,Fully Vaccinated,0,0,0,1,1,0,1,0,1,0,0,0,0,0
+44,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+18,Male,Booster Dose,0,1,1,0,1,0,0,1,0,0,0,0,0,0
+54,Male,Fully Vaccinated,0,0,0,0,1,1,0,0,0,1,0,0,0,0
+99,Male,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+44,Female,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+7,Female,Unvaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+92,Female,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+52,Female,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+54,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+31,Female,Fully Vaccinated,1,0,0,1,0,0,0,0,0,1,1,0,0,0
+50,Female,Fully Vaccinated,0,1,1,0,0,1,0,0,0,0,0,0,0,0
+43,Male,Partially Vaccinated,0,1,0,1,1,0,0,0,0,0,1,1,0,0
+81,Male,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+69,Male,Partially Vaccinated,0,1,0,1,0,0,0,0,0,1,0,1,1,0
+17,Female,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+82,Female,Fully Vaccinated,1,0,0,0,1,0,0,1,0,0,0,0,0,0
+21,Female,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,1,0,0,0
+36,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+95,Male,Fully Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+55,Male,Unvaccinated,1,1,0,1,0,0,0,0,0,0,1,1,0,1
+58,Male,Fully Vaccinated,1,1,1,0,0,1,0,0,0,0,0,1,0,0
+2,Female,Partially Vaccinated,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+27,Female,Unvaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+73,Male,Unvaccinated,1,0,1,0,0,1,0,0,0,0,0,1,0,0
+34,Female,Fully Vaccinated,0,1,0,1,0,0,0,0,0,0,1,0,0,0
+60,Male,Fully Vaccinated,0,0,0,0,1,1,1,0,0,0,0,0,0,0
+92,Other,Unvaccinated,1,1,1,0,1,1,0,0,0,0,1,1,0,0
+53,Male,Unvaccinated,0,0,0,1,0,1,0,0,0,0,0,1,0,0
+62,Male,Booster Dose,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+78,Male,Unvaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+96,Male,Booster Dose,1,1,1,0,0,1,0,0,0,0,0,1,0,0
+6,Male,Partially Vaccinated,0,0,1,0,1,0,1,0,0,0,1,1,0,0
+75,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+48,Female,Partially Vaccinated,0,1,0,0,0,0,0,1,1,0,1,1,0,0
+93,Female,Booster Dose,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+84,Male,Fully Vaccinated,0,0,1,0,0,1,1,0,0,0,0,0,0,0
+30,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,1,1,0,0,0,0
+57,Male,Unvaccinated,0,1,0,1,1,0,0,0,0,0,1,1,0,0
+60,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+23,Female,Fully Vaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+19,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+36,Male,Unvaccinated,1,0,0,0,0,1,0,1,0,0,0,1,0,1
+3,Male,Fully Vaccinated,0,1,0,0,1,0,0,0,0,1,0,0,0,0
+91,Other,Partially Vaccinated,1,0,1,0,0,1,0,0,0,1,0,1,0,0
+19,Male,Fully Vaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+59,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23,Female,Booster Dose,1,0,1,1,1,0,0,0,0,0,0,0,0,0
+49,Male,Booster Dose,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+48,Male,Booster Dose,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+50,Male,Unvaccinated,1,0,1,0,0,0,0,1,0,0,0,1,0,0
+95,Female,Booster Dose,1,0,0,0,0,1,0,1,0,0,0,0,0,0
+35,Female,Partially Vaccinated,1,0,1,0,0,1,1,1,0,0,0,1,1,0
+97,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+99,Other,Fully Vaccinated,1,1,1,0,0,0,0,0,1,0,1,1,1,0
+65,Female,Unvaccinated,1,1,1,0,0,0,0,0,0,0,0,1,0,0
+78,Male,Booster Dose,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+33,Male,Unvaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+35,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+5,Female,Fully Vaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+38,Female,Fully Vaccinated,0,0,0,1,1,1,0,0,0,1,0,0,0,0
+41,Female,Unvaccinated,0,1,0,0,1,0,0,0,1,1,0,1,0,0
+57,Male,Partially Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+11,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+2,Male,Partially Vaccinated,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+17,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+39,Male,Partially Vaccinated,0,0,0,0,0,0,1,1,1,0,0,0,0,0
+20,Female,Fully Vaccinated,1,0,0,1,0,1,1,0,0,0,0,0,0,0
+14,Female,Booster Dose,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+96,Male,Fully Vaccinated,1,0,1,1,0,0,0,0,0,0,0,0,0,0
+98,Male,Fully Vaccinated,0,1,1,0,0,1,1,0,0,0,0,1,1,0
+25,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+99,Female,Unvaccinated,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+93,Female,Partially Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+86,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+41,Female,Fully Vaccinated,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+43,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,1,0,0,0,0,0
+13,Male,Partially Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+77,Male,Partially Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+1,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+36,Other,Booster Dose,0,1,1,0,1,0,0,0,0,0,0,0,0,0
+68,Male,Fully Vaccinated,0,0,0,0,1,0,1,1,0,0,0,0,0,0
+37,Male,Unvaccinated,1,1,0,1,0,0,0,1,0,0,0,1,0,0
+40,Female,Unvaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+61,Female,Booster Dose,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+59,Female,Partially Vaccinated,0,1,1,0,0,1,1,0,0,0,0,1,1,1
+13,Male,Fully Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+88,Male,Unvaccinated,0,1,0,1,0,1,0,0,0,0,0,1,1,0
+83,Male,Booster Dose,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+1,Male,Booster Dose,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+69,Male,Fully Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+16,Male,Unvaccinated,0,0,0,1,0,0,1,0,1,0,0,1,1,0
+88,Female,Partially Vaccinated,1,0,1,0,0,0,1,0,1,0,0,1,0,0
+27,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+65,Female,Fully Vaccinated,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+34,Female,Partially Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+4,Male,Unvaccinated,0,0,0,0,0,1,1,1,0,0,0,1,1,0
+64,Female,Fully Vaccinated,0,0,0,1,0,0,0,1,0,0,0,0,0,0
+39,Male,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+75,Male,Partially Vaccinated,0,0,1,1,0,0,0,0,0,1,1,1,0,0
+55,Female,Unvaccinated,1,1,1,0,0,1,0,0,1,0,0,1,0,1
+35,Male,Booster Dose,1,0,1,1,0,0,1,0,0,0,0,0,0,0
+44,Other,Fully Vaccinated,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+22,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+46,Female,Fully Vaccinated,0,0,0,0,1,0,1,0,0,1,0,0,0,0
+30,Male,Unvaccinated,1,1,1,0,1,0,0,1,1,0,1,1,0,0
+10,Male,Partially Vaccinated,0,1,0,1,0,0,0,0,1,0,0,0,0,0
+9,Male,Partially Vaccinated,0,1,0,1,0,0,0,0,0,1,0,0,0,0
+66,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+13,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+79,Female,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+73,Female,Booster Dose,0,1,1,0,1,0,0,0,0,0,0,0,0,0
+92,Female,Partially Vaccinated,1,0,0,0,1,0,1,0,0,0,0,1,1,0
+9,Female,Booster Dose,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+75,Female,Booster Dose,1,1,1,1,0,0,0,0,0,0,0,1,0,0
+93,Female,Unvaccinated,1,1,0,0,1,0,0,0,0,0,0,1,1,0
+0,Female,Partially Vaccinated,0,0,1,1,1,0,0,1,1,0,0,1,0,0
+4,Female,Fully Vaccinated,0,0,1,0,0,1,0,1,0,0,0,0,0,0
+19,Male,Fully Vaccinated,0,1,0,0,0,1,0,0,1,0,0,0,0,0
+7,Female,Fully Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+42,Female,Booster Dose,0,1,0,0,1,0,0,0,1,0,0,0,0,0
+75,Male,Fully Vaccinated,0,0,1,1,0,1,0,0,0,0,0,0,0,0
+0,Male,Partially Vaccinated,0,1,0,1,0,0,0,0,0,1,0,0,0,0
+56,Male,Unvaccinated,1,0,0,1,0,0,0,1,0,0,0,1,0,0
+63,Female,Fully Vaccinated,1,0,0,1,1,0,1,0,0,0,0,1,1,0
+83,Female,Unvaccinated,0,1,0,0,1,0,0,0,0,0,0,1,0,0
+27,Male,Fully Vaccinated,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+36,Female,Partially Vaccinated,1,0,0,1,0,0,0,1,0,0,0,0,0,0
+46,Female,Partially Vaccinated,1,0,0,1,0,0,0,0,0,1,0,0,0,0
+75,Male,Unvaccinated,0,0,1,1,0,0,0,0,0,0,0,1,1,1
+36,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+48,Other,Unvaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+43,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+55,Female,Fully Vaccinated,0,0,0,0,1,0,0,1,1,0,0,0,0,0
+27,Other,Fully Vaccinated,1,0,1,0,0,0,0,0,0,1,1,0,0,0
+78,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+5,Male,Unvaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+60,Female,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+19,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+77,Female,Fully Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+1,Male,Unvaccinated,0,1,0,1,0,1,0,0,0,0,0,1,0,0
+72,Female,Fully Vaccinated,1,1,0,1,0,1,0,0,0,0,0,1,0,0
+36,Male,Booster Dose,0,0,1,1,1,0,1,0,0,0,0,0,0,0
+19,Female,Fully Vaccinated,1,1,0,1,0,0,0,0,0,1,0,0,0,0
+25,Male,Fully Vaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+28,Male,Fully Vaccinated,0,0,0,0,1,1,0,0,0,1,0,0,0,0
+0,Male,Unvaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+34,Male,Booster Dose,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+69,Female,Unvaccinated,0,1,0,0,0,0,0,1,0,1,0,1,0,0
+58,Female,Booster Dose,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+68,Female,Fully Vaccinated,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+32,Male,Fully Vaccinated,1,1,1,0,1,1,0,0,0,0,0,1,0,0
+50,Male,Fully Vaccinated,0,0,0,0,1,0,0,0,1,1,1,0,0,0
+77,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+11,Female,Fully Vaccinated,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+19,Male,Unvaccinated,0,0,0,1,0,0,0,1,0,0,0,0,0,0
+52,Female,Fully Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+87,Male,Fully Vaccinated,0,1,0,0,1,0,0,1,0,0,0,0,0,0
+42,Female,Booster Dose,0,0,1,1,1,0,0,0,0,1,0,0,0,0
+97,Female,Fully Vaccinated,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+88,Male,Unvaccinated,0,0,0,1,1,0,0,1,0,0,0,1,1,0
+49,Male,Partially Vaccinated,0,0,0,1,0,0,0,0,1,0,0,0,0,0
+28,Female,Fully Vaccinated,0,1,0,0,0,1,0,0,1,0,0,0,0,0
+56,Male,Partially Vaccinated,1,0,1,1,1,1,0,0,0,0,0,1,0,0
+38,Male,Partially Vaccinated,0,0,1,0,1,0,0,0,1,1,0,1,0,0
+94,Female,Fully Vaccinated,0,0,1,0,0,1,0,0,0,0,1,0,0,0
+55,Male,Fully Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+42,Male,Fully Vaccinated,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+49,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+22,Female,Fully Vaccinated,0,0,1,0,0,1,1,0,1,0,0,0,0,0
+43,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+37,Female,Fully Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+83,Female,Unvaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+22,Female,Booster Dose,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+44,Male,Fully Vaccinated,0,0,1,0,1,0,0,1,1,0,0,0,0,0
+51,Female,Partially Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+79,Other,Fully Vaccinated,0,0,0,1,0,1,0,1,0,0,0,0,0,0
+49,Male,Fully Vaccinated,0,0,0,0,1,1,0,0,1,0,0,0,0,0
+7,Male,Unvaccinated,0,1,0,1,0,1,0,0,0,0,1,1,1,0
+84,Female,Fully Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+0,Male,Partially Vaccinated,1,1,0,0,0,1,0,0,0,0,0,0,0,0
+7,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+28,Female,Fully Vaccinated,1,0,1,0,1,0,0,0,1,0,0,0,0,0
+95,Other,Partially Vaccinated,1,1,0,1,0,1,0,0,0,0,0,1,0,1
+4,Male,Fully Vaccinated,0,1,1,0,0,1,0,0,0,0,1,0,0,0
+85,Male,Partially Vaccinated,1,1,0,0,0,0,0,0,1,0,0,1,0,0
+46,Male,Unvaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+33,Female,Booster Dose,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+64,Male,Fully Vaccinated,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+54,Male,Fully Vaccinated,0,1,0,1,1,1,0,0,1,0,0,1,0,0
+89,Male,Partially Vaccinated,0,0,1,1,0,0,1,1,0,1,0,1,0,1
+42,Male,Partially Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+73,Female,Booster Dose,1,0,0,1,1,0,0,0,1,0,0,1,0,0
+29,Female,Unvaccinated,1,0,1,0,0,1,0,0,0,0,0,1,0,0
+81,Female,Partially Vaccinated,0,0,0,0,1,0,1,1,1,0,0,1,1,0
+16,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+25,Male,Fully Vaccinated,1,0,0,0,0,1,0,0,0,1,0,0,0,0
+7,Female,Fully Vaccinated,0,0,1,0,0,1,0,0,1,0,0,0,0,0
+46,Female,Unvaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+75,Male,Unvaccinated,0,0,1,1,0,0,0,0,0,0,0,1,0,1
+90,Female,Partially Vaccinated,0,1,0,0,0,1,1,0,0,1,0,1,0,1
+71,Male,Booster Dose,0,0,0,1,1,1,1,0,0,1,0,1,1,0
+88,Female,Unvaccinated,1,0,0,1,0,0,0,0,0,1,0,1,0,0
+45,Male,Fully Vaccinated,1,1,1,1,0,1,0,0,1,0,0,1,0,1
+67,Other,Fully Vaccinated,0,1,0,0,1,0,1,0,0,0,0,0,0,0
+32,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,Female,Booster Dose,0,1,0,0,1,0,0,0,0,1,0,0,0,0
+18,Female,Partially Vaccinated,0,1,1,1,1,0,0,0,0,1,0,1,0,0
+30,Female,Partially Vaccinated,1,1,1,0,1,0,0,1,0,0,0,1,0,0
+79,Male,Fully Vaccinated,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+13,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+52,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+47,Male,Fully Vaccinated,1,1,0,0,0,1,0,1,0,0,0,0,0,0
+68,Male,Booster Dose,0,1,0,0,0,1,0,0,1,0,0,0,0,0
+89,Female,Unvaccinated,1,0,0,0,1,0,0,0,1,0,0,1,1,0
+61,Female,Booster Dose,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+91,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+65,Male,Fully Vaccinated,1,0,0,0,0,0,0,1,0,0,1,0,0,0
+63,Male,Partially Vaccinated,1,0,1,0,0,0,1,0,0,0,0,1,1,0
+69,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+62,Female,Partially Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+72,Female,Booster Dose,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+32,Other,Booster Dose,1,1,0,1,0,1,0,0,0,0,0,0,0,0
+40,Male,Booster Dose,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+88,Male,Unvaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+47,Male,Booster Dose,0,0,0,0,0,1,0,1,0,0,0,0,0,0
+12,Male,Fully Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+72,Female,Unvaccinated,1,0,1,0,0,0,0,0,0,0,0,1,0,0
+76,Female,Unvaccinated,0,0,0,1,1,0,0,0,0,0,0,1,0,0
+30,Male,Unvaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+74,Male,Unvaccinated,0,1,1,0,1,1,0,0,0,0,0,1,1,0
+67,Female,Fully Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+97,Female,Booster Dose,0,1,0,0,1,1,0,0,0,0,0,0,0,0
+3,Male,Partially Vaccinated,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+18,Other,Fully Vaccinated,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+69,Female,Booster Dose,1,0,0,0,1,0,0,1,0,0,1,1,0,0
+97,Male,Partially Vaccinated,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+81,Female,Booster Dose,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+12,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,1,0,0,0,0,0
+22,Female,Fully Vaccinated,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+82,Other,Partially Vaccinated,0,0,0,1,1,0,0,1,0,0,0,1,0,0
+74,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+0,Female,Unvaccinated,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+87,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+53,Female,Partially Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+70,Female,Booster Dose,0,0,1,1,0,1,0,0,0,0,0,0,0,0
+88,Female,Partially Vaccinated,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+84,Female,Unvaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+14,Other,Fully Vaccinated,1,1,0,0,0,1,0,1,0,0,0,0,0,0
+64,Female,Unvaccinated,0,0,0,1,0,0,0,1,0,1,0,1,1,0
+75,Male,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+70,Other,Booster Dose,0,0,1,1,1,1,0,0,1,0,1,1,0,1
+14,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+20,Female,Unvaccinated,0,1,1,1,0,0,0,0,0,1,0,1,0,0
+18,Female,Fully Vaccinated,0,0,0,0,0,1,1,0,0,0,1,0,0,0
+59,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+92,Male,Fully Vaccinated,0,0,1,1,0,1,1,1,0,0,0,1,0,0
+88,Female,Unvaccinated,0,1,0,1,1,1,0,0,0,0,0,1,0,1
+32,Female,Fully Vaccinated,0,0,0,0,0,1,1,0,0,0,1,0,0,0
+48,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+95,Female,Unvaccinated,0,1,0,1,1,0,1,0,0,0,0,1,0,1
+34,Male,Partially Vaccinated,1,0,0,0,0,1,1,0,1,0,0,1,0,0
+43,Female,Partially Vaccinated,0,0,0,0,1,0,0,1,0,0,0,0,0,0
+89,Male,Fully Vaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+10,Male,Booster Dose,1,0,1,1,1,0,1,0,1,1,0,1,1,0
+98,Male,Fully Vaccinated,1,1,1,0,0,1,0,0,0,0,0,1,0,0
+71,Male,Partially Vaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+77,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+73,Male,Booster Dose,0,0,0,0,0,0,1,0,1,0,0,0,0,0
+65,Male,Booster Dose,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+45,Female,Booster Dose,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+8,Female,Fully Vaccinated,0,0,1,0,1,0,0,0,1,0,1,0,0,0
+2,Male,Partially Vaccinated,1,0,0,0,0,1,1,0,0,0,0,0,0,0
+84,Other,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25,Male,Partially Vaccinated,0,0,1,1,0,0,1,0,0,0,0,0,0,0
+71,Female,Partially Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+47,Female,Fully Vaccinated,1,1,1,0,0,1,0,0,0,0,0,0,0,0
+65,Male,Unvaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+69,Male,Unvaccinated,0,1,1,1,0,0,0,0,0,0,0,1,0,1
+27,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+92,Male,Partially Vaccinated,0,0,0,1,0,0,0,0,1,0,0,0,0,0
+25,Female,Booster Dose,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+24,Male,Unvaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+11,Male,Unvaccinated,1,0,0,1,1,0,0,0,0,0,1,1,1,0
+4,Male,Unvaccinated,1,0,0,0,1,1,0,0,0,0,0,1,0,0
+97,Male,Unvaccinated,0,1,1,0,0,0,0,0,0,0,1,1,1,0
+47,Female,Unvaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+36,Male,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+78,Female,Partially Vaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+43,Male,Fully Vaccinated,0,0,1,0,0,1,1,0,0,0,1,0,0,0
+99,Male,Booster Dose,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+14,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,1,0,0,0
+42,Male,Unvaccinated,0,1,0,0,1,1,1,0,1,0,0,1,0,1
+47,Female,Unvaccinated,0,1,0,0,1,1,0,1,0,0,1,1,0,0
+86,Female,Booster Dose,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+69,Male,Fully Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+45,Male,Fully Vaccinated,1,0,1,0,0,1,0,0,0,0,1,0,0,0
+42,Male,Booster Dose,1,0,0,1,0,1,1,0,1,0,0,1,0,0
+20,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22,Male,Booster Dose,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+79,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+46,Male,Partially Vaccinated,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+14,Female,Booster Dose,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+24,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+35,Female,Unvaccinated,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+74,Male,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+50,Male,Fully Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+14,Female,Booster Dose,0,0,1,0,1,1,1,0,0,0,1,1,0,0
+67,Female,Fully Vaccinated,0,1,1,1,0,1,0,0,0,0,1,1,1,0
+20,Female,Partially Vaccinated,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+12,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+85,Female,Fully Vaccinated,1,0,0,0,1,0,1,0,0,0,0,0,0,0
+18,Female,Fully Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+33,Male,Partially Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+77,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+67,Female,Fully Vaccinated,0,1,0,1,0,0,0,1,0,1,0,1,0,1
+51,Male,Unvaccinated,0,0,0,1,1,0,0,0,0,1,0,1,0,0
+26,Male,Partially Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+28,Female,Fully Vaccinated,1,0,0,1,1,0,0,0,0,0,1,0,0,0
+27,Female,Fully Vaccinated,0,0,0,0,0,1,0,1,0,0,0,0,0,0
+34,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+7,Male,Unvaccinated,0,1,1,0,0,1,0,0,0,0,1,1,1,0
+15,Male,Partially Vaccinated,0,1,1,0,0,1,0,0,1,0,0,1,0,1
+35,Female,Fully Vaccinated,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+29,Male,Partially Vaccinated,0,1,1,1,0,0,0,0,0,1,0,1,0,1
+17,Other,Unvaccinated,1,0,1,0,1,1,0,0,0,0,0,1,0,0
+1,Male,Fully Vaccinated,0,0,0,1,0,1,0,0,1,0,0,0,0,0
+48,Male,Booster Dose,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+76,Female,Fully Vaccinated,0,0,0,0,0,1,0,1,1,1,0,1,0,0
+3,Female,Unvaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+89,Male,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+88,Male,Booster Dose,0,0,0,1,0,0,1,0,1,0,0,0,0,0
+93,Other,Partially Vaccinated,0,0,1,1,0,0,1,0,1,0,0,1,0,0
+74,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+6,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+94,Male,Partially Vaccinated,0,1,0,1,0,0,0,0,0,1,0,1,0,0
+73,Female,Fully Vaccinated,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+38,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12,Male,Fully Vaccinated,1,0,0,1,0,0,0,0,1,0,1,0,0,0
+30,Female,Partially Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+70,Male,Unvaccinated,0,0,0,1,1,0,0,0,0,1,0,1,0,0
+62,Male,Fully Vaccinated,0,1,0,1,1,1,0,0,0,1,0,1,0,0
+55,Female,Fully Vaccinated,0,0,0,1,0,1,0,0,0,1,0,0,0,0
+41,Male,Unvaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+60,Female,Unvaccinated,0,0,0,0,1,1,0,0,1,0,0,1,0,0
+41,Male,Unvaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+55,Male,Booster Dose,0,1,0,1,0,0,1,0,0,0,1,1,1,0
+35,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+83,Male,Booster Dose,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+67,Male,Unvaccinated,1,0,0,0,0,0,0,0,1,0,0,1,0,0
+6,Female,Booster Dose,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+53,Female,Unvaccinated,0,1,0,0,1,0,0,1,0,0,1,1,0,0
+0,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+43,Male,Fully Vaccinated,1,1,0,0,1,0,0,0,0,0,1,0,0,0
+44,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+46,Male,Partially Vaccinated,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+12,Male,Unvaccinated,0,0,1,0,1,1,0,0,1,0,0,1,0,0
+21,Female,Unvaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+20,Male,Fully Vaccinated,0,1,0,1,0,1,0,0,0,0,0,0,0,0
+85,Male,Fully Vaccinated,0,0,1,1,0,0,0,1,0,0,0,0,0,0
+91,Female,Fully Vaccinated,0,1,0,1,0,0,0,1,1,0,1,1,0,0
+8,Male,Fully Vaccinated,1,0,0,1,1,0,0,0,0,1,0,0,0,0
+25,Male,Fully Vaccinated,1,0,1,1,0,0,0,0,0,1,0,0,0,0
+8,Male,Unvaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+14,Male,Unvaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+9,Female,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+87,Male,Unvaccinated,0,1,0,0,1,0,0,0,0,0,1,1,1,1
+41,Male,Fully Vaccinated,0,1,1,0,0,0,0,1,0,0,0,0,0,0
+71,Male,Unvaccinated,1,1,0,1,0,0,0,1,0,0,1,1,0,0
+23,Male,Fully Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+79,Male,Fully Vaccinated,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+48,Female,Partially Vaccinated,0,1,1,0,0,1,0,0,0,0,0,0,0,0
+25,Female,Partially Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+90,Female,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+36,Male,Partially Vaccinated,1,1,0,0,1,0,0,0,0,0,0,0,0,0
+67,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+49,Female,Fully Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+23,Male,Unvaccinated,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+18,Female,Booster Dose,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+99,Male,Fully Vaccinated,0,0,0,0,1,0,1,1,1,0,0,1,0,0
+59,Male,Unvaccinated,0,0,1,0,0,0,1,1,0,0,0,1,1,0
+38,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+73,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+88,Female,Partially Vaccinated,0,0,1,0,1,1,0,0,1,0,0,1,0,0
+17,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+18,Female,Partially Vaccinated,0,0,1,0,0,1,0,1,0,0,0,0,0,0
+35,Female,Partially Vaccinated,1,1,1,0,0,0,1,0,0,0,0,1,0,0
+73,Female,Unvaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+96,Male,Partially Vaccinated,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+54,Male,Partially Vaccinated,1,1,0,1,1,0,0,0,0,1,0,1,0,0
+68,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+46,Male,Fully Vaccinated,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+48,Male,Fully Vaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+98,Female,Fully Vaccinated,1,0,0,0,1,0,0,0,1,0,0,0,0,0
+97,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+32,Other,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20,Male,Fully Vaccinated,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+80,Male,Partially Vaccinated,0,1,0,0,0,1,0,1,0,0,0,1,0,0
+21,Male,Booster Dose,1,0,0,0,1,0,0,0,0,0,1,0,0,0
+47,Female,Unvaccinated,0,0,1,0,1,1,0,0,0,0,0,1,0,0
+36,Female,Partially Vaccinated,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+14,Female,Fully Vaccinated,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+34,Female,Unvaccinated,0,0,0,1,1,1,0,0,0,0,0,1,0,0
+91,Female,Unvaccinated,0,1,0,0,0,0,0,1,0,0,0,1,1,0
+70,Male,Fully Vaccinated,1,0,0,0,1,0,0,0,1,0,1,1,0,0
+31,Male,Fully Vaccinated,1,0,0,0,0,0,1,1,0,0,0,0,0,0
+10,Female,Fully Vaccinated,1,1,0,0,0,1,0,0,0,1,0,0,0,0
+9,Male,Fully Vaccinated,0,1,1,0,0,1,0,0,0,0,0,0,0,0
+72,Male,Unvaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+77,Female,Unvaccinated,0,1,0,0,0,1,1,1,0,1,0,1,1,0
+76,Other,Fully Vaccinated,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+56,Female,Partially Vaccinated,0,1,0,1,0,0,1,0,0,0,0,1,0,1
+24,Female,Fully Vaccinated,1,0,0,0,0,0,1,0,0,0,0,0,0,0
+1,Female,Unvaccinated,0,1,0,1,0,0,0,0,0,0,1,1,1,0
+63,Male,Fully Vaccinated,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+34,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+6,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+84,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17,Male,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+66,Female,Partially Vaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+41,Male,Unvaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+38,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+40,Female,Partially Vaccinated,1,0,0,0,0,1,0,0,0,1,0,0,0,0
+74,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+59,Male,Partially Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+45,Female,Fully Vaccinated,1,1,0,1,0,1,0,0,1,0,0,1,0,0
+18,Male,Booster Dose,1,0,0,0,1,1,0,0,0,0,0,0,0,0
+67,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+89,Female,Unvaccinated,0,1,1,0,0,0,0,0,0,1,0,1,1,0
+41,Male,Unvaccinated,1,0,0,0,0,0,0,0,1,1,0,1,1,0
+31,Other,Fully Vaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+38,Male,Partially Vaccinated,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+35,Other,Unvaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+96,Female,Fully Vaccinated,0,1,0,1,0,1,0,0,0,0,0,0,0,0
+35,Other,Unvaccinated,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+2,Male,Fully Vaccinated,0,1,0,0,1,1,0,0,0,1,0,0,0,0
+72,Female,Fully Vaccinated,0,1,0,0,1,1,0,1,0,0,0,1,0,0
+7,Male,Fully Vaccinated,0,0,0,1,1,0,0,0,1,0,0,0,0,0
+96,Male,Unvaccinated,1,0,0,0,0,0,1,0,0,1,0,1,1,0
+69,Female,Booster Dose,1,0,0,1,0,0,0,1,0,0,0,0,0,0
+40,Male,Fully Vaccinated,0,1,0,0,0,1,0,1,0,0,0,0,0,0
+67,Female,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+12,Male,Unvaccinated,0,1,1,0,0,1,0,0,0,0,0,1,0,0
+48,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+59,Female,Fully Vaccinated,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+1,Male,Fully Vaccinated,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+59,Female,Fully Vaccinated,1,0,1,0,0,0,0,0,0,0,1,0,0,0
+4,Female,Booster Dose,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+43,Female,Unvaccinated,1,0,0,1,1,1,1,0,0,0,0,1,0,0
+26,Male,Unvaccinated,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+31,Female,Booster Dose,1,0,0,0,0,0,0,0,1,0,1,0,0,0
+20,Other,Fully Vaccinated,1,0,1,1,1,0,0,0,0,0,0,0,0,0
+7,Female,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+71,Female,Fully Vaccinated,1,0,0,0,0,1,1,0,0,1,0,1,0,0
+49,Female,Booster Dose,0,0,1,0,1,0,0,1,0,0,0,0,0,0
+66,Female,Fully Vaccinated,1,0,0,0,1,1,0,0,0,0,0,0,0,0
+43,Female,Fully Vaccinated,0,1,1,0,0,0,1,0,0,1,0,0,0,0
+57,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2,Male,Unvaccinated,1,0,1,0,0,1,0,1,0,0,1,1,0,0
+85,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+69,Male,Unvaccinated,0,1,1,0,0,0,0,0,0,1,0,1,0,0
+1,Female,Booster Dose,1,0,0,0,1,0,0,0,0,1,0,0,0,0
+86,Male,Fully Vaccinated,0,0,0,0,0,1,0,1,0,0,1,0,0,0
+43,Female,Fully Vaccinated,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+1,Male,Fully Vaccinated,0,0,1,0,1,0,1,0,0,0,0,0,0,0
+80,Male,Unvaccinated,0,0,0,1,1,0,0,0,0,0,0,1,0,0
+34,Female,Partially Vaccinated,0,1,1,1,0,1,0,0,1,0,0,1,0,0
+97,Female,Booster Dose,0,0,0,0,0,0,0,1,0,1,0,0,0,0
+86,Female,Booster Dose,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+29,Male,Partially Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+7,Female,Booster Dose,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+21,Female,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+43,Female,Fully Vaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+57,Male,Unvaccinated,0,1,0,0,0,0,1,0,1,0,1,1,0,0
+35,Female,Booster Dose,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+68,Female,Fully Vaccinated,0,0,1,1,0,1,0,0,0,0,0,0,0,0
+76,Other,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+92,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+30,Female,Fully Vaccinated,1,0,0,1,0,1,0,0,0,0,0,0,0,0
+46,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+54,Male,Partially Vaccinated,1,0,1,0,0,0,0,0,0,0,1,1,1,0
+79,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+61,Male,Partially Vaccinated,0,1,0,1,1,1,0,0,0,1,1,1,1,1
+29,Male,Unvaccinated,0,0,0,1,1,0,0,0,0,0,1,1,0,1
+54,Male,Fully Vaccinated,0,1,0,0,1,1,0,0,0,0,0,0,0,0
+15,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+11,Female,Booster Dose,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+16,Female,Unvaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+15,Female,Fully Vaccinated,1,0,1,0,1,0,1,0,0,0,0,0,0,0
+11,Male,Unvaccinated,0,0,1,0,0,0,0,1,0,0,1,1,1,1
+7,Male,Unvaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+83,Female,Unvaccinated,0,0,0,1,0,0,1,0,0,1,0,1,0,0
+2,Male,Fully Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+15,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29,Male,Fully Vaccinated,1,0,1,1,1,0,1,0,0,0,0,1,0,0
+22,Male,Partially Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+91,Female,Booster Dose,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+4,Male,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+83,Male,Booster Dose,1,0,0,1,0,0,1,1,0,0,0,1,0,0
+64,Male,Booster Dose,1,1,0,0,0,0,0,1,0,0,1,1,1,0
+29,Female,Booster Dose,0,0,0,1,1,0,0,0,1,1,0,0,0,0
+20,Male,Booster Dose,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+83,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+69,Male,Unvaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+21,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+81,Female,Partially Vaccinated,0,1,0,0,0,0,0,0,1,1,0,1,0,0
+71,Male,Fully Vaccinated,1,1,0,0,1,0,0,0,0,1,0,1,1,0
+31,Male,Fully Vaccinated,0,1,0,0,1,1,0,1,0,0,0,0,0,0
+32,Male,Booster Dose,1,0,1,1,1,0,0,0,0,1,0,1,0,0
+15,Female,Booster Dose,1,0,0,0,1,1,0,1,0,0,0,0,0,0
+75,Male,Partially Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+37,Female,Fully Vaccinated,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+97,Male,Booster Dose,1,0,0,1,0,1,0,0,0,0,0,0,0,0
+13,Male,Partially Vaccinated,0,1,0,1,0,0,0,1,0,0,0,0,0,0
+35,Male,Fully Vaccinated,0,1,1,0,0,1,0,0,0,0,0,0,0,0
+96,Female,Partially Vaccinated,1,0,1,1,0,0,1,0,0,0,0,1,0,0
+22,Male,Fully Vaccinated,0,1,0,1,0,1,0,0,0,0,0,0,0,0
+65,Male,Partially Vaccinated,1,0,0,0,1,1,0,1,0,0,0,1,1,0
+84,Male,Booster Dose,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+1,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+90,Male,Unvaccinated,0,0,1,0,0,0,0,0,0,1,0,1,0,0
+72,Female,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+64,Male,Fully Vaccinated,0,1,0,1,1,0,0,0,0,1,1,1,0,0
+74,Male,Booster Dose,0,0,1,0,1,1,1,0,0,0,0,1,0,0
+66,Female,Fully Vaccinated,1,1,1,1,0,1,0,0,0,0,0,1,0,0
+51,Male,Fully Vaccinated,1,0,0,0,0,0,1,0,1,0,0,0,0,0
+61,Male,Partially Vaccinated,0,1,0,1,0,0,1,0,0,0,0,1,1,0
+22,Male,Fully Vaccinated,0,0,1,1,1,0,0,0,1,1,0,1,0,0
+25,Female,Fully Vaccinated,1,0,0,1,1,0,0,1,0,0,0,0,0,0
+67,Male,Fully Vaccinated,1,1,0,0,1,1,0,0,0,0,0,1,0,0
+81,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+54,Male,Fully Vaccinated,0,1,1,1,1,1,0,0,0,0,0,1,1,0
+5,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+34,Male,Booster Dose,0,1,0,1,0,1,0,0,0,0,0,0,0,0
+21,Female,Booster Dose,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+42,Female,Fully Vaccinated,0,0,1,0,0,1,1,0,0,1,0,0,0,0
+14,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+85,Male,Partially Vaccinated,0,1,1,1,0,0,1,0,0,1,0,1,0,0
+59,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+11,Male,Partially Vaccinated,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+48,Male,Partially Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+41,Male,Partially Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+37,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+81,Male,Unvaccinated,0,0,0,1,1,0,1,0,0,0,0,1,0,0
+44,Male,Fully Vaccinated,1,0,0,0,0,0,1,1,0,0,0,0,0,0
+34,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,1,0,1,0,0,0
+29,Female,Unvaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+87,Male,Unvaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+29,Female,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,1,0,0,0
+77,Male,Fully Vaccinated,0,0,0,1,1,1,0,1,0,0,0,1,0,1
+5,Female,Partially Vaccinated,0,1,1,0,1,0,0,1,0,0,0,1,1,1
+66,Female,Booster Dose,0,1,0,1,0,1,0,0,0,0,0,0,0,0
+79,Female,Fully Vaccinated,0,1,1,0,0,1,0,0,0,0,0,0,0,0
+6,Female,Partially Vaccinated,0,0,0,1,0,1,0,0,0,1,0,0,0,0
+51,Male,Fully Vaccinated,1,0,0,1,1,0,0,0,0,0,0,0,0,0
+13,Male,Booster Dose,1,0,0,1,0,0,0,0,0,1,0,0,0,0
+72,Female,Fully Vaccinated,1,0,0,0,0,0,1,1,0,0,0,0,0,0
+14,Male,Partially Vaccinated,1,0,1,1,1,0,1,0,0,0,1,1,0,1
+20,Female,Booster Dose,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+34,Male,Fully Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+65,Male,Unvaccinated,0,1,0,0,1,0,0,0,0,0,1,1,0,0
+90,Male,Fully Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+1,Male,Fully Vaccinated,1,1,1,1,0,0,0,0,0,0,0,0,0,0
+34,Female,Booster Dose,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+81,Female,Fully Vaccinated,0,0,0,0,0,1,0,1,1,1,0,1,1,1
+77,Female,Partially Vaccinated,0,1,0,0,0,0,1,0,1,0,1,1,0,0
+19,Female,Fully Vaccinated,0,1,1,1,0,0,0,0,1,0,0,0,0,0
+81,Female,Fully Vaccinated,0,0,1,0,1,0,0,1,1,0,1,1,0,0
+9,Female,Partially Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+24,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+65,Female,Fully Vaccinated,0,1,0,1,0,1,0,0,0,1,0,1,1,0
+24,Male,Unvaccinated,1,0,0,0,0,1,0,0,1,1,1,1,0,0
+53,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+32,Female,Partially Vaccinated,1,0,0,1,0,1,0,0,0,0,0,0,0,0
+35,Male,Partially Vaccinated,1,1,0,1,1,1,0,0,0,1,0,1,1,0
+94,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13,Male,Partially Vaccinated,1,1,1,1,1,1,0,0,0,0,0,1,0,0
+64,Male,Fully Vaccinated,0,0,0,0,1,0,0,1,0,0,0,0,0,0
+79,Female,Partially Vaccinated,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+53,Male,Fully Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+51,Male,Unvaccinated,1,0,0,0,1,0,0,0,0,0,0,1,0,0
+2,Male,Booster Dose,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+98,Male,Fully Vaccinated,1,0,1,0,0,0,0,1,0,0,0,0,0,0
+40,Female,Fully Vaccinated,0,0,0,1,1,0,0,0,0,0,1,0,0,0
+5,Male,Partially Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+24,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+12,Female,Partially Vaccinated,0,0,0,0,0,1,0,1,0,1,1,1,1,0
+97,Female,Booster Dose,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+7,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+20,Female,Fully Vaccinated,0,0,0,0,0,0,0,1,0,1,0,0,0,0
+97,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+67,Male,Partially Vaccinated,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+24,Male,Fully Vaccinated,1,0,1,1,0,1,0,1,0,0,0,1,0,1
+78,Female,Fully Vaccinated,1,1,0,0,0,0,0,1,1,0,0,1,0,1
+67,Male,Fully Vaccinated,0,0,1,0,1,0,1,1,0,0,0,1,0,0
+44,Male,Fully Vaccinated,0,0,0,1,0,0,0,1,0,0,0,0,0,0
+59,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11,Male,Partially Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+31,Male,Fully Vaccinated,1,1,0,0,0,1,0,0,0,1,0,0,0,0
+95,Other,Fully Vaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+91,Male,Partially Vaccinated,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+12,Female,Booster Dose,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+30,Female,Unvaccinated,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+77,Male,Booster Dose,1,1,0,0,1,1,0,0,0,1,0,1,0,0
+19,Male,Booster Dose,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+17,Male,Booster Dose,1,0,0,1,1,1,0,0,0,0,0,0,0,0
+92,Male,Fully Vaccinated,0,0,0,0,1,1,0,0,0,1,1,1,1,0
+59,Female,Partially Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+62,Male,Partially Vaccinated,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+5,Male,Fully Vaccinated,0,0,1,1,1,0,0,0,0,1,0,0,0,0
+31,Female,Partially Vaccinated,1,0,0,1,0,1,1,0,0,1,0,1,1,0
+92,Female,Unvaccinated,1,0,0,0,1,0,0,0,0,0,0,1,1,0
+42,Female,Fully Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+1,Female,Partially Vaccinated,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+59,Female,Booster Dose,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+22,Male,Fully Vaccinated,0,0,0,1,0,0,1,1,0,1,0,0,0,0
+82,Female,Fully Vaccinated,0,1,1,0,0,1,0,0,0,1,0,1,0,1
+30,Male,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+4,Female,Booster Dose,1,1,0,0,1,0,0,1,0,0,0,0,0,0
+82,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+33,Male,Fully Vaccinated,1,0,0,1,0,0,0,1,0,0,0,0,0,0
+9,Female,Partially Vaccinated,0,1,0,0,0,1,0,0,1,0,0,0,0,0
+88,Female,Booster Dose,0,1,0,0,1,0,0,0,1,0,0,0,0,0
+1,Male,Fully Vaccinated,0,0,0,0,1,1,1,0,0,0,0,0,0,0
+10,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+49,Male,Unvaccinated,0,1,1,0,0,0,1,0,0,0,1,1,0,0
+30,Female,Fully Vaccinated,1,0,0,1,0,0,0,1,0,0,0,0,0,0
+55,Female,Unvaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+78,Female,Booster Dose,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+72,Female,Booster Dose,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+86,Female,Unvaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+82,Female,Fully Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+8,Male,Unvaccinated,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+98,Female,Fully Vaccinated,1,1,0,1,0,1,0,0,1,0,0,1,0,0
+20,Male,Partially Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+72,Female,Fully Vaccinated,0,1,0,1,0,0,0,1,0,0,0,0,0,0
+27,Male,Partially Vaccinated,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+61,Male,Unvaccinated,0,1,1,0,0,0,0,0,0,0,0,1,0,0
+6,Female,Partially Vaccinated,1,0,1,0,1,1,0,0,0,0,0,1,0,1
+79,Male,Unvaccinated,1,0,0,0,0,0,0,0,0,0,1,1,1,0
+15,Male,Fully Vaccinated,1,1,0,1,0,0,0,0,0,1,0,0,0,0
+96,Male,Unvaccinated,1,1,0,1,1,0,0,0,0,0,0,1,0,0
+3,Male,Fully Vaccinated,0,1,1,0,0,0,0,0,1,0,0,0,0,0
+3,Male,Booster Dose,1,0,0,1,0,1,0,0,0,0,0,0,0,0
+39,Male,Fully Vaccinated,1,1,1,1,0,1,0,0,0,1,0,1,1,1
+16,Male,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+51,Male,Booster Dose,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+92,Female,Unvaccinated,1,0,0,1,0,1,0,0,0,0,0,1,1,0
+51,Male,Unvaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+35,Female,Fully Vaccinated,1,1,0,0,1,0,0,0,0,0,0,0,0,0
+37,Female,Booster Dose,0,0,1,0,1,0,0,0,1,0,0,0,0,0
+49,Male,Booster Dose,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+62,Female,Unvaccinated,1,0,0,0,0,0,0,1,0,1,0,1,0,0
+62,Female,Partially Vaccinated,1,0,0,0,1,1,0,0,0,1,0,1,0,0
+61,Other,Partially Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+98,Female,Fully Vaccinated,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+6,Male,Fully Vaccinated,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+26,Female,Unvaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+91,Female,Fully Vaccinated,1,0,0,0,0,1,0,0,0,1,0,0,0,0
+85,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+13,Male,Fully Vaccinated,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+70,Female,Unvaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+85,Female,Booster Dose,0,1,1,0,1,1,0,0,0,0,0,1,0,0
+4,Male,Fully Vaccinated,1,1,0,1,0,0,0,0,0,1,0,0,0,0
+54,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+1,Male,Fully Vaccinated,0,0,1,0,0,1,0,0,0,0,1,0,0,0
+61,Female,Unvaccinated,0,1,0,1,0,1,0,0,0,0,0,1,1,0
+90,Female,Unvaccinated,0,0,1,0,1,1,1,0,0,0,1,1,0,0
+20,Female,Fully Vaccinated,0,0,1,1,0,0,0,0,1,0,0,0,0,0
+78,Male,Unvaccinated,0,0,0,1,1,1,0,0,0,1,1,1,1,0
+20,Female,Fully Vaccinated,0,0,1,1,0,0,0,0,1,0,0,0,0,0
+9,Male,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+86,Male,Fully Vaccinated,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+57,Female,Partially Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+38,Other,Partially Vaccinated,0,0,0,1,0,0,0,1,0,0,1,0,0,0
+4,Female,Fully Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+64,Female,Unvaccinated,0,0,0,1,1,0,0,0,0,0,0,1,0,0
+12,Male,Fully Vaccinated,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+84,Male,Fully Vaccinated,1,0,1,0,1,0,0,0,1,0,0,1,0,1
+89,Female,Partially Vaccinated,1,0,0,0,0,0,1,0,0,1,0,1,1,0
+84,Female,Fully Vaccinated,0,0,1,0,1,0,0,0,1,0,0,0,0,0
+52,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+81,Male,Partially Vaccinated,1,0,1,1,0,1,0,0,0,0,0,1,0,1
+44,Male,Booster Dose,0,1,0,0,0,1,0,0,1,0,0,0,0,0
+31,Female,Booster Dose,1,0,0,1,1,0,0,0,0,0,0,0,0,0
+35,Male,Fully Vaccinated,0,1,1,0,1,0,0,0,0,0,1,0,0,0
+80,Male,Booster Dose,1,0,0,1,0,1,0,0,0,0,0,0,0,0
+98,Male,Fully Vaccinated,0,1,0,0,1,1,0,1,0,0,0,1,1,0
+59,Male,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+10,Female,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+62,Male,Booster Dose,0,1,0,1,1,0,1,0,0,0,0,1,0,0
+20,Female,Unvaccinated,1,0,0,0,1,1,1,0,0,0,0,1,1,0
+51,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+54,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25,Male,Fully Vaccinated,1,1,0,0,0,1,0,0,0,0,1,0,0,0
+67,Other,Fully Vaccinated,0,1,1,0,1,1,0,0,0,0,0,1,0,0
+33,Female,Partially Vaccinated,0,0,1,0,0,0,0,0,0,1,0,0,0,0
+51,Other,Unvaccinated,0,1,0,1,0,1,0,0,0,1,0,1,1,1
+81,Female,Fully Vaccinated,0,0,0,1,0,1,0,0,0,1,0,0,0,0
+98,Male,Fully Vaccinated,0,0,1,0,0,0,1,1,0,0,0,0,0,0
+92,Male,Fully Vaccinated,0,1,0,1,1,0,0,0,0,1,0,1,0,0
+51,Male,Fully Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+28,Female,Unvaccinated,0,1,0,0,1,1,0,0,0,0,0,1,0,0
+37,Male,Booster Dose,1,0,0,0,1,1,0,0,0,1,0,0,0,0
+41,Male,Fully Vaccinated,1,1,0,0,0,1,0,0,0,0,1,0,0,0
+20,Male,Unvaccinated,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+41,Male,Fully Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+12,Male,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+63,Male,Booster Dose,1,0,1,1,1,0,0,1,0,0,0,1,0,0
+16,Male,Partially Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+8,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+40,Male,Unvaccinated,0,0,0,0,0,0,0,1,0,0,1,0,0,0
+0,Male,Unvaccinated,0,0,0,1,0,1,0,1,1,0,0,1,0,0
+1,Female,Fully Vaccinated,0,1,0,0,0,1,1,0,0,0,0,0,0,0
+59,Female,Fully Vaccinated,0,1,0,1,1,1,0,0,0,0,0,1,0,0
+47,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+28,Male,Partially Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+96,Female,Unvaccinated,0,0,1,0,1,1,0,0,0,1,1,1,1,0
+9,Female,Fully Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+57,Female,Unvaccinated,1,0,1,0,1,0,1,0,0,1,1,1,1,0
+59,Female,Unvaccinated,0,0,1,0,1,0,1,0,0,0,0,1,0,1
+20,Male,Partially Vaccinated,1,1,0,1,0,1,0,1,0,0,0,1,1,0
+27,Male,Partially Vaccinated,0,0,1,1,0,1,0,0,0,1,0,1,0,0
+74,Male,Partially Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+33,Female,Fully Vaccinated,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+7,Female,Unvaccinated,0,0,1,0,1,0,1,0,0,0,0,1,0,0
+58,Female,Unvaccinated,0,0,1,0,1,0,0,0,0,0,1,1,0,0
+85,Male,Fully Vaccinated,1,1,1,0,0,1,0,0,0,0,0,1,1,1
+71,Female,Unvaccinated,0,1,1,0,0,0,0,0,0,0,1,1,1,0
+48,Male,Fully Vaccinated,0,1,1,0,1,0,0,1,0,1,0,1,1,1
+78,Male,Unvaccinated,0,0,1,1,0,0,0,0,0,0,0,1,0,0
+16,Male,Partially Vaccinated,0,1,0,0,1,0,0,0,0,0,1,0,0,0
+59,Female,Unvaccinated,0,0,1,1,0,0,0,0,0,0,0,1,0,0
+86,Male,Unvaccinated,0,0,0,0,0,1,1,0,0,0,0,1,0,0
+87,Female,Fully Vaccinated,0,1,0,0,0,0,1,0,1,0,0,0,0,0
+44,Male,Booster Dose,1,1,0,1,1,0,0,0,0,1,0,1,1,0
+82,Female,Unvaccinated,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+68,Female,Partially Vaccinated,0,1,0,0,1,0,0,0,0,0,1,1,1,0
+31,Male,Fully Vaccinated,0,1,1,0,0,1,0,0,0,0,1,0,0,0
+43,Female,Fully Vaccinated,0,1,1,0,1,0,0,0,1,1,1,1,0,0
+64,Female,Fully Vaccinated,1,1,0,0,0,0,1,0,1,1,0,1,1,0
+86,Female,Unvaccinated,0,1,0,0,1,0,0,0,0,0,1,1,0,1
+7,Female,Booster Dose,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+76,Female,Partially Vaccinated,0,0,1,0,1,1,0,0,1,1,0,1,1,0
+71,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+86,Female,Booster Dose,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+42,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,Male,Fully Vaccinated,1,1,0,1,0,0,0,0,0,0,1,0,0,0
+50,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,1,0,1,0,0,0
+23,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+98,Female,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23,Male,Fully Vaccinated,0,0,1,0,1,0,0,0,1,1,0,0,0,0
+16,Female,Unvaccinated,1,1,1,1,0,0,0,0,1,0,0,1,1,1
+4,Female,Fully Vaccinated,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+19,Male,Booster Dose,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+20,Male,Partially Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+57,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+30,Male,Unvaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+99,Female,Unvaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+10,Male,Booster Dose,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+51,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14,Female,Partially Vaccinated,1,0,0,1,0,0,1,0,0,0,1,1,0,0
+82,Female,Fully Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+6,Female,Booster Dose,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+27,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+50,Female,Fully Vaccinated,1,0,0,1,0,1,0,0,0,1,1,1,1,1
+57,Female,Fully Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+4,Male,Booster Dose,1,0,0,1,0,1,0,1,1,1,0,1,0,1
+4,Female,Fully Vaccinated,0,0,0,1,1,1,1,0,1,0,0,1,0,0
+93,Male,Fully Vaccinated,0,0,0,0,1,1,0,0,0,1,0,0,0,0
+95,Female,Unvaccinated,0,1,1,1,0,1,0,0,0,0,0,1,0,0
+7,Male,Unvaccinated,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+63,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+9,Male,Booster Dose,0,1,1,0,0,0,1,0,0,1,0,0,0,0
+37,Female,Booster Dose,0,0,1,0,1,0,0,1,1,1,0,1,1,0
+95,Female,Booster Dose,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+91,Male,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+80,Female,Fully Vaccinated,0,1,1,1,0,0,0,0,0,0,0,0,0,0
+94,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+7,Female,Fully Vaccinated,0,0,1,0,0,1,0,0,0,1,0,0,0,0
+24,Female,Partially Vaccinated,0,1,0,0,1,0,0,0,0,0,1,0,0,0
+72,Male,Fully Vaccinated,0,0,0,1,0,0,0,1,0,0,0,0,0,0
+65,Female,Booster Dose,1,0,1,0,0,0,1,0,0,0,0,0,0,0
+78,Male,Partially Vaccinated,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+49,Male,Booster Dose,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+66,Female,Partially Vaccinated,0,1,0,1,0,1,0,1,1,0,0,1,1,0
+48,Male,Fully Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+35,Other,Fully Vaccinated,0,1,0,1,0,0,1,0,0,1,1,1,1,0
+67,Female,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+77,Male,Partially Vaccinated,0,0,0,0,0,1,0,1,0,0,0,0,0,0
+40,Female,Booster Dose,1,0,0,0,1,0,0,0,0,1,1,0,0,0
+88,Male,Fully Vaccinated,0,1,0,0,0,1,0,1,0,0,0,0,0,0
+61,Male,Partially Vaccinated,0,1,1,1,0,1,0,1,0,0,0,1,0,0
+9,Male,Fully Vaccinated,0,0,0,0,1,1,0,0,0,0,1,0,0,0
+20,Male,Partially Vaccinated,0,1,1,1,0,0,1,0,0,1,0,1,0,0
+35,Male,Partially Vaccinated,0,0,0,1,1,0,0,0,0,0,1,0,0,0
+11,Male,Partially Vaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+90,Other,Booster Dose,0,0,0,1,1,0,0,0,0,0,1,0,0,0
+1,Female,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+12,Female,Fully Vaccinated,0,0,0,1,0,1,0,0,1,0,0,0,0,0
+52,Female,Partially Vaccinated,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+31,Female,Partially Vaccinated,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+94,Male,Booster Dose,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+15,Female,Fully Vaccinated,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+31,Other,Booster Dose,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+31,Male,Partially Vaccinated,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+97,Female,Unvaccinated,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+10,Female,Booster Dose,1,0,1,1,1,0,0,0,1,1,0,1,0,0
+9,Female,Fully Vaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+14,Female,Unvaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+16,Male,Partially Vaccinated,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+39,Male,Fully Vaccinated,0,1,1,0,1,0,1,0,0,0,0,0,0,0
+17,Male,Fully Vaccinated,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+54,Female,Fully Vaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+72,Male,Partially Vaccinated,0,0,0,0,0,0,0,1,0,1,1,1,1,0
+24,Female,Partially Vaccinated,0,0,0,1,1,1,0,1,0,0,0,1,0,0
+58,Male,Booster Dose,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+77,Male,Partially Vaccinated,0,0,1,1,1,0,0,0,0,0,0,1,1,1
+88,Male,Fully Vaccinated,0,0,0,0,1,0,1,0,1,0,0,0,0,0
+21,Female,Fully Vaccinated,0,0,0,1,1,0,0,1,0,0,0,0,0,0
+29,Male,Partially Vaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+83,Male,Partially Vaccinated,0,0,0,1,1,1,0,0,0,0,0,1,1,0
+84,Female,Fully Vaccinated,0,0,1,1,0,0,1,1,0,0,0,1,0,0
+43,Male,Fully Vaccinated,0,1,0,0,1,1,0,0,0,0,1,0,0,0
+31,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+50,Female,Partially Vaccinated,0,0,1,1,0,1,0,0,0,0,0,0,0,0
+45,Female,Fully Vaccinated,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+20,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+98,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+31,Other,Unvaccinated,0,1,1,0,1,1,0,0,0,1,0,1,0,0
+93,Female,Fully Vaccinated,1,0,0,0,0,0,1,0,0,0,0,0,0,0
+38,Female,Booster Dose,0,1,0,0,1,0,1,0,0,1,0,0,0,0
+11,Female,Fully Vaccinated,0,0,1,1,0,1,0,0,0,0,0,0,0,0
+46,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+17,Female,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+20,Male,Booster Dose,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+12,Female,Booster Dose,0,0,1,0,1,0,0,1,0,0,0,0,0,0
+20,Female,Unvaccinated,0,0,0,0,1,1,0,0,0,0,1,1,1,0
+7,Male,Partially Vaccinated,1,0,0,1,0,1,0,0,0,0,0,0,0,0
+45,Male,Partially Vaccinated,1,1,0,1,0,0,1,1,0,0,0,1,1,0
+6,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,1,0,0,0,0,0
+22,Female,Unvaccinated,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+95,Male,Fully Vaccinated,1,0,0,0,1,0,0,1,0,0,1,1,0,0
+74,Female,Unvaccinated,0,1,1,0,1,0,0,0,1,0,0,1,0,1
+85,Male,Fully Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+21,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+88,Female,Partially Vaccinated,1,0,1,1,0,1,0,0,0,1,0,1,0,0
+21,Male,Booster Dose,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+91,Male,Fully Vaccinated,0,1,1,1,0,0,0,0,0,0,0,0,0,0
+28,Female,Fully Vaccinated,1,1,1,1,0,1,0,1,0,0,0,1,1,0
+12,Male,Partially Vaccinated,0,0,0,1,1,0,0,0,0,1,0,0,0,0
+81,Male,Partially Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+1,Other,Fully Vaccinated,1,0,0,0,0,0,0,0,1,0,1,0,0,0
+28,Female,Unvaccinated,1,1,1,1,0,0,0,0,0,0,1,1,0,0
+84,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+78,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+51,Male,Partially Vaccinated,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+26,Female,Booster Dose,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+49,Female,Unvaccinated,1,0,0,0,0,0,1,1,0,1,0,1,0,0
+94,Female,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+78,Female,Unvaccinated,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+22,Female,Fully Vaccinated,0,1,0,0,0,1,0,0,1,0,0,0,0,0
+87,Male,Partially Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+43,Male,Fully Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+76,Female,Fully Vaccinated,0,0,0,0,1,0,0,0,1,1,0,0,0,0
+21,Female,Unvaccinated,0,1,1,1,0,0,0,0,0,0,0,1,0,0
+42,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,1,0,1,0,0,0
+36,Male,Partially Vaccinated,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+60,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,1,1,0,0,0,0
+96,Female,Booster Dose,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+55,Female,Partially Vaccinated,0,1,1,1,0,1,0,0,0,0,1,1,1,0
+2,Female,Partially Vaccinated,1,0,0,1,1,0,0,0,0,1,0,1,1,1
+62,Female,Unvaccinated,0,1,0,0,1,1,1,0,0,0,0,1,0,0
+18,Female,Fully Vaccinated,1,0,0,1,0,1,0,0,0,0,1,0,0,0
+22,Female,Partially Vaccinated,0,0,0,0,0,0,0,1,0,0,1,0,0,0
+28,Female,Partially Vaccinated,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+29,Female,Unvaccinated,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+38,Female,Partially Vaccinated,1,1,0,0,1,0,0,0,0,0,0,0,0,0
+24,Female,Booster Dose,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+7,Female,Partially Vaccinated,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+57,Female,Fully Vaccinated,1,0,0,0,1,0,1,0,0,0,0,0,0,0
+15,Male,Fully Vaccinated,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+71,Male,Fully Vaccinated,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+0,Other,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+4,Female,Fully Vaccinated,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+2,Female,Booster Dose,1,0,1,0,0,0,0,0,0,0,1,0,0,0
+64,Female,Unvaccinated,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+3,Female,Partially Vaccinated,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+98,Female,Partially Vaccinated,0,0,1,1,0,1,0,0,0,0,0,1,0,0
+95,Female,Partially Vaccinated,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+63,Female,Partially Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+97,Male,Fully Vaccinated,0,1,1,0,0,0,0,0,1,0,0,0,0,0
+88,Male,Unvaccinated,0,1,0,0,0,1,0,1,0,0,0,1,1,0
+9,Male,Fully Vaccinated,0,1,0,1,0,0,0,1,0,0,0,0,0,0
+20,Male,Fully Vaccinated,0,0,0,1,0,1,0,0,1,0,0,0,0,0
+45,Female,Fully Vaccinated,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+90,Male,Fully Vaccinated,1,1,1,1,0,1,0,0,0,0,1,1,0,0
+26,Male,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+65,Male,Booster Dose,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+40,Male,Fully Vaccinated,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+12,Female,Fully Vaccinated,1,1,0,1,1,0,0,0,0,0,0,0,0,0
+8,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+35,Female,Partially Vaccinated,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+85,Male,Unvaccinated,1,1,0,0,0,1,0,0,0,1,1,1,0,0
+89,Male,Fully Vaccinated,0,0,1,0,1,0,0,0,0,0,1,0,0,0
+57,Male,Fully Vaccinated,0,0,0,1,1,1,0,1,1,1,0,1,0,0
+53,Female,Booster Dose,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+11,Male,Booster Dose,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+80,Female,Partially Vaccinated,1,0,0,1,1,1,1,0,0,0,0,1,0,1
+77,Male,Partially Vaccinated,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+13,Female,Partially Vaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+33,Male,Partially Vaccinated,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+52,Male,Fully Vaccinated,1,0,0,0,1,0,0,1,0,0,0,0,0,0
+19,Female,Fully Vaccinated,0,1,1,0,0,0,0,0,1,0,0,0,0,0
+74,Male,Fully Vaccinated,1,0,1,1,1,1,0,1,0,1,0,1,0,0
+15,Male,Unvaccinated,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+94,Female,Partially Vaccinated,1,1,0,0,0,1,0,0,1,0,0,1,1,1
+69,Female,Partially Vaccinated,0,1,1,1,1,1,0,0,1,0,0,1,0,0
+55,Female,Fully Vaccinated,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+82,Male,Unvaccinated,1,1,0,0,0,0,1,0,1,0,0,1,0,0
+57,Male,Fully Vaccinated,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+3,Male,Fully Vaccinated,0,0,1,1,0,0,0,0,0,1,0,0,0,0
+3,Male,Fully Vaccinated,0,1,1,0,0,1,0,0,0,0,0,0,0,0
+19,Female,Partially Vaccinated,0,1,1,1,1,0,0,0,1,1,1,1,0,1
+9,Female,Fully Vaccinated,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+23,Male,Fully Vaccinated,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+98,Female,Fully Vaccinated,1,0,0,0,1,0,1,0,1,1,0,1,0,0
+25,Male,Partially Vaccinated,0,0,0,0,1,0,1,0,0,0,1,0,0,0
+36,Female,Fully Vaccinated,1,0,0,1,0,1,0,0,0,0,0,0,0,0
+84,Male,Fully Vaccinated,1,1,0,0,0,0,1,0,0,0,0,0,0,0
